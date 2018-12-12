@@ -1,0 +1,281 @@
+﻿<style>
+    .customer-photo {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-size: 20px 20px;
+        background-position: center center;
+        vertical-align: middle;
+        line-height: 32px;
+        box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+        margin-left: 5px;
+    }
+</style>
+<script>
+    function loadColors(param) {
+
+        var color = "";
+
+        switch (param) {
+
+
+            //case 2:
+            //    return "<center><div class='customer-photo' style='background-color: yellow;'></div></center>";
+            //    break;
+            case 40:
+                return "<center><div class='customer-photo' style='background-color: red;'></div></center>";
+                break;
+            //case 39:
+            //    return "<center><div class='customer-photo' style='background-color: green;'></div></center>";
+            // break;
+            case 37:
+                return "<center><div class='customer-photo' style='background-color: green;'></div></center>";
+                break;
+            default:
+                return "<center><div class='customer-photo' style='background-color: yellow ;'></div></center>";
+                break;
+
+        }
+
+    }
+</script>
+
+@(Html.Kendo().Grid<net.paxialabs.mabe.serviplus.entities.ModelView.Operation.ModelViewQuotation>()
+            .Name("grid")
+            .EnableCustomBinding(true)
+            .Columns(columns =>
+            {
+                columns.Bound(o => o.StatusQuotation).Title("Estatus").Width("90px").ClientTemplate("#= loadColors(StatusQuotation) #").Filterable(false);
+                columns.Bound(o => o.OrderID).Title("Nº de ODS").Width("100px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.TypeQuotation).Title("Tipo Cotizacion").Width("100px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.Folio).Title("Folio").Width("100px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.OrdenVenta).Title("Orden Venta").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.ClientName).Title("Cliente").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.EmployeeName).Title("Técnico de Servicio").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.Total).Title("Total a Pagar").Width("100px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Command(command => command.Custom("Ver").Click("showDetails")).Title("Documento").Width(100);
+
+                //columns.Command(command => command.Custom("Comprobante").Click("showContrat")).Title("Contrato/Recibo").Width(150);
+            })
+            //.Selectable(selectable => selectable.Mode(GridSelectionMode.Multiple))
+            .Resizable(resize => resize.Columns(true))
+            .Pageable(p => p.ButtonCount(5).PageSizes(true).Refresh(true).Messages(m => m.ItemsPerPage("Elementos por Página")).Messages(m => m.Display("Elementos Mostrados {0}-{1} de {2}")))
+            .Sortable()
+            .HtmlAttributes(new { style = "height: 380px" })
+            .Scrollable(scrolling => scrolling.Enabled(true))
+            .Events(events => events.DataBound("gridDataBound"))
+            .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+            .DataSource(dataSource => dataSource
+                .Ajax()
+                .Read(read => read.Action("GetListAllQuotation", "Quotation").Data("filterData"))
+                .PageSize(15)
+                .ServerOperation(true)
+                .Events(e => e.Error("error_handler"))
+            )
+)
+
+@(Html.Kendo().Dialog()
+                .Name("dialogDetail")
+                .Title("Serviplus - Cotización")
+                .Content("")
+                .Width(800)
+                .Height(650)
+                .Modal(true)
+                .Visible(false)
+)
+@(Html.Kendo().Dialog()
+                .Name("dialogContrat")
+                .Title("Serviplus - Comprobante")
+                .Content("")
+                .Width(800)
+                .Height(650)
+                .Modal(true)
+                .Visible(false)
+)
+@(Html.Kendo().Dialog()
+                .Name("dialogalert")
+                .Title("Serviplus - Alerta")
+                .Content("")
+                .Width(300)
+                .Height(150)
+                .Modal(true)
+                .Visible(false)
+)
+
+@(Html.Kendo().Dialog()
+                .Name("dialogPriorityDetail")
+                .Title("Serviplus")
+                .Content("")
+                .Width(400)
+                .Modal(true)
+                .Visible(false)
+)
+
+
+<script>
+    var firstLoad = true;
+    function gridDataBound(e) {
+        var grid = e.sender;
+        if (grid.dataSource.total() == 0) {
+            if (!firstLoad) {
+                var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+                $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                dialog.content('No se encontraron datos para mostrar.');
+                dialog.open();
+            }
+            //alert('No se encontraron datos para mostrar.');
+            e.sender.pager.options.messages.empty = 'No se encontraron datos para mostrar.';
+        }
+    }
+
+    function error_handler(e) {
+        alert('No cuenta con permisos suficientes.');
+    }
+
+    function filterData() {
+        try {
+
+            var ModuleID = $("#ModuleID").data("kendoMultiSelect").value().toString();
+
+            var PriorityID = $("#PriorityID").data("kendoMultiSelect").value().toString();
+            var StatusOrderID = $("#StatusOrderID").data("kendoMultiSelect").value().toString();
+            var ServiceID = $("#ServiceID").data("kendoMultiSelect").value().toString();
+            var StatusVisitID = $("#StatusVisitID").data("kendoMultiSelect").value().toString();
+            var QuotationID = $("#QuotationID").data("kendoMultiSelect").value().toString();
+
+            var OrderID = document.getElementById("ODS").value;
+            var Employee = document.getElementById("Employee").value;
+
+
+        }
+        catch (ex) {
+
+            var ModuleID = "";
+            var PriorityID = "";
+            var StatusOrderID = "";
+            var StatusVisitID = "";
+            var ServiceID = "";
+            var QuotationID = "";
+            var OrderID = "";
+            var Employee = "";
+        }
+
+        return {
+            ModuleID: ModuleID,
+            PriorityID: PriorityID,
+            StatusOrderID: StatusOrderID,
+            StatusVisitID: StatusVisitID,
+            ServiceID: ServiceID,
+            QuotationID: QuotationID,
+            OrderID: OrderID,
+            Employee: Employee,
+            StartDate: $('#StartDate').val(),
+            EndDate: $('#EndDate').val(),
+
+        }
+    }
+
+    var filter = {};
+    function showDetails(e) {
+
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        //dataItem.URL
+
+        var dialog = $('#dialogDetail').data("kendoDialog");
+
+        $('#dialogDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+
+        var x = "<object data=" + dataItem.URL + " type='application/pdf' width='770px' height='550px' />"
+        dialog.content(x);
+        dialog.open();
+
+    }
+    function showContrat(e) {
+
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        if (dataItem.Contract != "") {
+         
+
+
+            var dialog = $('#dialogContrat').data("kendoDialog");
+
+            $('#dialogContrat').parent().find('.k-dialog-title').css(' font-size', 'bold');
+
+            var x = "<object data=" + dataItem.Contract + " type='application/pdf' width='770px' height='550px' />"
+            dialog.content(x);
+            dialog.open();
+        }
+        else {
+            var dialogSalida = $('#dialogalert').data("kendoDialog");
+            dialogSalida.content('No cuenta con Comprobante');
+            dialogSalida.open();
+        }
+    }
+
+
+    $("#btnSearch").click(function () {
+
+        firstLoad = true;
+        $("#grid").data('kendoGrid').dataSource.data([]);
+
+        firstLoad = false;
+
+
+        if ($("#EndDate").val() == "" && $("#StartDate").val() == "") {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Es necesario seleccionar fecha inicial y fecha final.');
+            dialog.open();
+            return false;
+        }
+
+        if ($("#EndDate").val() == "" && $("#StartDate").val() != "") {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Es necesario seleccionar una fecha final.');
+            dialog.open();
+            return false;
+        }
+
+        if ($("#StartDate").val() == "" && $("#EndDate").val() != "") {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Es necesario seleccionar una fecha inicial.');
+            dialog.open();
+            return false;
+        }
+
+
+        filter = filterData();
+        $('#btnClean').attr("disabled", false);
+        var form = $('#frmFilter1');
+        $("#grid").data("kendoGrid").dataSource.read();
+
+    });
+
+    $("#btnClean").click(function () {
+
+        $("#ModuleID").data("kendoMultiSelect").value([]);
+        $("#PriorityID").data("kendoMultiSelect").value("");
+        $("#StatusOrderID").data("kendoMultiSelect").value([]);
+        $("#StatusVisitID").data("kendoMultiSelect").value([]);
+        $("#ServiceID").data("kendoMultiSelect").value("");
+        $("#QuotationID").data("kendoMultiSelect").value("");
+        $('#ODS').val("");
+        $('#Employee').val("");
+        $('#StartDate').val("");
+        $('#EndDate').val("");
+        $('#btnSearch').attr("disabled", false);
+        //filter = filterData();
+        $(this).attr("disabled", true);
+        filterData();
+        //var grid = $("#grid").data("kendoGrid");
+        //$filter = new Array();
+        //$filter.push({ field: "ActivationEnabled", operator: "eq", value: true });
+        $("#grid").data("kendoGrid").dataSource.read();
+    });
+</script>

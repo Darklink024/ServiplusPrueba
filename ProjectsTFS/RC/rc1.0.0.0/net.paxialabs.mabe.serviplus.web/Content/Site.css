@@ -1,0 +1,403 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #EDEDED;
+    font-family: Helvetica;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 55px;
+    padding-right: 15px;
+    background-color: #EDEDED;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/*Inicio Splitter */ 
+#splitter {
+    height: 490px;
+    margin: 0 auto;
+}
+
+#middle-pane {
+    color: #000;
+    background-color: #ccc;
+}
+
+#bottom-pane {
+    color: #000;
+    background-color: #aaa;
+}
+
+#left-pane, #center-pane, #right-pane {
+    color: #000;
+    background-color: #eee;
+    height: 540px;
+    
+}
+
+.pane-content {
+    padding: 0 10px;
+}
+
+
+/*Center Grid*/
+.k-header .k-link {
+    text-align: center;
+}
+/*Fin Center Grid*/
+
+/*Fin Splitter */
+
+.footer {
+    text-align: center;
+    background: url(/Content/Images/logos_serviplus_mabe.png) no-repeat center;
+    height: 49px;
+    padding-top: 11px;
+    /*position: relative;*/
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #16568A;
+}
+
+.espacio-footer {
+    height: 3px;
+    margin-top: 10px;
+    display: block;
+}
+
+
+.fondo-blanco {
+    margin: 20px 20px 20px 20px;
+    background-color: white;
+}
+
+
+.btn-unauth {
+    color: #ffffff;
+    background-color: #31794F;
+    border-color: #31794F;
+}
+
+.btn-aceptar {
+    color: #ffffff;
+    background-color: #16568A;
+    border-color: #16568A;
+}
+
+.btn-confirmar {
+    color: #ffffff;
+    background-color: #31794F;
+    border-color: #31794F;
+}
+
+.btn-cancel {
+    color: #ffffff;
+    background-color: #FF0033;
+    border-color: #FF0033;
+}
+
+.btn-unauth:hover,
+.btn-unauth:focus,
+.btn-unauth:active,
+.btn-unauth.active,
+.open .dropdown-toggle.btn-unauth {
+    color: #ffffff;
+    background-color: #2f6847;
+    border-color: #14494C;
+}
+
+    .btn-unauth:active,
+    .btn-unauth.active,
+    .open .dropdown-toggle.btn-unauth {
+        background-image: none;
+    }
+
+    .btn-unauth.disabled,
+    .btn-unauth[disabled],
+    fieldset[disabled] .btn-unauth,
+    .btn-unauth.disabled:hover,
+    .btn-unauth[disabled]:hover,
+    fieldset[disabled] .btn-unauth:hover,
+    .btn-unauth.disabled:focus,
+    .btn-unauth[disabled]:focus,
+    fieldset[disabled] .btn-unauth:focus,
+    .btn-unauth.disabled:active,
+    .btn-unauth[disabled]:active,
+    fieldset[disabled] .btn-unauth:active,
+    .btn-unauth.disabled.active,
+    .btn-unauth[disabled].active,
+    fieldset[disabled] .btn-unauth.active {
+        background-color: #14494C;
+        border-color: #14494C;
+    }
+
+    .btn-unauth .badge {
+        color: #14494C;
+        background-color: #ffffff;
+    }
+
+
+/* Inicia estilos de layout */
+#titleModuleApp {
+    font-size: 24px;
+    font-weight: bold;
+    color: #16568A;
+}
+.perfilUser {
+    font-size: 8px;
+    font-style: italic;
+    color: white;
+}
+
+#div_superior {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+/* Fin estilos del layout*/
+
+
+
+.loading {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5) url(../Content/Images/loader.gif) no-repeat center;
+    background-size: 150px;
+    z-index: 100;
+}
+
+.k-input {
+    text-align: left;
+    max-width: 480px;
+}
+
+.k-popup .k-list .k-item {
+    width: 100%;
+    text-align: left;
+}
+
+.k-pager-wrap {
+    margin-bottom: 55px;
+}
+
+
+/*Inicio estilos ODSs*/
+
+#bootstrap_overrides hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 2px solid #eee;
+}
+#bootstrap_overrides ul.aditionals {
+    list-style-type: none;
+    margin-left: 0;
+}
+#bootstrap_overrides ul.aditionals li {
+    float: none;
+}
+.k-content.k-state-active {
+    height: 429px;
+}
+
+#table-ods.table > thead > tr > th,
+#table-ods.table > tbody > tr > th,
+#table-ods.table > tfoot > tr > th,
+#table-ods.table > thead > tr > td,
+#table-ods.table > tbody > tr > td,
+#table-ods.table > tfoot > tr > td {
+    padding: 7px;
+    line-height: 0;
+    vertical-align: middle;
+    border-top: none;
+}
+
+#table-spares tr td.right-padding {
+    padding-right: 23px !important;
+}
+
+#table-faults tr td:first-child {
+    padding-right: 30px !important;
+}
+
+#table-faults .width {
+    width: 100px;
+}
+
+#table-faults.table > thead > tr > th,
+#table-faults.table > tbody > tr > th,
+#table-faults.table > tfoot > tr > th,
+#table-faults.table > thead > tr > td,
+#table-faults.table > tbody > tr > td,
+#table-faults.table > tfoot > tr > td,
+#table-spares.table > thead > tr > th,
+#table-spares.table > tbody > tr > th,
+#table-spares.table > tfoot > tr > th,
+#table-spares.table > thead > tr > td,
+#table-spares.table > tbody > tr > td,
+#table-spares.table > tfoot > tr > td {
+    padding: 4px;
+    line-height: normal;
+    vertical-align: middle;
+    border-top: none;
+}
+
+#tabstrip-1,
+#tabstrip-2,
+#tabstrip-3,
+#tabstrip-4,
+#tabstrip-5,
+#tabstrip-6 {
+    padding-top: 16px;
+    padding-bottom: 15px;
+}
+
+.main-data {
+    font-size: 1.1em;
+}
+.main-dataasig {
+    font-size: 1.3em;
+}
+.order-id {
+    font-size: 2.3em;
+    font-weight: normal;
+    margin: 0 0 3px 0;
+}
+.order-idasig {
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 0 0 3px 0;
+}
+
+.en-linea {
+    display: inline;
+}
+
+.en-bloque {
+    display: block;
+}
+
+.right-spacing {
+    margin-right: 30px;
+}
+
+.tel-right-spacing, .double-right-spacing {
+    margin-right: 60px;
+}
+
+.street-right-spacing {
+    margin-right: 270px;
+}
+
+.slight-margin-bottom {
+    margin-bottom: 15px;
+}
+
+.slight-margin-top {
+    margin-top: 15px;
+}
+
+.double-margin-bottom {
+    margin-bottom: 30px;
+}
+
+.double-margin-top {
+    margin-top: 30px;
+}
+
+.blue-header {
+    background: #16568A;
+    color: white;
+    padding: 3px 0px 3px 0px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.gray-header {
+    background: #eee;
+    padding: 3px 0px 3px 3px;
+    margin-top: 6px;
+}
+
+/*Fin estilos ODSs*/
+
+
+/*Inicio estilos Security/Error */
+.center-abs {
+    position: absolute;
+    left: 50%;
+}
+.center-abs-child {
+    position: relative;
+    left: -50%;
+}
+.access-denied {
+    margin-top: 0px;
+}
+.serviplus-logo {
+    margin-top: 50px;
+}
+.notification-error {
+    font-size: 16px;
+    margin-top: 400px;
+    color: white;
+    background: rgba(255, 0, 0, 0.8);
+    box-shadow: 0px 0px 3px gray;
+    padding: 20px;
+}
+/*Fin estilos Security/Error */
+
+/*Inicio estilos barra navegación*/
+#li3 {
+    margin-top: -3px;
+}
+
+#li1A, #li2A, #li3A {
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    width: 100%;
+}
+
+#li1A, #li2A, #li3A {
+    color: #16568A;
+}
+
+#li1:hover, #li2:hover, #li3:hover {
+    background-color: #6eb2ea;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#li1:hover > #li1A, #li2:hover > #li2A, #li3:hover > #li3A {
+    color: #fff;
+}
+/*Inicio estilos barra navegación*/

@@ -1,0 +1,201 @@
+﻿<style>
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        text-align: center;
+    }
+
+    ::-moz-placeholder { /* Firefox 19+ */
+        text-align: center;
+    }
+
+    :-ms-input-placeholder {
+        text-align: center;
+    }
+
+</style>
+
+
+@using (Html.BeginForm("", "#", FormMethod.Post, new { id = "frmRecovery", @class = "form-horizontal" }))
+{
+
+    <div class="container fondo-blanco" style="border-radius: 8px; box-shadow: 0 0 15px 10px #b0b9c1;">
+        <div class="col-md-8 col-md-offset-2">
+            <br />
+
+            <div class="form-group">
+                <div class="col-md-12 col-md-offset-0">
+                    <input type="text" class="form-control input-sm" id="Mail" name="Mail" placeholder="Correo electrónico">
+                </div>
+            </div>
+    
+            <center>
+                <div class="form-group">
+                    <div class="col-md-12 col-md-offset-0">
+                        <button class="btn btn-unauth" type="submit" id="btnRecovery">Recuperar Contraseña</button>
+                    </div>
+                </div>
+                @*<div class="form-group">
+                    <div class="col-md-12 col-md-offset-0">
+                        <button class="btn btn-unauth" type="button" id="btnReturn">Regresar </button>
+                    </div>
+                </div>*@
+            </center>
+                @(Html.Kendo().Dialog()
+        .Name("dialogPriorityDetail")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+                )
+
+         @(Html.Kendo().Dialog()
+        .Name("dialogPriorityDetail1")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+        .Actions(actions =>
+        {
+            actions.Add().Text("<button class='btn btn-confirmar'>Aceptar</button>");
+        })
+        .Events(ev => ev.Close("onClose").Open("onOpen"))
+            )
+         
+        </div>
+    </div>
+
+
+}
+
+<script>
+
+    @*$("form").on("submit", function (event) {
+        event.preventDefault();
+
+        $.ajax({
+            url: '../Security/Recovery',
+            type: "GET",
+            cache: false,
+            data: { data: "{ Email: '" + $("#Mail").val() + "', TokenApp:'@ViewBag.AppToken' }" },
+            beforeSend: function (jqXHR, settings) { },
+            error: function (jqXHR, textStatus, errorThrown) {
+                var json = $.parseJSON(jqXHR.responseText);
+                if (json.serverError_Message == "EmailInvalid")
+                {
+                    alert('Correo electrónico invalido');
+                }
+            },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+                var json = $.parseJSON(result);
+
+            }
+        });
+    });*@
+
+    $(document).ready(function () {
+        $('[class="btn btn-primary"]').tooltip();
+
+        $('#frmRecovery').bootstrapValidator({
+            message: 'Envio de formulario',
+            excluded: [':disabled'],
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                Mail: {
+                    container: 'tooltip',
+                    validators: {
+                        notEmpty: {
+                            message: 'Este campo es requerido.'
+                        },
+                        emailAddress: {
+                            message: 'Campo de correo es inválido.'
+                        }
+                    }
+                }
+            }
+        })
+        .on('status.field.bv', function (e, data) {
+            var $form = $(e.target),
+            validator = data.bv,
+            $tabPane = data.element.parents('.tab-pane'),
+            tabId = $tabPane.attr('id');
+
+            if (tabId) {
+                var $icon = $('a[href="#' + tabId + '"][data-toggle="tab"]').parent().find('i');
+                // Add custom class to tab containing the field
+                if (data.status == validator.STATUS_INVALID) {
+                    $icon.removeClass(faIcon.valid).addClass(faIcon.invalid);
+                } else if (data.status == validator.STATUS_VALID) {
+                    var isValidTab = validator.isValidContainer($tabPane);
+                    $icon.removeClass(faIcon.valid).addClass(isValidTab ? faIcon.valid : faIcon.invalid);
+                }
+            }
+        }).on('success.form.bv', function (e, data) {
+            // Prevent form submission
+            e.preventDefault();
+
+            var online = navigator.onLine;
+            if (!online) {
+                bootbox.alert('Sin Internet');
+                return false;
+            }
+
+            var form = $('#frmRecovery');
+                    $.ajax({
+            url: '../Security/Recovery',
+            type: "GET",
+            cache: false,
+            data: { data: "{ Email: '" + $("#Mail").val() + "', TokenApp:'@ViewBag.AppToken' }" },
+            beforeSend: function (jqXHR, settings) { $("#divLoading").show() },
+            error: function (jqXHR, textStatus, errorThrown) {
+                var json = $.parseJSON(jqXHR.responseText);
+                if (json.serverError_Message == "EmailInvalid")
+                {
+                    $("#divLoading").hide()
+                    var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+                    $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                    dialog.content('Correo electrónico invalido.');
+                    dialog.open();
+
+                    //alert('Correo electrónico invalido');
+                }
+            },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+                $("#divLoading").show()
+                //var json = $.parseJSON(result);
+                var dialog = $('#dialogPriorityDetail1').data("kendoDialog");
+                $('#dialogPriorityDetail1').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                dialog.content('Contraseña temporal enviada.');
+                dialog.open();
+                window.location.href = "../Security/Index";
+            }
+        });
+
+        });
+    });
+
+
+    $("#btnReturn").click(function () {
+        window.location.href = '@Url.Content("~/Security/Index")';
+    });
+
+
+    function onClose() {
+
+            }
+
+            function onOpen() {
+
+            }
+
+</script>

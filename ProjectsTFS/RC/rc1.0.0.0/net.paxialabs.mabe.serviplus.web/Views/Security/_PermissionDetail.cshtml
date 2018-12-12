@@ -1,0 +1,159 @@
+﻿@model net.paxialabs.mabe.serviplus.entities.ModelView.Security.ModelViewPermission
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm())
+{
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.ModuleID)
+    @Html.HiddenFor(model => model.ProfileID)
+
+    <br />
+
+    <fieldset>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Section, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Section, new { htmlAttributes = new { @class = "form-control", @readonly = true } })                
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Module, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Module, new { htmlAttributes = new { @class = "form-control", @readonly = true } })                
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Access, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.Access, new { htmlAttributes = new { @class = "form-control" } })                
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Read, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.Read, new { htmlAttributes = new { @class = "form-control" } }) 
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Export, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.Export, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Add, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.Add, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Update, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.Update, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Delete, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBoxFor(model => model.Delete, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" id="btnGuardar" value="Guardar" class="btn btn-default" />
+                <input type="button" id="btnCancelar" value="Cancelar" class="btn btn-danger" />
+            </div>
+        </div>
+
+    </fieldset>
+
+}
+
+
+@(Html.Kendo().Dialog()
+        .Name("dialogModuleDetail")
+        .Title("Mabe - Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+        .Actions(actions =>
+        {
+            actions.Add().Text("<button class='btn-confirmar'>Aceptar</button>");
+        })
+        .Events(ev => ev.Close("onClose").Open("onOpen"))
+)
+
+
+<script>
+    $("form").on("submit", function (event) {
+        event.preventDefault();
+
+        $.ajax({
+            url: '../Security/savePermission',
+            type: "POST",
+            cache: false,
+            data: $(this).serialize(),
+            beforeSend: function (jqXHR, settings) { /*$("#divLoading").show();*/ },
+            error: function (jqXHR, textStatus, errorThrown) { /*$("#divLoading").hide();*/ },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+
+                //$("#divLoading").hide();
+                //$("#divModal").modal('toggle');
+
+                if (result == "Unauthorized") {
+                    showDialog('No cuenta con permisos suficientes.');
+                } else {
+                    showDialog('Su solicitud se proceso con éxito.');
+                }
+                var grid = $("#grid").data("kendoGrid");
+                grid.dataSource.read();
+            }
+        });
+    });
+
+    $("#btnCancelar").click(function () {
+        $("#ModuleID").val("0");
+        $("#ProfileID").val("0");
+        $("#Module").val("");
+        $("#Section").val("");
+        
+
+        var splitter = $("#splitter").data("kendoSplitter");
+        splitter.expand("#left-pane");
+        splitter.collapse("#right-pane");
+
+    });
+
+
+    function onClose() {
+
+    }
+
+    function onOpen() {
+
+    }
+
+    function showDialog(msg) {
+
+        var dialog = $('#dialogModuleDetail').data("kendoDialog");
+        dialog.content(msg);
+        dialog.open();
+    }
+
+</script>
+
+

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:p1="http://mabe.com/MW/CONFINAL/Mobile/Crear_Reserva" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="SI_CrearReserva_OS" targetNamespace="http://mabe.com/MW/CONFINAL/Mobile/Crear_Reserva" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_SI_CrearReserva_OS" />
+  <wsdl:types>
+    <xsd:schema xmlns="http://mabe.com/MW/CONFINAL/Mobile/Crear_Reserva" targetNamespace="http://mabe.com/MW/CONFINAL/Mobile/Crear_Reserva" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="MT_CrearReserva_Req" type="p1:DT_CrearReserva_Req" />
+      <xsd:element name="MT_CrearReserva_Res" type="p1:DT_CrearReserva_Res" />
+      <xsd:complexType name="DT_CrearReserva_Res">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">c93d35539a3b11e7b643000000873c82</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">30df26a091b111e79fb100155d52058f</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="IDOrden" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">30df269891b111e7903e00155d52058f</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="IDReserva" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">30df269991b111e78bdf00155d52058f</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Return">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">434bf9c491b211e7bbab00155d52058f</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="TipoMensaje" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">434bf9b891b211e79a2900155d52058f</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ClaseMensaje" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">434bf9b791b211e7b38500155d52058f</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="Mensaje" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">434bf9b691b211e78d8200155d52058f</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="Descripcion" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">434bf9b591b211e7cb4b00155d52058f</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_CrearReserva_Req">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">30f08f6595a611e7a0e0000000873c82</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="SessionReference">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">9487caa3936a11e795d100155d52058f</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:attribute name="Satelite" type="xsd:string">
+                <xsd:annotation>
+                  <xsd:appinfo source="http://sap.com/xi/TextID">9487caa2936a11e7cd0800155d52058f</xsd:appinfo>
+                </xsd:annotation>
+              </xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="DestinoSistema">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">9487caa6936a11e791b000155d52058f</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:attribute name="Mandante" type="xsd:string">
+                <xsd:annotation>
+                  <xsd:appinfo source="http://sap.com/xi/TextID">9487caa4936a11e7c01c00155d52058f</xsd:appinfo>
+                </xsd:annotation>
+              </xsd:attribute>
+              <xsd:attribute name="idioma" type="xsd:string">
+                <xsd:annotation>
+                  <xsd:appinfo source="http://sap.com/xi/TextID">9487caa5936a11e7bfe200155d52058f</xsd:appinfo>
+                </xsd:annotation>
+              </xsd:attribute>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Tipo_de_operacion">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">0df78ce291b411e7887600155d52058f</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" maxOccurs="unbounded" name="item">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">0df78ce191b411e7ac4500155d52058f</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element minOccurs="0" name="IDOrden" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">0df76ec991b411e7a26300155d52058f</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="Material" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">0df76eca91b411e7afe500155d52058f</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="Cantidad" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">0df76ecb91b411e78b2400155d52058f</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="Centro" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">0df76ecc91b411e791fa00155d52058f</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="AlmacenReceptor" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">0df76ecd91b411e7b85500155d52058f</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="AlmacenOrigen" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">0df76ece91b411e78a3500155d52058f</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element minOccurs="0" name="TipoMovimiento" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">0df76ecf91b411e7821e00155d52058f</xsd:appinfo>
+                        </xsd:annotation>
+                      </xsd:element>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_CrearReserva_Req">
+    <wsdl:documentation />
+    <wsdl:part name="MT_CrearReserva_Req" element="p1:MT_CrearReserva_Req" />
+  </wsdl:message>
+  <wsdl:message name="MT_CrearReserva_Res">
+    <wsdl:documentation />
+    <wsdl:part name="MT_CrearReserva_Res" element="p1:MT_CrearReserva_Res" />
+  </wsdl:message>
+  <wsdl:portType name="SI_CrearReserva_OS">
+    <wsdl:documentation />
+    <wsdl:operation name="SI_CrearReserva_OS">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_SI_CrearReserva_OS" />
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_CrearReserva_Req" />
+      <wsdl:output message="p1:MT_CrearReserva_Res" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SI_CrearReserva_OSBinding" type="p1:SI_CrearReserva_OS">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="SI_CrearReserva_OS">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SI_CrearReserva_OSService">
+    <wsdl:port name="HTTP_Port" binding="p1:SI_CrearReserva_OSBinding">
+      <address location="http://srvmabe84.mabenet.corpmabe.com:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_MABE_CONFINAL_FPR&amp;receiverParty=&amp;receiverService=&amp;interface=SI_CrearReserva_OS&amp;interfaceNamespace=http%3A%2F%2Fmabe.com%2FMW%2FCONFINAL%2FMobile%2FCrear_Reserva" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+    <wsdl:port name="HTTPS_Port" binding="p1:SI_CrearReserva_OSBinding">
+      <address location="https://srvmabe84.mabenet.corpmabe.com:50001/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_MABE_CONFINAL_FPR&amp;receiverParty=&amp;receiverService=&amp;interface=SI_CrearReserva_OS&amp;interfaceNamespace=http%3A%2F%2Fmabe.com%2FMW%2FCONFINAL%2FMobile%2FCrear_Reserva" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

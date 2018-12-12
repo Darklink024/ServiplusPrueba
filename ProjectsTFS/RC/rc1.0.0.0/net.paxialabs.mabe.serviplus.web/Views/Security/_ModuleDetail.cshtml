@@ -1,0 +1,132 @@
+﻿
+@model net.paxialabs.mabe.serviplus.entities.ModelView.Security.ModelViewModule
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm())
+{
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.ModuleID)
+
+    <br />
+
+    <fieldset>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Section, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Section, new SelectList(ViewBag.lstSection, "Value", "Text"), new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Section, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Module, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Module, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Module, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.URL, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.URL, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.URL, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" id="btnGuardar" value="Guardar" class="btn btn-default" />
+                <input type="button" id="btnCancelar" value="Cancelar" class="btn btn-danger" />
+            </div>
+        </div>
+
+    </fieldset>
+
+}
+
+
+@(Html.Kendo().Dialog()
+        .Name("dialogModuleDetail")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+        .Actions(actions =>
+        {
+            actions.Add().Text("Aceptar").Primary(true);
+        })
+        .Events(ev => ev.Close("onClose").Open("onOpen"))
+)
+
+
+<script>
+    $("form").on("submit", function (event) {
+        event.preventDefault();
+
+        $.ajax({
+            url: '../Security/saveModule',
+            type: "POST",
+            cache: false,
+            data: $(this).serialize(),
+            beforeSend: function (jqXHR, settings) { /*$("#divLoading").show();*/ },
+            error: function (jqXHR, textStatus, errorThrown) { /*$("#divLoading").hide();*/ },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+
+                //$("#divLoading").hide();
+                //$("#divModal").modal('toggle');
+
+                if (result == "Unauthorized") {
+                    showDialog('No cuenta con permisos suficientes.');
+                } else {
+                    showDialog('Su solicitud se proceso con éxito.');
+                }
+                var grid = $("#grid").data("kendoGrid");
+                grid.dataSource.read();
+            }
+        });
+    });
+
+    $("#btnCancelar").click(function () {
+        $("#ModuleID").val("0");        
+        $("#Module").val("");
+        $("#Description").val("");
+        $("#URL").val("");
+        var splitter = $("#splitter").data("kendoSplitter");
+        splitter.expand("#left-pane");
+        splitter.collapse("#right-pane");
+
+    });
+
+
+    function onClose() {
+
+    }
+
+    function onOpen() {
+
+    }
+
+    function showDialog(msg) {
+
+        var dialog = $('#dialogModuleDetail').data("kendoDialog");
+        dialog.content(msg);
+        dialog.open();
+    }
+
+</script>
+

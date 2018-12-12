@@ -1,0 +1,589 @@
+﻿<style>
+
+    #ModuleID_listbox li {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        width: 300px;
+        font-size: 12px;
+    }
+
+    #Employee li {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        width: 500px;
+        font-size: 12px;
+    }
+
+    .k-upload-pct {
+        visibility: hidden;
+    }
+
+    .center {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .k-upload .k-upload-status-total {
+        visibility: hidden;
+    }
+
+    .k-widget k-autocomplete k-header k-state-default k-state-hover {
+        visibility: hidden;
+    }
+</style>
+
+@model net.paxialabs.mabe.serviplus.entities.Entity.Operation.EntityConfiguration
+@{
+   Layout = null;
+}
+
+
+
+@using (Html.BeginForm("", "#", FormMethod.Post, new { id = "frmNotification", @class = "form-horizontal" }))
+{
+    @Html.HiddenFor(model => model.ConfigurationID)
+
+    <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
+        <br>
+        <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+                <input type="text" class="form-control input-sm" id="Notification" name="Notification" placeholder="Título">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+                <textarea rows="2" cols="50" class="form-control input-sm" id="Description" name="Description" placeholder="Mensaje"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="" class="col-sm-4 control-label"></label>
+            <div class="col-md-8 col-md-offset-2">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="URLType" value="file" id="URLType" checked> Archivo adjunto
+                    </label>
+                    <label>
+                        <input type="radio" name="URLType" value="youtube" id="URLType"> URL de Youtube
+
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" id="AttachmentFile">
+            <div class="col-md-8 col-md-offset-2">
+                @Html.HiddenFor(Model => Model.Url, new { id = "Url" })
+                <center>
+                    <figure>
+                        <img id="imgNotification" src="~/Content/Notification/logo.png" alt="Space" width="127" height="128" />
+                        <figcaption></figcaption>
+                    </figure>
+                    <br>
+                </center>
+                <input name="files" id="files" type="file" />
+            </div>
+        </div>
+        <div class="form-group" id="URLYoutube">
+            <div class="col-md-8 col-md-offset-2">
+                <input id="Youtube" name="Youtube" type="text" class="form-control input-sm" placeholder="http//:www.youtube.com/" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+                @(Html.Kendo().MultiSelect()
+           .Name("ModuleID")
+        .DataValueField("Value")
+        .DataTextField("Text")
+        .Filter(FilterType.Contains)
+        .Placeholder("Módulo de Servicios")
+                             .DataSource(source =>
+                             {
+                                 source.Read(read =>
+                                 {
+                                     read.Action("GetList_Modules", "Monitor");
+                                 }).ServerFiltering(true).Custom().Type("aspnetmvc-ajax");
+                             })
+
+                )
+
+                @*@Html.DropDownList("Modulos", new SelectList(ViewBag.lstModules, "Value", "Text"), "Módulo de Servicios ", new { @class = "form-control input-sm" })*@
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+                <input id="Tecnico" name="Tecnico" type="text" class="form-control input-sm" placeholder="Buscar Técnico (Min 4 Caracteres)" onkeyup="search()" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="center">
+                <input type="checkbox" name="Checo" value="Checo" id="Checo" /> Seleccionar Todo
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="center">
+                <div style="border:solid 1px #ccc; width:500px; border-radius: 8px">
+                    <ul id="Employee" name="Employee" style="height: 110px;  width:500px; margin-left:2px; overflow-y:auto; overflow-x:auto"></ul>
+                </div>
+            </div>
+        </div>
+
+            @*<label for="EmployeeFound"></label>*@
+        <div class="form-group">
+            <div class="center">
+                <input type="submit" id="btnGuardar" value="Guardar" class="btn btn-unauth" />
+                <input type="button" id="btnCancelar" value="Cancelar" class="btn btn-danger" />
+            </div>
+           </div>
+        </div>
+@(Html.Kendo().Dialog()
+        .Name("dialogNoti")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+)
+
+}
+
+<script>
+    var cargo;
+    $("#btnCancelar").click(function () {
+
+        $("#frmNotification").validate().resetForm();
+        $("#frmNotification").find('.has-error').removeClass("has-error");
+        $("#frmNotification").find('.has-success').removeClass("has-success");
+        $('#frmNotification').find('.form-control-feedback').remove()
+        $("#imgNotification").attr("src", "@Url.Content("~/Content/Notification/logo.png")");
+        $("input[name=URLType][value=file]").prop('checked', true);
+        $("#Youtube").val("");
+        $("#URLYoutube").hide();
+        $("#AttachmentFile").show();
+        $("#Notification").val("");
+        $("#Description").val("");
+        $("#Tecnico").val("");
+        $("#ModuleID").data("kendoMultiSelect").value([]);
+        document.getElementById("Employee").innerHTML = '';
+        $(".Employee:checkbox").prop('checked', false);
+        var splitter = $("#splitter").data("kendoSplitter");
+        splitter.expand("#left-pane");
+        splitter.collapse("#right-pane");
+    });
+
+    $('#ModuleID').on('change', function () {
+        $("#divLoading").show();
+        if ($("#ModuleID").val() == null || $("#ModuleID").val() == '') {
+            $("#ModuleID").data("kendoMultiSelect").focus();
+        }
+        search();
+    });
+        $("input[name='URLType']").change(function (event) {
+
+            if ($("#URLType:checked").val() == "file") {
+
+            $("#Url").val("empty");
+            //$("#Youtube").val("");
+            $("#URLYoutube").hide();
+            $("#AttachmentFile").show();
+        }
+            else {
+
+            $(".k-upload-files.k-reset").find("li").parent().remove();
+            $(".k-upload.k-header").addClass("k-upload-empty");
+            $(".k-upload-status").remove();
+            $("#Url").val("empty");
+            $("#URLYoutube").show();
+            $("#AttachmentFile").hide();
+        }
+    });
+
+    function getFileInfo(e) {
+        return $.map(e.files, function (file) {
+            var info = file.name;
+            return info;
+        }).join(", ");
+    }
+
+
+    function getFileExtension(e) {
+        return $.map(e.files, function (file) {
+            var ext = file.extension;
+
+            return ext;
+        }).join(", ");
+    }
+
+    function onSuccess(e) {
+        if (e.operation == 'upload') {
+            $("#Url").val(getFileInfo(e));
+            cargo = true;
+            setImage(getFileInfo(e));
+        }
+        if (e.operation == 'remove') {
+            $("#Url").val('');
+            cargo = false;
+            setImage('');
+        }
+    }
+       function onSelect(e) {
+
+        var ext = getFileExtension(e);
+
+        if (ext == '.png' || ext == '.jpg' || ext == '.JPG' || ext == '.pdf' || ext == '.PDF') {
+            return true;
+        }
+        else {
+            e.preventDefault();
+            return false;
+        }
+    }
+
+       function setImage(source) {
+
+        if(source == '')
+        {
+            $("#imgNotification").attr("src", "@Url.Content("~/Content/Notification/logo.png")");
+            $("#Url").val("empty");
+        }
+        else if (cargo == true) {
+          
+            $("#imgNotification").attr("src", "@Url.Content("~/Content/upload/")" + source);
+          }
+        else {
+            $("#imgNotification").attr("src", "@Url.Content("~/Content/Notification/")" + source);
+        }
+    }
+
+
+
+    var EmployeesID = {};
+    function selectedEmployee() {
+        $(".Employee:checked").each(function (i) {
+            EmployeesID.push({ UserID: $(this).val(), Name: $("#LName" + $(this).val()).text() });
+        });
+    }
+
+    function printEmployee() {
+        $.each(EmployeesID, function (i, o) {
+            var node = document.createElement("LI");
+            node.innerHTML = '<input checked="checked" onclick="clean()" type="checkbox" class="Employee"  value="' + o.UserID + '" id="Tecnico' + o.UserID + '"><span id="LName' + o.UserID + '" > ' + o.Name + '</span> ';
+            document.getElementById("Employee").appendChild(node);
+        });
+
+    }
+
+
+
+    function Cargarlst(rutavista, param) {
+        try {
+            var url = "";
+            switch (rutavista) {
+
+                case 'loadEmployee':
+                    url = "@Url.Content("~/Notification/GetUserAll_Actives")";
+                    break;
+            }
+            $.ajax({
+                url: url,
+                type: "POST",
+                data: param,
+                cache: false,
+                beforeSend: function (jqXHR, settings) {
+                    $("#divLoading").show();
+                },
+                error: function (jqXHR, textStatus, errorThrown)
+                {
+                    $("#divLoading").hide();
+                },
+                complete: function (jqXHR, textStatus) {; },
+                success: function (result) {
+                    var toAppend = '';
+                    var toAppend1 = '';
+                    switch(rutavista)
+                    {
+                        case 'loadEmployee':
+                            //objetosGMercadoTitle = result;
+                            var elements = 0;
+                            document.getElementById("Employee").innerHTML = '';
+                            printEmployee();
+                            $.each(result, function (i, o) {
+                                var Validation = true;
+                                $.each(EmployeesID, function (a, b) {
+                                    if (o.UserID == b.UserID)
+                                        Validation = false;
+                                });
+
+                                if (Validation) {
+                                    var node = document.createElement("LI");
+                                    node.innerHTML = '<input onclick="clean()"  class="Employee" type="checkbox" value="' + o.UserID + '" id="Tecnico' + o.UserID + '"><span id="LName' + o.UserID + '" >  ' + o.Name + '</span>';
+                                    document.getElementById("Employee").appendChild(node);
+                                    elements++;
+                                }
+                            });
+
+                            $("label[for='EmployeeFound']").text((EmployeesID.length + elements) + ' Tecnico(s) Encontrado(s)');
+                            break;
+                    }
+                    $("#divLoading").hide();
+                }
+            });
+        }
+        catch (e) {
+        }
+    }
+
+        function CargarEmpladosNotificacion(rutavista, param) {
+        try {
+            var url = "";
+            switch (rutavista) {
+
+                case 'loadEmployee':
+                    url = "@Url.Content("~/Notification/GetUserAll_Notification")";
+                    break;
+            }
+            $.ajax({
+                url: url,
+                type: "POST",
+                data: param,
+                cache: false,
+                beforeSend: function (jqXHR, settings) {
+                    $("#divLoading").show();
+                },
+                error: function (jqXHR, textStatus, errorThrown)
+                {
+                    $("#divLoading").hide();
+                },
+                complete: function (jqXHR, textStatus) {; },
+                success: function (result) {
+                    var toAppend = '';
+                    var toAppend1 = '';
+                    switch(rutavista)
+                    {
+                        case 'loadEmployee':
+                            var elements = 0;
+                            document.getElementById("Employee").innerHTML = '';
+                            printEmployee();
+                            $.each(result, function (i, o) {
+                                var Validation = true;
+                                $.each(EmployeesID, function (a, b) {
+                                    if (o.UserID == b.UserID)
+                                        Validation = false;
+                                });
+
+                                if (Validation) {
+                                    var node = document.createElement("LI");
+                                    node.innerHTML = '<input onclick="clean()"  class="Employee" type="checkbox" checked value="' + o.UserID + '" id="Tecnico' + o.UserID + '"><span id="LName' + o.UserID + '" >  ' + o.Name + '</span>';
+                                    document.getElementById("Employee").appendChild(node);
+                                    elements++;
+                                }
+                            });
+
+                            $("label[for='EmployeeFound']").text((EmployeesID.length + elements) + ' Tecnico(s) Encontrado(s)');
+                            break;
+                    }
+                    $("#divLoading").hide();
+                }
+            });
+        }
+        catch (e) {
+        }
+    }
+
+
+    $("#Checo").click(function () {
+        if ($("#Checo").is(":checked")) selectAll();
+        else deselectAll();
+
+    });
+
+    function selectAll() {
+        $(".Employee:checkbox").prop('checked', true);
+    }
+    function deselectAll() {
+        $(".Employee:checkbox").prop('checked', false);
+    }
+
+    function search() {
+        EmployeesID = [];
+        selectedEmployee();
+        clean();
+        var Texto = $('#Tecnico').val();
+        var ModuleID = $("#ModuleID").data("kendoMultiSelect").value().toString();
+        if (ModuleID == '') {
+            if (Texto.length > 3)
+                Cargarlst('loadEmployee', { Name: Texto });
+            else {
+                document.getElementById("Employee").innerHTML = '';
+                printEmployee();
+                //$("label[for='EmployeeFound']").text(StoresID.length + ' (s) Encontrada(s)');
+                $("#divLoading").hide();
+            }
+        }
+        else { Cargarlst('loadEmployee', { ModuleID: ModuleID, Name: Texto});}
+
+    }
+    function clean() {
+        $("#Checo").attr("checked", false)
+    }
+
+    function callEmployee() {
+        var ids = [];
+        $(".Employee:checked").each(function (i) {
+            ids.push($(this).val());
+        });
+        return ids.toString();
+    }
+
+
+
+    $(document).ready(function () {
+        $("#URLYoutube").hide();
+        $("#Url").val("empty");
+        $("#files").kendoUpload({
+            async: {
+                saveUrl: "@Url.Content("~/Notification/Save")",
+            removeUrl: "@Url.Content("~/Notification/RemoveImage")",
+            autoUpload: true
+    },
+        success: onSuccess,
+    select: onSelect,
+    multiple: false
+        });
+
+           $('[class="btn btn-primary"]').tooltip();
+           $('#frmNotification').bootstrapValidator({
+            message: 'Envio de formulario',
+            excluded: [':disabled'],
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                Notification: {
+                    container: 'tooltip',
+                    validators: {
+                        notEmpty: {
+                            message: 'Este campo es requerido.'
+                        }
+                    }
+                },
+                Description: {
+                    container: 'tooltip',
+                    validators: {
+                        notEmpty: {
+                            message: 'Este campo es requerido.'
+                        },
+                    }
+                }
+            }
+        })
+        .on('status.field.bv', function (e, data) {
+            var $form = $(e.target),
+            validator = data.bv,
+            $tabPane = data.element.parents('.tab-pane'),
+            tabId = $tabPane.attr('id');
+            if (tabId) {
+                var $icon = $('a[href="#' + tabId + '"][data-toggle="tab"]').parent().find('i');
+                if (data.status == validator.STATUS_INVALID) {
+                    $icon.removeClass(faIcon.valid).addClass(faIcon.invalid);
+                } else if (data.status == validator.STATUS_VALID) {
+                    var isValidTab = validator.isValidContainer($tabPane);
+                    $icon.removeClass(faIcon.valid).addClass(isValidTab ? faIcon.valid : faIcon.invalid);
+                }
+            }
+        })
+        .on('success.form.bv', function (e, data) {
+            e.preventDefault();
+
+            var videoURL = $("#Youtube").val();
+            if ($("#URLType:checked").val() == "youtube") {
+                if (videoURL != "") {
+                    var verify = validateYouTubeUrl(videoURL);
+
+                    if (verify == false) {
+                        var dialog = $('#dialogNoti').data("kendoDialog");
+                        dialog.content('La url que intenta ingresar no es de youtube.');
+                        dialog.open();
+                        return false;
+                    }
+                    else {
+
+                        $("#Url").val(videoURL);
+                        //$("#URLType").val("youtube");
+                    }
+                } else {
+                    var dialog = $('#dialogNoti').data("kendoDialog");
+                    dialog.content("Debe ingresar una liga de youtube.");
+                    dialog.open();
+                    return false;
+                }
+            }
+
+
+            var UsersID = [];
+          $('.Employee:checked').each(function () {
+           UsersID.push($(this).attr('value'));
+            });
+
+
+
+          if (UsersID.length < 1) {
+              var dialog = $('#dialogNoti').data("kendoDialog");
+              dialog.content("Debe ingresar un Usuario");
+              dialog.open();
+              document.getElementById('btnGuardar').disabled = false;
+              return false;
+          }
+
+           var Notification = document.getElementById("Notification").value;
+           var Description = document.getElementById("Description").value;
+           var ConfigurationID = document.getElementById("ConfigurationID").value != "" ? document.getElementById("ConfigurationID").value : 0;
+           var URLType = $("#URLType:checked").val();
+           var Url = document.getElementById("Url").value;
+           var notification = { ConfigurationID: ConfigurationID,  Title: Notification, Message: Description, URLType: URLType, Url: Url}
+
+           $.ajax({
+            url: "@Url.Content("~/Notification/saveNotification")",
+               type: "POST",
+               cache: false,
+               data: { notification: JSON.stringify(notification), Usuarios: UsersID },
+               beforeSend: function (jqXHR, settings) {
+                   $("#divLoading").show();
+               },
+               error: function (jqXHR, textStatus, errorThrown) {
+                   $("#divLoading").hide();
+                   try {
+                       var json = $.parseJSON(jqXHR.responseText)
+                   }
+                   catch (ex) {
+                   }
+               },
+               complete: function (jqXHR, textStatus) { ; },
+               success: function (result) {
+                   $("#divLoading").hide();
+                       window.location.href = "../Notification/Index";
+               }
+           });
+               });
+    });
+
+           function validateYouTubeUrl(youTubeUrl) {
+               var Valid = false;
+               var url = youTubeUrl;
+               if (url != undefined || url != '') {
+                   var regExp = /^(?:https?:\/\/)?(?:m\.|www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+                   if (url.match(regExp)) {
+                       //bootbox.dialog({
+                       //            title: ' ',
+                       //            message: '<iframe width="100%" height="400px" src="https://www.youtube.com/embed/' + url.match(regExp)[1] + '?autoplay=true" frameborder="0" allowfullscreen></iframe>'
+                       //        });
+                       Valid = true;
+                   }
+               }
+               return Valid;
+           }
+</script>

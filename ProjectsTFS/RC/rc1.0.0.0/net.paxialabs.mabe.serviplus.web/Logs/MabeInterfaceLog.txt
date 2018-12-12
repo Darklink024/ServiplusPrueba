@@ -1,0 +1,1375 @@
+2018-12-11 15:38:49,154 [6] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 15:39:06,868 [6] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344492</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344492 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344492</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 15:39:07,267 [6] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344492 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344492
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 15:40:30,338 [12] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 03:40:30 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 15:40:38,978 [12] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 15:40:53,144 [12] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344493</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344493 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344493</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 15:40:53,688 [12] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344493 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344493
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 15:41:00,164 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 03:41:00 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 15:41:07,299 [5] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 15:41:21,569 [5] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344494</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344494 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344494</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 15:41:22,150 [5] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344494 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344494
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 15:42:12,894 [14] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 15:42:27,792 [14] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344495</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344495 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344495</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 15:42:28,440 [14] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344495 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344495
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 15:44:10,967 [15] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 15:44:26,010 [15] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344496</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344496 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344496</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 15:44:26,545 [15] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344496 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344496
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 16:04:21,373 [8] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 16:04:34,766 [8] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344497</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344497 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344497</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 16:04:35,259 [8] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344497 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344497
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 16:26:56,890 [9] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 17:25:01,968 [8] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>021018-0611-002-P</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP21</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>13</Sector>
+  <NumCliente>20001300</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>113641085</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EDUARDO</NombreSH>
+  <NombreSH1>HERNANDEZ JMENEZ</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>LIMAS</CalleNum>
+  <NumInterior>72</NumInterior>
+  <NumExteriorSup>102</NumExteriorSup>
+  <ColoniaSH>Don Manuel</ColoniaSH>
+  <CodigoPostalSH>76114</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>MEX</RegionSH>
+  <Telefono1>4425441140</Telefono1>
+  <Telefono2>4425441140</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH>pilarbarron78@gmail.com</EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20190103</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>11</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal></ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>008011161600000000</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro></Centro>
+  <Almacen></Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado>WEA77114CBAB00</NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase></Clase><Valor></Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4>345</GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1>01</GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios>02</TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN>22222</PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 17:25:13,672 [8] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-021018-0611-002-P</OrdenWeb><PedidoSAP/></Item><Return><Type>E</Type><ID>VP</ID><Number>200</Number><Message>No customer master record exists for customer 113641085</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>113641085</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>E</Type><ID>V4</ID><Number>219</Number><Message>Sales document  was not changed</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>E</Type><ID/><Number/><Message>Data was not found for the document</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+

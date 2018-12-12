@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Configuración";
+}
+@Html.Partial("~/Views/Shared/_Configuration.cshtml")
+
+
+@(Html.Kendo().Splitter()
+    .Name("splitter")
+    .HtmlAttributes(new { style = "height: 350;" })
+    .Panes(horizontalPanes =>
+    {
+            horizontalPanes.Add()
+                .HtmlAttributes(new { id = "left-pane" })
+                .Size("50%")
+                .Collapsible(true)
+                .Content(@<div class="pane-content">
+                    @Html.Partial("_ProfileList")
+                </div>);
+
+            horizontalPanes.Add()
+                .HtmlAttributes(new { id = "right-pane" })
+                .Collapsible(true)
+                .Size("50%")
+                .Content(@<div class="pane-content">
+                    @Html.Partial("_ProfileDetail")
+                </div>);
+    })
+)
+
+
+
+<script>
+    $(document).ready(function () {
+        $('#mnuPrincipal').hide();
+        var a = document.getElementById("li2");
+        a.style.color = "#FFFFFF";
+        a.style.backgroundColor = "#16568A";
+        a.style.textAlign = "center";
+
+        var a = document.getElementById("li2A");
+        a.style.color = "#FFFFFF";
+        a.style.backgroundColor = "#16568A";
+        a.style.textAlign = "center";
+        a.style.fontWeight = "bold";
+
+        
+       // $('#imgMnuShowHide').attr("src", "@Url.Content("~/Content/Images/Group_86.png")")
+        var splitter = $("#splitter").data("kendoSplitter");
+        splitter.collapse("#right-pane");
+    });
+</script>

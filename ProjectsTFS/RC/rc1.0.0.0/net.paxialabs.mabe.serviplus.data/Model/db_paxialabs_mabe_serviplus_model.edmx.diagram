@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="83126abb7aeb4477b48da97d523f59bd" Name="Diagram1" ZoomLevel="10" ShowGrid="true">
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.BuildOfMaterials" Width="1.5" PointX="3" PointY="55.5" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.CauseOrder" Width="1.5" PointX="11.25" PointY="37" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.CauseVisit" Width="1.5" PointX="13.5" PointY="71.375" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Client" Width="1.5" PointX="0.75" PointY="35.625" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.CodeFailure" Width="1.5" PointX="3.75" PointY="34.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.CodeFailureByProduct" Width="1.5" PointX="6" PointY="44.625" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Countries" Width="1.5" PointX="2.75" PointY="1.125" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Employee" Width="1.5" PointX="9" PointY="26.25" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Guaranty" Width="1.5" PointX="9" PointY="61.5" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.GuarantyType" Width="1.5" PointX="6.75" PointY="61.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.InstalledBase" Width="1.5" PointX="3" PointY="43.375" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.ModelSerialNumber" Width="1.5" PointX="3" PointY="37.875" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.ModuleMabe" Width="1.5" PointX="6.75" PointY="29.125" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Prices" Width="1.5" PointX="8.25" PointY="54.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Priority" Width="1.5" PointX="5" PointY="5" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Product" Width="1.5" PointX="0.75" PointY="43.5" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Quotation" Width="1.5" PointX="13.5" PointY="58.5" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.QuotationDetail" Width="1.5" PointX="15.75" PointY="69.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Schedule" Width="1.5" PointX="2.75" PointY="5" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.ShopPlace" Width="1.5" PointX="0.75" PointY="49.5" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.States" Width="1.5" PointX="5" PointY="1" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.StatusOrder" Width="1.5" PointX="9" PointY="37.25" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.StatusScheme" Width="1.5" PointX="9" PointY="50.125" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.StatusVisit" Width="1.5" PointX="11.25" PointY="51.5" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.TypeQuotation" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.ValidationGuarantyBOM" Width="1.5" PointX="3" PointY="51" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.ValidationGuarantyProduct" Width="1.5" PointX="3" PointY="59.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.ValidationsSerialNumber" Width="1.5" PointX="5.25" PointY="37.875" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Workforce" Width="1.5" PointX="6" PointY="51" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Configuration" Width="1.5" PointX="9.75" PointY="18.625" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Message" Width="1.5" PointX="9" PointY="31.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Receivers" Width="1.5" PointX="12" PointY="24.875" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.ContratReceipt" Width="1.5" PointX="13.5" PointY="54" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Evidence" Width="1.5" PointX="15.75" PointY="44.25" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.History" Width="1.5" PointX="8.25" PointY="43.375" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Invoice" Width="1.5" PointX="13.5" PointY="64.875" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.LogCRM" Width="1.5" PointX="13.5" PointY="50.125" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.MonitorOrders" Width="1.5" PointX="13.5" PointY="41" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Orders" Width="1.5" PointX="11.25" PointY="41.5" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Payment" Width="1.5" PointX="13.5" PointY="33.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Policy" Width="1.5" PointX="18.75" PointY="49.25" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.RefSell" Width="1.5" PointX="15.75" PointY="49.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.RefsellQuotation" Width="1.5" PointX="15.75" PointY="72.875" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.SpareParts" Width="1.5" PointX="5.25" PointY="55" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.BOM" Width="1.5" PointX="7.75" PointY="3.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.CifrasControl" Width="1.5" PointX="7.75" PointY="7.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Clientes" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Fallas" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.InterfaceLog" Width="1.5" PointX="4.75" PointY="8.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.LugarCompra" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.ODS" Width="1.5" PointX="9.75" PointY="4.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.PRECIOS" Width="1.5" PointX="11.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.PTRef" Width="1.5" PointX="11.75" PointY="5.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.REFACCIONES" Width="1.5" PointX="11.75" PointY="10.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.REFMAN" Width="1.5" PointX="2.75" PointY="12.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Resumen" Width="1.5" PointX="13.75" PointY="0.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Audit" Width="1.5" PointX="9" PointY="14.375" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.DevicePhone" Width="1.5" PointX="6.75" PointY="19.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.DevicePhoneUser" Width="1.5" PointX="9" PointY="22.875" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.LogMobile" Width="1.5" PointX="13.75" PointY="5.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.MobileSync" Width="1.5" PointX="13.75" PointY="11.75" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Module" Width="1.5" PointX="0.75" PointY="2.875" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Permission" Width="1.5" PointX="6.75" PointY="13.5" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.Profile" Width="1.5" PointX="4.5" PointY="24.875" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.User" Width="1.5" PointX="6.75" PointY="23.625" />
+        <EntityTypeShape EntityType="db_PaxiaLabs_ServiplusModel.BlackList" Width="1.5" PointX="15.75" PointY="0.75" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__Prices__7FB5F314" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_BuildOfMaterials_Product" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_SpareParts_BuildOfMaterials" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_CauseOrder_StatusOrder" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_MonitorOrders_CauseOrder" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_CauseVisit_StatusVisit" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_InstalledBase_Client" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Policy_CientID" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_RefSell_CliendID" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_CodeFailureByProduct_CodeFailure" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_CodeFailureByProduct_Product" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__States__FK_Count__72B0FDB1" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__Orders__5B438874" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Employee_Module" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Employee_User" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Guaranty_GuarantyType" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Orders_Guaranty" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_History_InstalledBase" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_InstalledBase_Product" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_InstalledBase_ShopPlace" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Orders_InstalledBase" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__ModelSeri__FK_Pr__5E54FF49" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__Validatio__FK_Mo__640DD89F" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_WorkforceID" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__Priority__FK_Sch__7FEAFD3E" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__Validatio__FK_Pr__69C6B1F5" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__Validatio__FK_Pr__6CA31EA0" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_RefSell_ProductID" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__Quotation__FK_Or__361203C5" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__Quotation__FK_Qu__38EE7070" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Policy_Quotation" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_RefSell_Quotation" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_RefsellQuotation_Quotation" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Orders_StatusScheme" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_MonitorOrders_StatusVisit" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__SparePart__FK_Wo__4F9CCB9E" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Receivers_Configuration" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Message_User" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Receivers_User" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_ContratReceipt_Order" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Evidence_MonitorOrders" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Evidence_Orders" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_History_Orders" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Invoice_Orders" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK__LogCRM__FK_Order__2EC5E7B8" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_MonitorOrders_Orders" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Payment_Orders" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Policy_PK_OrderID" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_RefSell_OrderID" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_SpareParts_Orders" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_RefSell_Employee" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Audit_Module" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Audit_User" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_DevicePhoneUser_DevicePhone" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_DevicePhoneUser_User" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Permission_Module" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_Permission_Profile" />
+        <AssociationConnector Association="db_PaxiaLabs_ServiplusModel.FK_User_Profile" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,11 @@
+﻿<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>DESTINO_VALUE</Destino>
+      <Satelite>SATELITE_VALUE</Satelite>
+      <!--1 or more repetitions:-->
+      ITEMS_VALUE
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,82 @@
+﻿
+<fieldset>
+    <table class="table table-responsive table-striped" id="table-faults">
+        <tr>
+            <th colspan="8" class="blue-header">Fallas</th>
+        </tr>
+        <tr>    
+            <th class="width"><label class="main-data font-weight-bold">ID</label></th>
+            <th><label class="main-data font-weight-bold">Descripción</label></th>
+        </tr>
+
+        @if (@ViewBag.dataODS.Failure1 != null)
+        {
+            <tr>
+                <td><span>@ViewBag.dataODS.Failure1</span></td>
+                <td><span>@ViewBag.desc1</span></td>
+            </tr>
+        }
+        @if (@ViewBag.dataODS.Failure2 != null)
+        {
+            <tr>
+                <td><span>@ViewBag.dataODS.Failure2</span></td>
+                <td><span>@ViewBag.desc2</span></td>
+            </tr>
+        }
+        @if (@ViewBag.dataODS.Failure3 != null)
+        {
+            <tr>
+                <td><span>@ViewBag.dataODS.Failure3</span></td>
+                <td><span>@ViewBag.desc3</span></td>
+            </tr>
+        }
+        @if (@ViewBag.dataODS.Failure4 != null)
+        {
+            <tr>
+                <td><span>@ViewBag.dataODS.Failure4</span></td>
+                <td><span>@ViewBag.desc4</span></td>
+            </tr>
+        }
+        @if (@ViewBag.dataODS.Failure5 != null)
+        {
+            <tr>
+                <td><span>@ViewBag.dataODS.Failure5</span></td>
+                <td><span>@ViewBag.desc5</span></td>
+            </tr>
+        }
+
+    </table>
+
+    <table class="table table-responsive table-striped slight-margin-top" id="table-spares">
+        <tr>
+            <th colspan="8" class="blue-header">Refacciones</th>
+        </tr>
+        <tr>
+            <th><label class="main-data font-weight-bold">ID</label></th>
+            <th><label class="main-data font-weight-bold">Descripción</label></th>
+            <th><label class="main-data font-weight-bold text-center">Cantidad</label></th>
+            <th><label class="main-data font-weight-bold text-center">Precio</label></th>
+            <th><label class="main-data font-weight-bold text-center">Posición</label></th>
+            <th><label class="main-data font-weight-bold">Estatus Pieza</label></th>
+            <th><label class="main-data font-weight-bold">Estatus Esquema</label></th>
+            <th><label class="main-data font-weight-bold">Descripción de Estatus</label></th>
+        </tr>
+
+        @foreach (var item in ViewBag.dataRef)
+        {
+
+            <tr>
+                <td class="right-padding"><span>@item.RefManID</span></td>
+                <td class="right-padding"><span>@item.SparePartDescription</span></td>
+                <td class="text-center"><span>@item.Quantity</span></td>
+                <td class="text-center"><span>@if (ViewBag.dataGuranty.FK_GuarantyTypeID == 2) { @item.Price.ToString("C2") } else { @Html.Raw("--") }</span></td>
+                <td class="text-center"><span>@item.PosicionItem</span></td>
+                <td class="right-padding"><span>@item.SparePartStatus</span></td>
+                <td class="right-padding"><span>@item.StatusSchema</span></td>
+                <td><span>@item.StatusDescription</span></td>
+            </tr>
+
+        }
+    </table>
+   
+</fieldset>

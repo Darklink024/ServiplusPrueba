@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Monitor";
+}
+@Html.Partial("~/Views/Shared/_Monitor.cshtml")
+@Html.Partial("~/Views/Shared/_Filter.cshtml")
+@Html.Partial("_List")
+
+<script>
+$(document).ready(function () {
+    var a = document.getElementById("li2");
+    a.style.color = "#FFF";
+    a.style.backgroundColor = "#16568A";
+
+    var a = document.getElementById("li2A");
+    a.style.color = "#FFF";
+    a.style.backgroundColor = "#16568A";
+    a.style.fontWeight = "bold";
+
+
+    var splitter = $("#splitter").data("kendoSplitter");
+    splitter.collapse("#right-pane");
+
+        $('#mnuPrincipal').hide("slow");
+        $('#imgMnuShowHide').attr("src", "@Url.Content("~/Content/Images/Group_86.png")")
+});
+</script>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:p1="http://mabe.com/MW/HD/CYM/ATP" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="SI_AvailabilityStock_Out" targetNamespace="http://mabe.com/MW/HD/CYM/ATP" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_SI_AvailabilityStock_Out" />
+  <wsdl:types>
+    <xsd:schema xmlns="http://mabe.com/MW/HD/CYM/ATP" targetNamespace="http://mabe.com/MW/HD/CYM/ATP" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="MT_AvailabilityStockResponse" type="p1:DT_AvailabilityStockResponse" />
+      <xsd:element name="MT_AvailabilityStock" type="p1:DT_AvailabilityStock" />
+      <xsd:complexType name="DT_AvailabilityStockResponse">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">2c74e6c8951e11e3bc1b00000041533f</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" name="item">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">53def91c92b011e38e92c44619a32a23</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="PLANT">
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="4" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="MATERIAL">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">53def91692b011e381e7c44619a32a23</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="18" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="STORE">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">53def91792b011e38da9c44619a32a23</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="20" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="QUANTITY">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">53def91892b011e3a056c44619a32a23</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="20" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="STORAGELOCATION">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">53def91992b011e39215c44619a32a23</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="4" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="AVAILABILITYDATE" type="xsd:date">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">53def91a92b011e38afdc44619a32a23</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ERROR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">53def91b92b011e398fac44619a32a23</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_AvailabilityStock">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">e10fccc4d9f011e687d4000000873c82</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Destino" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">3d87ce2ca71b11e3c1e400225fc5b309</xsd:appinfo>
+              <xsd:documentation>Identificador</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" name="item">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a2cf680992c211e3848ec44619a32a23</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="MATERIAL">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a2cf680592c211e39540c44619a32a23</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="18" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="STORE">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a2cf680692c211e3a5fdc44619a32a23</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="20" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="QUANTITY">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a2cf680792c211e3aa2bc44619a32a23</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="20" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="DATE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a2cf680892c211e39371c44619a32a23</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="PLANT">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">defa5828da3511e396d20250f2000001</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="4" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="STORAGELOCATION">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e9e4e96fd9f011e6a903000c297e0157</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="4" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="CUSTOMER">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">b060747fd9f111e6a599000c297e0157</xsd:appinfo>
+                  </xsd:annotation>
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="10" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_AvailabilityStock">
+    <wsdl:documentation />
+    <wsdl:part name="MT_AvailabilityStock" element="p1:MT_AvailabilityStock" />
+  </wsdl:message>
+  <wsdl:message name="MT_AvailabilityStockResponse">
+    <wsdl:documentation />
+    <wsdl:part name="MT_AvailabilityStockResponse" element="p1:MT_AvailabilityStockResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SI_AvailabilityStock_Out">
+    <wsdl:documentation />
+    <wsdl:operation name="SI_AvailabilityStock_Out">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_SI_AvailabilityStock_Out" />
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_AvailabilityStock" />
+      <wsdl:output message="p1:MT_AvailabilityStockResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SI_AvailabilityStock_OutBinding" type="p1:SI_AvailabilityStock_Out">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="SI_AvailabilityStock_Out">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SI_AvailabilityStock_OutService">
+    <wsdl:port name="HTTP_Port" binding="p1:SI_AvailabilityStock_OutBinding">
+      <address location="http://srvmabe84.mabenet.corpmabe.com:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_MABE_HOMEDEPOT_FPR&amp;receiverParty=&amp;receiverService=&amp;interface=SI_AvailabilityStock_Out&amp;interfaceNamespace=http%3A%2F%2Fmabe.com%2FMW%2FHD%2FCYM%2FATP" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+    <wsdl:port name="HTTPS_Port" binding="p1:SI_AvailabilityStock_OutBinding">
+      <address location="https://srvmabe84.mabenet.corpmabe.com:50001/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_MABE_HOMEDEPOT_FPR&amp;receiverParty=&amp;receiverService=&amp;interface=SI_AvailabilityStock_Out&amp;interfaceNamespace=http%3A%2F%2Fmabe.com%2FMW%2FHD%2FCYM%2FATP" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

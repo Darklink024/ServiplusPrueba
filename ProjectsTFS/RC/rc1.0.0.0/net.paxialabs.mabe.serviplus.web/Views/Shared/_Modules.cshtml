@@ -1,0 +1,16 @@
+﻿@(Html.Kendo().MultiSelect()
+        .Name("ModuleID")
+        //.HtmlAttributes(new { style = "width: 300px" })
+        .DataValueField("Value")
+        .DataTextField("Text")
+        .Filter(FilterType.Contains)
+        .Placeholder("Módulo de Servicios")
+                             .DataSource(source =>
+                             {
+                                 source.Read(read =>
+                                 {
+                                     read.Action("GetList_Modules", "Monitor");
+                                 }).ServerFiltering(true).Custom().Type("aspnetmvc-ajax");
+                             })
+
+)

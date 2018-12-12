@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DA4718C-89B4-496B-B223-B0E064C85FFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>net.paxialabs.mabe.serviplus.security</RootNamespace>
+    <AssemblyName>net.paxialabs.mabe.serviplus.security</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\..\..\..\..\Users\Jose\Documents\System.Web.Mvc\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Filters\AllowCrossSiteJsonAttribute.cs" />
+    <Compile Include="Filters\AuthorizationAttribute.cs" />
+    <Compile Include="GlobalConfiguration.cs" />
+    <Compile Include="LoggerConfiguration.cs" />
+    <Compile Include="ManagerExceptions\ClientExceptions\JsonErrorHandlerAttribute.cs" />
+    <Compile Include="ManagerExceptions\ClientExceptions\ParseToMasterException.cs" />
+    <Compile Include="ManagerExceptions\Commons\Argument_Exception.cs" />
+    <Compile Include="ManagerExceptions\Commons\Arithmetic_Exception.cs" />
+    <Compile Include="ManagerExceptions\Commons\Database_Exception.cs" />
+    <Compile Include="ManagerExceptions\Commons\Format_Exception.cs" />
+    <Compile Include="ManagerExceptions\Commons\Generic_Exception.cs" />
+    <Compile Include="ManagerExceptions\Commons\InputOutput_Exception.cs" />
+    <Compile Include="ManagerExceptions\Commons\InvalidCast_Exception.cs" />
+    <Compile Include="ManagerExceptions\Commons\NullReference_Exception.cs" />
+    <Compile Include="ManagerExceptions\Commons\System_Exception.cs" />
+    <Compile Include="ManagerExceptions\Commons\UnauthorizedAccess_Exception.cs" />
+    <Compile Include="ManagerExceptions\CustomExceptions.cs" />
+    <Compile Include="ManagerExceptions\HtmlStatusCodeDefinitions.cs" />
+    <Compile Include="ManagerExceptions\Log4NetException.cs" />
+    <Compile Include="ManagerExceptions\MasterException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\net.paxialabs.mabe.serviplus.resource\net.paxialabs.mabe.serviplus.resource.csproj">
+      <Project>{4748b1e2-60ce-4f67-9a64-228d9f0b3c9f}</Project>
+      <Name>net.paxialabs.mabe.serviplus.resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\DependencyValidation1\DependencyValidation1.layerdiagram">
+      <Link>DependencyValidation1.layerdiagram</Link>
+      <Visible>False</Visible>
+    </AdditionalFiles>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

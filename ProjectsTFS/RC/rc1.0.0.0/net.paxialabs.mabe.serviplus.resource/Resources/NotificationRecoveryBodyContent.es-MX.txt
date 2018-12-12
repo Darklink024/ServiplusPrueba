@@ -1,0 +1,11 @@
+﻿Saludos #%Nombre%#,
+
+En respuesta a su solicitud de recuperaci�n de clave de acceso.
+
+Le hacemos llegar su clave temporal 
+
+#%ClaveTemporal%#
+
+Le sugerimos cambiar la clave temporal
+
+Mabe ServiPlus

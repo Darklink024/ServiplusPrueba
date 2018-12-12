@@ -1,0 +1,1738 @@
+2018-12-04 13:39:49,356 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 01:39:49 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 13:46:56,189 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 01:46:56 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 13:50:09,873 [6] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 01:50:09 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 17:09:16,920 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 05:09:16 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 17:10:26,370 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 05:10:26 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 17:11:03,086 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 05:11:03 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 17:12:17,030 [13] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 05:12:17 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 17:13:23,934 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 05:13:23 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 17:14:58,162 [16] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 05:14:57 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 17:20:20,738 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 05:20:20 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 17:23:40,364 [7] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 05:23:39 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 17:35:16,234 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 05:35:16 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 17:40:33,863 [13] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 05:40:33 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 18:10:04,729 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 06:10:04 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 18:15:27,762 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 06:15:27 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 18:16:12,777 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 06:16:12 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 18:22:17,172 [13] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 06:22:17 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 18:27:46,746 [14] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 06:27:46 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 18:40:40,178 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 06:40:40 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 18:54:46,384 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 06:54:46 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 18:56:26,935 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 06:56:26 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 18:59:23,837 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 06:59:23 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-04 19:00:17,102 [17] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 04/12/2018 07:00:17 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 10:28:41,744 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 10:28:41 a. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 10:40:29,607 [14] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 10:40:29 a. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 11:17:51,876 [12] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 11:17:51 a. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 11:28:30,478 [12] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 11:28:30 a. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 11:36:08,123 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 11:36:08 a. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 11:40:59,263 [13] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 11:40:59 a. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 11:45:16,923 [11] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 11:45:16 a. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 12:01:09,045 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 12:01:09 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 12:13:43,284 [11] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 12:13:43 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 12:16:46,401 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 12:16:46 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 12:43:21,595 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 12:43:21 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 12:52:03,789 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 12:52:03 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"hikaru.elmo@gmail.com","EstimatedTipe":1,"FK_ProductID":47647,"FK_ShopPlaceID":35930,"Failures":[{"FailureID":9922}],"IVA":"$27.59","ODS":"9407764411","OrderID":"","PreOrden":0,"SerialNumber":"ffff","ServiceTypes":"ODS","ShopDate":"01-08-2018","SubTotal":"$172.41","Total":"$200.00","WorkForce":"$172.410003662109"} 
+-----------------------Log Mobile End------------------------
+2018-12-05 13:54:53,993 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 01:54:53 p. m.
+Data: Order/SetBilling|				{"BillingDetails":[{"Origins":"","Price":"10.00","ProductID":379094,"Quantity":1,"RefManID":"WR01A00194","SparePartsDescription":"ABRAZADERA SENSOR EVAPORADOR","Totals":"10.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":33097,"FK_ShopPlaceID":407,"Failures":[{"FailureID":5291},{"FailureID":5151}],"IVA":"$139.52","ODS":"9407874678","OrderID":"","PreOrden":0,"SerialNumber":"1612B512893","ServiceTypes":"ODS","ShopDate":"30-12-2016","SubTotal":"$872.00","Total":"$1011.52","WorkForce":"$862.0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 13:58:21,598 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 01:58:21 p. m.
+Data: Order/SetBilling|				{"BillingDetails":[{"Origins":"","Price":"10.00","ProductID":379094,"Quantity":1,"RefManID":"WR01A00194","SparePartsDescription":"ABRAZADERA SENSOR EVAPORADOR","Totals":"10.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":33097,"FK_ShopPlaceID":407,"Failures":[{"FailureID":5291},{"FailureID":5151}],"IVA":"$139.52","ODS":"9407874678","OrderID":"","PreOrden":0,"SerialNumber":"1612B512893","ServiceTypes":"ODS","ShopDate":"30-12-2016","SubTotal":"$872.00","Total":"$1011.52","WorkForce":"$862.0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 18:47:29,415 [6] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 06:47:29 p. m.
+Data: Order/SetBilling|				{"BillingDetails":[{"Origins":"","Price":"10.00","ProductID":379094,"Quantity":1,"RefManID":"WR01A00194","SparePartsDescription":"ABRAZADERA SENSOR EVAPORADOR","Totals":"10.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":33097,"FK_ShopPlaceID":407,"Failures":[{"FailureID":5291},{"FailureID":5151}],"IVA":"$139.52","ODS":"9407874678","OrderID":"","PreOrden":0,"SerialNumber":"1612B512893","ServiceTypes":"ODS","ShopDate":"30-12-2016","SubTotal":"$872.00","Total":"$1011.52","WorkForce":"$862.0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 18:55:24,442 [6] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 06:55:24 p. m.
+Data: Order/SetBilling|				{"BillingDetails":[{"Origins":"","Price":"10.00","ProductID":379094,"Quantity":1,"RefManID":"WR01A00194","SparePartsDescription":"ABRAZADERA SENSOR EVAPORADOR","Totals":"10.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":33097,"FK_ShopPlaceID":407,"Failures":[{"FailureID":5291},{"FailureID":5151}],"IVA":"$139.52","ODS":"9407874678","OrderID":"","PreOrden":0,"SerialNumber":"1612B512893","ServiceTypes":"ODS","ShopDate":"30-12-2016","SubTotal":"$872.00","Total":"$1011.52","WorkForce":"$862.0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 18:57:00,123 [7] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 06:57:00 p. m.
+Data: Order/SetBilling|				{"BillingDetails":[{"Origins":"","Price":"10.00","ProductID":379094,"Quantity":1,"RefManID":"WR01A00194","SparePartsDescription":"ABRAZADERA SENSOR EVAPORADOR","Totals":"10.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":33097,"FK_ShopPlaceID":407,"Failures":[{"FailureID":5291},{"FailureID":5151}],"IVA":"$139.52","ODS":"9407874678","OrderID":"","PreOrden":0,"SerialNumber":"1612B512893","ServiceTypes":"ODS","ShopDate":"30-12-2016","SubTotal":"$872.00","Total":"$1011.52","WorkForce":"$862.0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 18:58:51,265 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 06:58:51 p. m.
+Data: Order/SetBilling|				{"BillingDetails":[{"Origins":"","Price":"10.00","ProductID":379094,"Quantity":1,"RefManID":"WR01A00194","SparePartsDescription":"ABRAZADERA SENSOR EVAPORADOR","Totals":"10.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":33097,"FK_ShopPlaceID":407,"Failures":[{"FailureID":5291},{"FailureID":5151}],"IVA":"$139.52","ODS":"9407874678","OrderID":"","PreOrden":0,"SerialNumber":"1612B512893","ServiceTypes":"ODS","ShopDate":"30-12-2016","SubTotal":"$872.00","Total":"$1011.52","WorkForce":"$862.0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 19:04:44,306 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 07:04:44 p. m.
+Data: Order/SetBilling|				{"BillingDetails":[{"Origins":"","Price":"10.00","ProductID":379094,"Quantity":1,"RefManID":"WR01A00194","SparePartsDescription":"ABRAZADERA SENSOR EVAPORADOR","Totals":"10.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":33097,"FK_ShopPlaceID":407,"Failures":[{"FailureID":5291},{"FailureID":5151}],"IVA":"$139.52","ODS":"9407874678","OrderID":"","PreOrden":0,"SerialNumber":"1612B512893","ServiceTypes":"ODS","ShopDate":"30-12-2016","SubTotal":"$872.00","Total":"$1011.52","WorkForce":"$862.0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 19:18:52,990 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 07:18:52 p. m.
+Data: Order/SetBilling|{   "BillingDetails": [     {       "Origins": "",       "Price": "10.00",       "ProductID": 379094,       "Quantity": 1,       "RefManID": "WR01A00194",       "SparePartsDescription": "ABRAZADERA SENSOR EVAPORADOR",       "Totals": "10.00"     }   ],   "EMails": "",   "EstimatedTipe": 1,   "FK_ProductID": 42553,   "FK_ShopPlaceID": 407,   "Failures": [     {       "FailureID": 5291     },     {       "FailureID": 5151     }   ],   "IVA": "$139.52",   "ODS": "9407874678",   "OrderID": "",   "PreOrden": 0,   "SerialNumber": "1612B512893",   "ServiceTypes": "ODS",   "ShopDate": "30-12-2016",   "SubTotal": "$872.00",   "Total": "$1011.52",   "WorkForce": "$862.0" }
+-----------------------Log Mobile End------------------------
+2018-12-05 19:22:27,962 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 07:22:27 p. m.
+Data: Order/SetBilling|{   "BillingDetails": [     {       "Origins": "",       "Price": "10.00",       "ProductID": 379094,       "Quantity": 1,       "RefManID": "WR01A00194",       "SparePartsDescription": "ABRAZADERA SENSOR EVAPORADOR",       "Totals": "10.00"     }   ],   "EMails": "",   "EstimatedTipe": 1,   "FK_ProductID": 42553,   "FK_ShopPlaceID": 407,   "Failures": [     {       "FailureID": 5291     },     {       "FailureID": 5151     }   ],   "IVA": "$139.52",   "ODS": "9407874678",   "OrderID": "",   "PreOrden": 0,   "SerialNumber": "1612B512893",   "ServiceTypes": "ODS",   "ShopDate": "30-12-2016",   "SubTotal": "$872.00",   "Total": "$1011.52",   "WorkForce": "$862.0" }
+-----------------------Log Mobile End------------------------
+2018-12-05 19:25:31,857 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 07:25:31 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"10.00","ProductID":113512,"Quantity":1,"RefManID":"WW01A00001","SparePartsDescription":"TORNILLO","Totals":"10.00"}],"EMails":"edwin_24_link@hotmail.com","EstimatedTipe":1,"FK_ProductID":35404,"FK_ShopPlaceID":7787,"Failures":[{"FailureID":5897},{"FailureID":5005}],"IVA":"$139.52","ODS":"0361-021018-02","OrderID":"9407874697","PreOrden":1,"SerialNumber":"Qwerty","ServiceType":"0120","ServiceTypes":"PREODS","ShopDate":"02-10-2012","SubTotal":"$872.00","Total":"$1011.52","WorkForce":"$862.0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 19:28:08,555 [12] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 07:28:08 p. m.
+Data: Order/SetBilling|				{"BillingDetails":[{"Origins":"","Price":"50.00","ProductID":60948,"Quantity":1,"RefManID":"WW01F01739","SparePartsDescription":"MOTOR FAN","Totals":"50.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":33168,"FK_ShopPlaceID":128,"Failures":[{"FailureID":5067},{"FailureID":4997}],"IVA":"$0","ODS":"0361-021018-01","OrderID":"9407874697","PreOrden":1,"SerialNumber":"","ServiceType":"0010","ServiceTypes":"PREODS","ShopDate":"02-10-2018","SubTotal":"$0","Total":"$0","WorkForce":"$0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 19:44:01,713 [13] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 07:44:01 p. m.
+Data: Order/SetBilling|				{"BillingDetails":[{"Origins":"","Price":"50.00","ProductID":60948,"Quantity":1,"RefManID":"WW01F01739","SparePartsDescription":"MOTOR FAN","Totals":"50.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":33168,"FK_ShopPlaceID":128,"Failures":[{"FailureID":5067},{"FailureID":4997}],"IVA":"$0","ODS":"0361-021018-01","OrderID":"9407874697","PreOrden":1,"SerialNumber":"","ServiceType":"0010","ServiceTypes":"PREODS","ShopDate":"02-10-2018","SubTotal":"$0","Total":"$0","WorkForce":"$0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 19:46:50,292 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 07:46:50 p. m.
+Data: Order/SetBilling|				{"BillingDetails":[{"Origins":"","Price":"50.00","ProductID":60948,"Quantity":1,"RefManID":"WW01F01739","SparePartsDescription":"MOTOR FAN","Totals":"50.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":33168,"FK_ShopPlaceID":128,"Failures":[{"FailureID":5067},{"FailureID":4997}],"IVA":"$0","ODS":"0361-021018-01","OrderID":"9407874697","PreOrden":1,"SerialNumber":"","ServiceType":"0010","ServiceTypes":"PREODS","ShopDate":"02-10-2018","SubTotal":"$0","Total":"$0","WorkForce":"$0"}
+-----------------------Log Mobile End------------------------
+2018-12-05 19:58:06,003 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 05/12/2018 07:58:06 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 10:52:03,242 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 10:52:03 a. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 12:15:06,527 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 12:15:06 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 12:16:47,251 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 12:16:47 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 12:18:12,941 [11] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 12:18:12 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 12:23:19,390 [11] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 12:23:19 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 12:29:51,128 [11] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 12:29:51 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 12:39:45,642 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 12:39:45 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 12:52:24,334 [10] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 12:52:24 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 12:53:32,229 [11] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 12:53:32 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 13:25:38,425 [11] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 01:25:38 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 13:30:06,015 [17] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 01:30:06 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-06 13:33:52,792 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/12/2018 01:33:52 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-07 13:01:57,430 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 07/12/2018 01:01:57 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-07 13:20:44,915 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 07/12/2018 01:20:44 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-07 13:22:01,197 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 07/12/2018 01:22:01 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-07 13:23:58,186 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 07/12/2018 01:23:58 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-07 16:00:31,062 [7] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 07/12/2018 04:00:31 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-07 17:28:42,673 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 07/12/2018 05:28:42 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-07 17:30:15,903 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 07/12/2018 05:30:15 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-07 17:37:14,884 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 07/12/2018 05:37:14 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-07 18:06:10,688 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 07/12/2018 06:06:10 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-07 18:25:16,688 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 07/12/2018 06:25:16 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 11:07:23,713 [13] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 11:07:23 a. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 11:14:07,738 [13] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 11:14:07 a. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 11:42:56,059 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 11:42:56 a. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 13:44:53,182 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 01:44:53 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 16:03:27,993 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 04:03:27 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 16:05:40,606 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 04:05:40 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 16:31:29,203 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 04:31:29 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 16:38:30,544 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 04:38:30 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 16:51:16,187 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 04:51:16 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 16:52:56,384 [11] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 04:52:56 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 17:01:01,202 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 05:01:01 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 17:12:31,224 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 05:12:31 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 17:17:49,700 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 05:17:49 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 17:18:54,796 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 05:18:54 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 17:24:53,586 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 05:24:53 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 18:06:08,380 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 06:06:08 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 18:07:33,715 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 06:07:33 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 18:28:55,047 [14] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 06:28:55 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 18:34:45,961 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 06:34:45 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 19:05:30,626 [10] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 07:05:30 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 19:09:48,540 [12] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 07:09:48 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 19:15:00,901 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 07:15:00 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 19:20:13,914 [13] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 07:20:13 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 19:51:56,352 [10] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 07:51:56 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-10 19:53:04,424 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 10/12/2018 07:53:04 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 11:05:49,402 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 11:05:49 a. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 11:19:19,943 [19] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 11:19:19 a. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 11:19:19,969 [12] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 11:19:19 a. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 11:30:25,611 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 11:30:25 a. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 11:34:30,589 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 11:34:30 a. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"","Price":"55.30","ProductID":2609390,"Quantity":1,"RefManID":"WW02L00642","SparePartsDescription":"BASE MOTOR NV","Totals":"55.30"},{"Origins":"","Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"","EstimatedTipe":1,"FK_ProductID":48497,"FK_ShopPlaceID":36997,"Failures":[{"FailureID":13790}],"IVA":"$98.61","ODS":"9407740330","OrderID":"","PreOrden":0,"SerialNumber":"ggg","ServiceTypes":"ODS","ShopDate":"05-03-2017","SubTotal":"$616.30","Total":"$714.91","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 13:44:32,930 [14] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 01:44:32 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 13:50:07,321 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 01:50:07 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 15:38:38,634 [6] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 03:38:38 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 15:38:49,154 [6] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 15:39:06,868 [6] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344492</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344492 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344492</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 15:39:07,267 [6] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344492 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344492
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 15:40:30,338 [12] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 03:40:30 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 15:40:38,978 [12] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 15:40:53,144 [12] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344493</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344493 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344493</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 15:40:53,688 [12] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344493 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344493
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 15:41:00,164 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 03:41:00 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 15:41:07,299 [5] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 15:41:21,569 [5] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344494</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344494 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344494</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 15:41:22,150 [5] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344494 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344494
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 15:41:58,484 [14] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 03:41:58 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 15:42:12,894 [14] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 15:42:27,792 [14] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344495</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344495 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344495</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 15:42:28,440 [14] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344495 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344495
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 15:43:59,385 [15] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 03:43:59 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 15:44:10,967 [15] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 15:44:26,010 [15] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344496</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344496 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344496</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 15:44:26,545 [15] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344496 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344496
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 16:04:06,072 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 04:04:06 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 16:04:21,373 [8] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 16:04:34,766 [8] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-171018-0611-001-R</OrdenWeb><PedidoSAP>0012344497</PedidoSAP></Item><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_HEADER_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAKKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_ITEM_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>VBAPKOM</Message_V1><Message_V2>000010</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_ITEM_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V4</ID><Number>233</Number><Message>SALES_CONDITIONS_IN has been processed successfully</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>KONVKOM</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_CONDITIONS_IN</Parameter><Row>        1</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>S</Type><ID>V1</ID><Number>311</Number><Message>Portal 12344497 has been saved</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>Portal</Message_V1><Message_V2>12344497</Message_V2><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type/><ID/><Number/><Message/><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 16:04:35,259 [8] INFO  MabeInterfaceLog - -------------------------INICIO_Orden_venta-------------------------
+Refaccion
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_HEADER_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAKKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_ITEM_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: VBAPKOM
+Message_V2: 000010
+Message_V3: 
+Message_V4: 
+Parameter: SALES_ITEM_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V4
+Number: 233
+Message: SALES_CONDITIONS_IN has been processed successfully
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: KONVKOM
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: SALES_CONDITIONS_IN
+Row:         1
+System: ESNCLNT700
+Type: S
+Field: 
+ID: V1
+Number: 311
+Message: Portal 12344497 has been saved
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: Portal
+Message_V2: 12344497
+Message_V3: 
+Message_V4: 
+Parameter: SALES_HEADER_IN
+Row:         0
+System: ESNCLNT700
+Type: 
+Field: 
+ID: 
+Number: 
+Message: 
+Log_No: 
+Log_Msg_No: 000000
+Message_V1: 
+Message_V2: 
+Message_V3: 
+Message_V4: 
+Parameter: 
+Row: 
+System: 
+-------------------------INICIO_Orden_venta-------------------------
+
+2018-12-11 16:26:42,502 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 04:26:42 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 16:26:56,890 [9] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>171018-0611-001-R</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP18</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>12</Sector>
+  <NumCliente>20001192</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>20001192</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EVA</NombreSH>
+  <NombreSH1>MENDOZA</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>15</CalleNum>
+  <NumInterior>30</NumInterior>
+  <NumExteriorSup>85</NumExteriorSup>
+  <ColoniaSH>Casa Blanca</ColoniaSH>
+  <CodigoPostalSH>76116</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>DF</RegionSH>
+  <Telefono1>0147852365</Telefono1>
+  <Telefono2>0847484588</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH></EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20181211</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>12</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal>1</ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>WR01A01231</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro>T007</Centro>
+  <Almacen>6001</Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado></NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase>ZPR1</Clase><Valor>11.06</Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4></GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1></GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios></TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN></PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 16:52:04,636 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 04:52:04 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Origins":"6001","Price":"11.06","ProductID":4823,"Quantity":1,"RefManID":"WR01A01231","SparePartsDescription":"TORNILLO TIPO AB(8-18*5/8)","Totals":"11.06"},{"Origins":"","Price":"","ProductID":0,"Quantity":0,"RefManID":"","SparePartsDescription":"171018-0611-001-R","Totals":""}],"EMails":"","EstimatedTipe":3,"FK_ProductID":30488,"FK_ShopPlaceID":8495,"IVA":"$1.77","ODS":"9407136744","PreOrden":0,"SerialNumber":"","ServiceTypes":"Supply","ShopDate":"09-10-2014","SubTotal":"$11.06","Total":"$12.83","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 17:19:34,797 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 05:19:34 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"","EstimatedTipe":2,"FK_ProductID":33168,"FK_ShopPlaceID":622,"Failures":[],"IVA":"330.88","ODS":"9407873341","OrderID":"","Policies":{"ClientID":"113641085","Coin":"MXN","Folio":"021018-0611-002-P","GuarantyEnd":"03-01-2021","GuarantyStart":"03-01-2019","MaterialGroup4":"345","Model":"WEA77114CBAB00","PolicyDate":"02-10-2018","PolicyDescription":"Dos años.","PolicyID":"8011161600000000","PolicyPrice":"2930.00 ","PriceList":"02","ProductID":"33168","PurchaseDate":"02-01-2018","SalesOrg":"MX03","ccGroup":"01"},"PreOrden":0,"SerialNumber":"22222","ServiceType":"","ServiceTypes":"Policy","ShopDate":"02-01-2018","SubTotal":"2068.00","Total":"2398.88","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 17:24:49,235 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 05:24:49 p. m.
+Data: Order/SetBilling|{"BillingDetails":[],"EMails":"","EstimatedTipe":2,"FK_ProductID":33168,"FK_ShopPlaceID":622,"Failures":[],"IVA":"330.88","ODS":"9407873341","OrderID":"","Policies":{"ClientID":"113641085","Coin":"MXN","Folio":"021018-0611-002-P","GuarantyEnd":"03-01-2021","GuarantyStart":"03-01-2019","MaterialGroup4":"345","Model":"WEA77114CBAB00","PolicyDate":"02-10-2018","PolicyDescription":"Dos años.","PolicyID":"8011161600000000","PolicyPrice":"2930.00 ","PriceList":"02","ProductID":"33168","PurchaseDate":"02-01-2018","SalesOrg":"MX03","ccGroup":"01"},"PreOrden":0,"SerialNumber":"22222","ServiceType":"","ServiceTypes":"Policy","ShopDate":"02-01-2018","SubTotal":"2068.00","Total":"2398.88","WorkForce":""}
+-----------------------Log Mobile End------------------------
+2018-12-11 17:25:01,968 [8] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Request Inicio -----
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ord="http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ord:MT_OrdenVentaClienteNoSAP>
+      <Destino>MEX</Destino>
+      <Satelite>MOB</Satelite>
+      <!--1 or more repetitions:-->
+      <Item>
+  <OrdenWeb>021018-0611-002-P</OrdenWeb>
+  <AliasNegocio></AliasNegocio>
+  <ClaseDocumento>ZP21</ClaseDocumento>
+  <OrganizacionVentas>MX03</OrganizacionVentas>
+  <CanalDistribucion>10</CanalDistribucion>
+  <Sector>13</Sector>
+  <NumCliente>20001300</NumCliente>
+  <FuncionInterlocutorSP>AG</FuncionInterlocutorSP>
+  <NumDestinatario>113641085</NumDestinatario>
+  <FuncionInterlocutorSH></FuncionInterlocutorSH>
+  <NombreSH>EDUARDO</NombreSH>
+  <NombreSH1>HERNANDEZ JMENEZ</NombreSH1>
+  <NombreSH2></NombreSH2>
+  <NombreSH3></NombreSH3>
+  <CalleNum>LIMAS</CalleNum>
+  <NumInterior>72</NumInterior>
+  <NumExteriorSup>102</NumExteriorSup>
+  <ColoniaSH>Don Manuel</ColoniaSH>
+  <CodigoPostalSH>76114</CodigoPostalSH>
+  <Delegacion>Querétaro</Delegacion>
+  <PaisSH>MX</PaisSH>
+  <RegionSH>MEX</RegionSH>
+  <Telefono1>4425441140</Telefono1>
+  <Telefono2>4425441140</Telefono2>
+  <FaxSH></FaxSH>
+  <RFCSH></RFCSH>
+  <EmailSH>pilarbarron78@gmail.com</EmailSH>
+  <FuncionInterlocutorZR></FuncionInterlocutorZR>
+  <NumEjecutivoVentas></NumEjecutivoVentas>
+  <NumOrdenCompra></NumOrdenCompra>
+  <PreciosCliente></PreciosCliente>
+  <FechaCompra>20181211</FechaCompra>
+  <FechaEntrega>20190103</FechaEntrega>
+  <BloqueoEntrega></BloqueoEntrega>
+  <FechaPrecio>20181211</FechaPrecio>
+  <MonedaDoc>MXN</MonedaDoc>
+  <MotivoPedido></MotivoPedido>
+  <Incoterms1></Incoterms1>
+  <Incoterms2></Incoterms2>
+  <CondiPago></CondiPago>
+  <CondiEmbarque>11</CondiEmbarque>
+  <ViaPago>W</ViaPago>
+  <ClasificacionFiscal></ClasificacionFiscal>
+  <PosicionPedido>10</PosicionPedido>
+  <MaterialSKU>008011161600000000</MaterialSKU>
+  <CantPedido>1</CantPedido>
+  <UniMedida>ST</UniMedida>
+  <FechaEntregaItem></FechaEntregaItem>
+  <Centro></Centro>
+  <Almacen></Almacen>
+  <Ruta></Ruta>
+  <NumEmpleado>tec6118</NumEmpleado>
+  <NombEmpleado>WEA77114CBAB00</NombEmpleado>
+  <UbicacionEmpleado></UbicacionEmpleado>
+  <FormaPago></FormaPago>
+  <TexCabecera></TexCabecera>
+  <ClaseCondicion><Clase></Clase><Valor></Valor></ClaseCondicion>
+  <NombreSHFac></NombreSHFac>
+  <!--Optional:-->
+  <NombreSH1Fac></NombreSH1Fac>
+  <!--Optional:-->
+  <CalleNumFac></CalleNumFac>
+  <!--Optional:-->
+  <NumInteriorFac></NumInteriorFac>
+  <!--Optional:-->
+  <NumExteriorSupFac></NumExteriorSupFac>
+  <!--Optional:-->
+  <ColoniaSHFac></ColoniaSHFac>
+  <!--Optional:-->
+  <CodigoPostalSHFac></CodigoPostalSHFac>
+  <!--Optional:-->
+  <DelegacionFac></DelegacionFac>
+  <!--Optional:-->
+  <PaisSHFac>MX</PaisSHFac>
+  <!--Optional:-->
+  <RegionSHFac></RegionSHFac>
+  <!--Optional:-->
+  <RFCSHFac></RFCSHFac>
+  <!--Optional:-->
+  <EmailSHFac></EmailSHFac>
+  <!--Optional:-->
+  <Telefono1Fac></Telefono1Fac>
+  <!--Optional:-->
+  <Telefono2Fac></Telefono2Fac>
+  <!--Optional:-->
+  <PersonaFisica></PersonaFisica>
+  <!--Optional:-->
+  <TipoIdentFiscal></TipoIdentFiscal>
+  <!--Optional:-->
+  <GrupoMateriales4>345</GrupoMateriales4>
+  <!--Optional:-->
+  <GrupoCondiciones1>01</GrupoCondiciones1>
+  <!--Optional:-->
+  <TipoListaPrecios>02</TipoListaPrecios>
+  <!--Optional:-->
+  <PolizaSN>22222</PolizaSN>
+</Item>
+
+
+    </ord:MT_OrdenVentaClienteNoSAP>
+  </soapenv:Body>
+</soapenv:Envelope>
+------- BussinesWSOrdenVenta Send Request Fin -----
+
+2018-12-11 17:25:13,672 [8] INFO  MabeInterfaceLog - ------- BussinesWSOrdenVenta Send Response Inicio -----
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body xmlns:ord='http://mabe.com/MW/PEC/COM/OrdenVenta_vTEX'><ns0:MT_NumeroOrdenVenta xmlns:ns0='http://mabe.com/MW/ECC/COM/OrdenVenta'><Item><OrdenWeb>MOB-021018-0611-002-P</OrdenWeb><PedidoSAP/></Item><Return><Type>E</Type><ID>VP</ID><Number>200</Number><Message>No customer master record exists for customer 113641085</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1>113641085</Message_V1><Message_V2/><Message_V3/><Message_V4/><Parameter>SALES_HEADER_IN</Parameter><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>E</Type><ID>V4</ID><Number>219</Number><Message>Sales document  was not changed</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row>        0</Row><Field/><System>ESNCLNT700</System></Return><Return><Type>E</Type><ID/><Number/><Message>Data was not found for the document</Message><Log_No/><Log_Msg_No>000000</Log_Msg_No><Message_V1/><Message_V2/><Message_V3/><Message_V4/><Parameter/><Row/><Field/><System/></Return></ns0:MT_NumeroOrdenVenta></SOAP:Body></SOAP:Envelope>------- BussinesWSOrdenVenta Send Response Fin -----
+
+2018-12-11 17:49:22,973 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 05:49:22 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"7560.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000025","SparePartsDescription":"Kilometraje","Totals":"7560.00"},{"Price":"11.06","ProductID":130295,"Quantity":1,"RefManID":"WR01L08049","SparePartsDescription":"TAPA CAJA CONTROL SIRIUS 360","Totals":"11.06"},{"Price":"108.48","ProductID":106180,"Quantity":1,"RefManID":"WR01L09705","SparePartsDescription":"BASE JALADERA FF.NEGRO","Totals":"108.48"},{"Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"Kari_1329@hotmail.com","EstimatedTipe":1,"FK_ProductID":30593,"FK_ShopPlaceID":5373,"Failures":[{"FailureID":5016},{"FailureID":4998}],"IVA":"$1318.49","ODS":"9500010472","OrderID":"","PreOrden":0,"SerialNumber":"Uuuu2","ServiceTypes":"ODS","ShopDate":"06-11-2015","SubTotal":"$8240.54","Total":"$9559.03","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 17:54:17,924 [5] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 05:54:17 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"7560.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000025","SparePartsDescription":"Kilometraje","Totals":"7560.00"},{"Price":"11.06","ProductID":130295,"Quantity":1,"RefManID":"WR01L08049","SparePartsDescription":"TAPA CAJA CONTROL SIRIUS 360","Totals":"11.06"},{"Price":"108.48","ProductID":106180,"Quantity":1,"RefManID":"WR01L09705","SparePartsDescription":"BASE JALADERA FF.NEGRO","Totals":"108.48"},{"Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"Kari_1329@hotmail.com","EstimatedTipe":1,"FK_ProductID":30593,"FK_ShopPlaceID":5373,"Failures":[{"FailureID":5016},{"FailureID":4998}],"IVA":"$1318.49","ODS":"9500010472","OrderID":"","PreOrden":0,"SerialNumber":"Uuuu2","ServiceTypes":"ODS","ShopDate":"06-11-2015","SubTotal":"$8240.54","Total":"$9559.03","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 18:06:38,461 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 06:06:38 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"7560.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000025","SparePartsDescription":"Kilometraje","Totals":"7560.00"},{"Price":"11.06","ProductID":130295,"Quantity":1,"RefManID":"WR01L08049","SparePartsDescription":"TAPA CAJA CONTROL SIRIUS 360","Totals":"11.06"},{"Price":"108.48","ProductID":106180,"Quantity":1,"RefManID":"WR01L09705","SparePartsDescription":"BASE JALADERA FF.NEGRO","Totals":"108.48"},{"Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"Kari_1329@hotmail.com","EstimatedTipe":1,"FK_ProductID":30593,"FK_ShopPlaceID":5373,"Failures":[{"FailureID":5016},{"FailureID":4998}],"IVA":"$1318.49","ODS":"9500010472","OrderID":"","PreOrden":0,"SerialNumber":"Uuuu2","ServiceTypes":"ODS","ShopDate":"06-11-2015","SubTotal":"$8240.54","Total":"$9559.03","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 18:16:31,280 [13] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 06:16:31 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"7560.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000025","SparePartsDescription":"Kilometraje","Totals":"7560.00"},{"Price":"11.06","ProductID":130295,"Quantity":1,"RefManID":"WR01L08049","SparePartsDescription":"TAPA CAJA CONTROL SIRIUS 360","Totals":"11.06"},{"Price":"108.48","ProductID":106180,"Quantity":1,"RefManID":"WR01L09705","SparePartsDescription":"BASE JALADERA FF.NEGRO","Totals":"108.48"},{"Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"Kari_1329@hotmail.com","EstimatedTipe":1,"FK_ProductID":30593,"FK_ShopPlaceID":5373,"Failures":[{"FailureID":5016},{"FailureID":4998}],"IVA":"$1318.49","ODS":"9500010472","OrderID":"","PreOrden":0,"SerialNumber":"Uuuu2","ServiceTypes":"ODS","ShopDate":"06-11-2015","SubTotal":"$8240.54","Total":"$9559.03","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 18:19:33,082 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 06:19:33 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"7560.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000025","SparePartsDescription":"Kilometraje","Totals":"7560.00"},{"Price":"11.06","ProductID":130295,"Quantity":1,"RefManID":"WR01L08049","SparePartsDescription":"TAPA CAJA CONTROL SIRIUS 360","Totals":"11.06"},{"Price":"108.48","ProductID":106180,"Quantity":1,"RefManID":"WR01L09705","SparePartsDescription":"BASE JALADERA FF.NEGRO","Totals":"108.48"},{"Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"Kari_1329@hotmail.com","EstimatedTipe":1,"FK_ProductID":30593,"FK_ShopPlaceID":5373,"Failures":[{"FailureID":5016},{"FailureID":4998}],"IVA":"$1318.49","ODS":"9500010472","OrderID":"","PreOrden":0,"SerialNumber":"Uuuu2","ServiceTypes":"ODS","ShopDate":"06-11-2015","SubTotal":"$8240.54","Total":"$9559.03","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 18:34:00,377 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 06:34:00 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"7560.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000025","SparePartsDescription":"Kilometraje","Totals":"7560.00"},{"Price":"11.06","ProductID":130295,"Quantity":1,"RefManID":"WR01L08049","SparePartsDescription":"TAPA CAJA CONTROL SIRIUS 360","Totals":"11.06"},{"Price":"108.48","ProductID":106180,"Quantity":1,"RefManID":"WR01L09705","SparePartsDescription":"BASE JALADERA FF.NEGRO","Totals":"108.48"},{"Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"Kari_1329@hotmail.com","EstimatedTipe":1,"FK_ProductID":30593,"FK_ShopPlaceID":5373,"Failures":[{"FailureID":5016},{"FailureID":4998}],"IVA":"$1318.49","ODS":"9500010472","OrderID":"","PreOrden":0,"SerialNumber":"Uuuu2","ServiceTypes":"ODS","ShopDate":"06-11-2015","SubTotal":"$8240.54","Total":"$9559.03","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 18:38:21,442 [9] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 06:38:21 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"7560.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000025","SparePartsDescription":"Kilometraje","Totals":"7560.00"},{"Price":"11.06","ProductID":130295,"Quantity":1,"RefManID":"WR01L08049","SparePartsDescription":"TAPA CAJA CONTROL SIRIUS 360","Totals":"11.06"},{"Price":"108.48","ProductID":106180,"Quantity":1,"RefManID":"WR01L09705","SparePartsDescription":"BASE JALADERA FF.NEGRO","Totals":"108.48"},{"Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"Kari_1329@hotmail.com","EstimatedTipe":1,"FK_ProductID":30593,"FK_ShopPlaceID":5373,"Failures":[{"FailureID":5016},{"FailureID":4998}],"IVA":"$1318.49","ODS":"9500010472","OrderID":"","PreOrden":0,"SerialNumber":"Uuuu2","ServiceTypes":"ODS","ShopDate":"06-11-2015","SubTotal":"$8240.54","Total":"$9559.03","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 18:40:56,177 [13] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 06:40:56 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"7560.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000025","SparePartsDescription":"Kilometraje","Totals":"7560.00"},{"Price":"11.06","ProductID":130295,"Quantity":1,"RefManID":"WR01L08049","SparePartsDescription":"TAPA CAJA CONTROL SIRIUS 360","Totals":"11.06"},{"Price":"108.48","ProductID":106180,"Quantity":1,"RefManID":"WR01L09705","SparePartsDescription":"BASE JALADERA FF.NEGRO","Totals":"108.48"},{"Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"Kari_1329@hotmail.com","EstimatedTipe":1,"FK_ProductID":30593,"FK_ShopPlaceID":5373,"Failures":[{"FailureID":5016},{"FailureID":4998}],"IVA":"$1318.49","ODS":"9500010472","OrderID":"","PreOrden":0,"SerialNumber":"Uuuu2","ServiceTypes":"ODS","ShopDate":"06-11-2015","SubTotal":"$8240.54","Total":"$9559.03","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-11 18:43:17,710 [11] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 11/12/2018 06:43:17 p. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"7560.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000025","SparePartsDescription":"Kilometraje","Totals":"7560.00"},{"Price":"11.06","ProductID":130295,"Quantity":1,"RefManID":"WR01L08049","SparePartsDescription":"TAPA CAJA CONTROL SIRIUS 360","Totals":"11.06"},{"Price":"108.48","ProductID":106180,"Quantity":1,"RefManID":"WR01L09705","SparePartsDescription":"BASE JALADERA FF.NEGRO","Totals":"108.48"},{"Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"Kari_1329@hotmail.com","EstimatedTipe":1,"FK_ProductID":30593,"FK_ShopPlaceID":5373,"Failures":[{"FailureID":5016},{"FailureID":4998}],"IVA":"$1318.49","ODS":"9500010472","OrderID":"","PreOrden":0,"SerialNumber":"Uuuu2","ServiceTypes":"ODS","ShopDate":"06-11-2015","SubTotal":"$8240.54","Total":"$9559.03","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------
+2018-12-12 10:22:29,110 [17] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 12/12/2018 10:22:29 a. m.
+Data: Order/SetBilling|{"BillingDetails":[{"Price":"7560.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000025","SparePartsDescription":"Kilometraje","Totals":"7560.00"},{"Price":"11.06","ProductID":130295,"Quantity":1,"RefManID":"WR01L08049","SparePartsDescription":"TAPA CAJA CONTROL SIRIUS 360","Totals":"11.06"},{"Price":"108.48","ProductID":106180,"Quantity":1,"RefManID":"WR01L09705","SparePartsDescription":"BASE JALADERA FF.NEGRO","Totals":"108.48"},{"Price":"259.00","ProductID":0,"Quantity":1,"RefManID":"8011161600000029","SparePartsDescription":"Mano de obra revision trad","Totals":"259.00"}],"EMails":"Kari_1329@hotmail.com","EstimatedTipe":1,"FK_ProductID":30593,"FK_ShopPlaceID":5373,"Failures":[{"FailureID":5016},{"FailureID":4998}],"IVA":"$1318.49","ODS":"9500010472","OrderID":"","PreOrden":0,"SerialNumber":"Uuuu2","ServiceTypes":"ODS","ShopDate":"06-11-2015","SubTotal":"$8240.54","Total":"$9559.03","WorkForce":"$302.0"}
+-----------------------Log Mobile End------------------------

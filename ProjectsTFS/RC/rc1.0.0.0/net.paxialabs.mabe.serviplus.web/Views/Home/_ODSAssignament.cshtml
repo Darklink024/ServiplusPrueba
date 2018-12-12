@@ -1,0 +1,122 @@
+﻿<label class="main-data font-weight-bold en-bloque contact slight-margin-bottom blue-header">Usuario Asignado</label>
+
+<table class="table table-responsive" id="table-ods">
+    <tr>
+        <td> <label class="main-dataasig font-weight-bold">ODS: </label> @ViewBag.dataODS.OrderID</td>
+
+
+    </tr>
+    <tr>
+        <td><label class="main-dataasig font-weight-bold"> Nombre del Taller: </label> @ViewBag.dataModule.Module</td>
+    </tr>
+    <tr>
+        <td><label class="main-dataasig font-weight-bold">ID TÉCNICO: </label> @ViewBag.dataTecnico.EmployeeID</td>
+    </tr>
+
+    <tr>
+        <td><label class="main-dataasig font-weight-bold">TÉCNICO: </label> @(ViewBag.dataTecnico.FirstName + " " + @ViewBag.dataTecnico.LastName)</td>
+    </tr>
+</table>
+
+<label class="main-data font-weight-bold en-bloque contact slight-margin-bottom blue-header">Reasignación de Usuario</label>
+
+
+<table>
+    <tr>
+        <th>
+        @(Html.Kendo().ComboBox()
+                        .Name("UserTA")
+                        .DataValueField("Value")
+                        .DataTextField("Text")
+                        .Filter(FilterType.Contains)
+                        .Height(500)
+                        .HtmlAttributes(new { style = "width: 350px; aling: centre;" })
+                        .Placeholder("Técnicos de Talleres")
+                                             .DataSource(source =>
+                                             {
+                                                 source.Read(read =>
+                                                 {
+                                                     read.Action("GetList_UserTA", "Monitor").Data("onmonitorID");
+                                                 }).ServerFiltering(true).Custom().Type("aspnetmvc-ajax");
+                                             })
+                              
+
+        )
+            </th>
+    </tr>
+        
+    
+</table>
+<br/>
+<br/>
+<br/>
+
+<input type="button" id="btnconfirm" value="Reasignar" class="btn btn-default" /> 
+<script>
+    $(document).ready(onmonitorID);
+  
+    function onmonitorID() {
+
+     var MonitorID=@ViewBag.monitorID;
+
+        return {
+
+            monitorID: MonitorID
+
+        };
+    }
+
+    $("#btnconfirm").click(function (){
+        
+
+        
+
+        
+        var userReasig = $("#UserTA").data("kendoComboBox").value();
+        var monitorID=@ViewBag.monitorID
+            $('#dialogAsignation').data("kendoDialog").close();
+        $.ajax({
+            url: '../Monitor/SaveAsig',
+            type: "POST",
+            cache: false,
+            data: { Newuser: userReasig,order: monitorID },
+            beforeSend: function (jqXHR, settings) { $("#divLoading").show(); },
+            error: function (jqXHR, textStatus, errorThrown) {
+                try {
+                   
+                }
+                catch (ex) {
+                }
+            },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+                
+               
+                $('#dialogAsignation').data("kendoDialog").close();
+                
+                if (result == "Success") {
+                    var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+                    $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                    dialog.content('La orden de servicio se reasigno correctamente');
+                    dialog.open();
+                    $("#divLoading").hide();
+                    
+                    
+                } else {
+                    var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+                    $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                    dialog.content('No se pudo reasignar la Orden de Servicio');
+                    dialog.open();
+                     $("#divLoading").hide();
+                }
+                var grid = $("#grid").data("kendoGrid");
+                grid.dataSource.read();
+            }
+            });
+        d
+        
+    });
+</script>
+
+
+

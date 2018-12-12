@@ -1,0 +1,240 @@
+﻿<style>
+  ul  {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        margin-left: 180px;
+        text-align: left;
+    }
+
+</style>
+@using (Html.BeginForm("", "#", FormMethod.Post, new { id = "frmFilter1", @class = "form-horizontal" }))
+{
+    <br />
+<div class=" container">
+  
+        <div class="row">
+            <div class="form-group">
+                <div class="col-md-2 ">
+                    @(Html.Kendo().MultiSelect()
+           .Name("ModuleID")
+           .DataValueField("Value")
+           .DataTextField("Text")
+           .Filter(FilterType.Contains)
+           .Placeholder("Módulo de Servicios")
+                                .DataSource(source =>
+                                {
+                                    source.Read(read =>
+                                    {
+                                        read.Action("GetList_Modules", "Monitor");
+                                    }).ServerFiltering(true).Custom().Type("aspnetmvc-ajax");
+                                })
+
+                    )
+                    @*@Html.DropDownList("Modulos", new SelectList(ViewBag.lstModules, "Value", "Text"), "Módulo de Servicios ", new { @class = "form-control input-sm" })*@
+                </div>
+
+                <div class="col-md-2">
+                    @(Html.Kendo().MultiSelect()
+.Name("PriorityID")
+.DataValueField("Value")
+.DataTextField("Text")
+.Filter(FilterType.Contains)
+.Placeholder("Rango de Horario ")
+                     .DataSource(source =>
+                     {
+                         source.Read(read =>
+                         {
+                             read.Action("GetList_Prioritys", "Monitor");
+                         }).ServerFiltering(true).Custom().Type("aspnetmvc-ajax");
+                     })
+
+                    )
+                    @*@Html.DropDownList("Prioridades", new SelectList(ViewBag.lstPrioritys, "Value", "Text"), "Rango de Horario ", new { @class = "form-control input-sm" })*@
+                </div>
+
+                <div class="col-md-2">
+                    @(Html.Kendo().MultiSelect()
+           .Name("StatusVisitID")
+           .DataValueField("Value")
+           .DataTextField("Text")
+           .Filter(FilterType.Contains)
+           .Placeholder("Estatus Visita")
+                                .DataSource(source =>
+                                {
+                                    source.Read(read =>
+                                    {
+                                        read.Action("GetList_StatusVisit", "Monitor");
+                                    }).ServerFiltering(true).Custom().Type("aspnetmvc-ajax");
+                                })
+
+                    )
+                    @*@Html.DropDownList("Prioridades", new SelectList(ViewBag.lstPrioritys, "Value", "Text"), "Rango de Horario ", new { @class = "form-control input-sm" })*@
+                </div>
+                <div class="col-md-2 ">
+                    @(Html.Kendo().MultiSelect()
+.Name("StatusOrderID")
+.DataValueField("Value")
+.DataTextField("Text")
+.Filter(FilterType.Contains)
+.Placeholder("Estatus ODS")
+                     .DataSource(source =>
+                     {
+                         source.Read(read =>
+                         {
+                             read.Action("GetList_StatusOrder", "Monitor");
+                         }).ServerFiltering(true).Custom().Type("aspnetmvc-ajax");
+                     })
+
+                    )
+                    @*@Html.DropDownList("StatusOrder", new SelectList(ViewBag.lstStatusOrder, "Value", "Text"), "Estatus ODS ", new { @class = "form-control input-sm" })*@
+                </div>
+                
+                <div class="col-md-4">
+                    @(Html.Kendo().MultiSelect()
+.Name("ServiceID")
+.DataValueField("Value")
+.DataTextField("Text")
+.Filter(FilterType.Contains)
+.Placeholder("Tipo de Servicio")
+                     .DataSource(source =>
+                     {
+                         source.Read(read =>
+                         {
+                             read.Action("GetList_ServiceType", "Monitor");
+                         }).ServerFiltering(true).Custom().Type("aspnetmvc-ajax");
+                     })
+
+                    )
+                    @*@Html.DropDownList("TServicio", new SelectList(ViewBag.lstGuaranty, "Value", "Text"), "Tipo de Servicio ", new { @class = "form-control input-sm" })*@
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-2">
+                    @(Html.Kendo().MultiSelect()
+.Name("QuotationID")
+.DataValueField("Value")
+.DataTextField("Text")
+.Filter(FilterType.Contains)
+.Placeholder("Tipo Cotizacion")
+.DataSource(source =>
+{
+source.Read(read =>
+{
+    read.Action("GetList_TypeQuotation", "Monitor");
+}).ServerFiltering(true).Custom().Type("aspnetmvc-ajax");
+})
+
+                    )
+                </div>
+                <div class="col-md-2 ">
+                    <input id="StartDate" name="StartDate" placeholder="Fecha inicial" style="width:100%" class="form-control input-sm" value="@DateTime.Today.ToString("dd/MM/yyyy")" />
+                </div>
+                <div class="col-md-2 ">
+                    <input id="EndDate" name="EndDate" placeholder="Fecha final" style="width:100%" class="form-control input-sm" value="@DateTime.Today.ToString("dd/MM/yyyy")" />
+                </div>
+                <div class="col-md-2 ">
+                    <input type="text" class="form-control input-sm" id="ODS" name="ODS" placeholder="N° ODS">
+                </div>
+                <div class="col-md-2 ">
+                    <input type="text" class="form-control input-sm" id="Employee" name="Employee" placeholder="Técnico">
+                </div>
+                <div class="col-md-2 ">
+                    <input type="button" id="btnSearch" value="Buscar" class="btn btn-default" />
+                    <input type="button" id="btnClean" value="Limpiar" class="btn btn-default" />
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+}
+
+
+<script>
+
+    $(document).ready(cargarFechas);
+    function cargarFechas() {
+        var d = new Date();
+
+        $("#StartDate").kendoDatePicker({
+            //value: new Date(d.getFullYear(), d.getMonth() - 1, d.getDate()),
+            //max: new Date(d.getFullYear(), d.getMonth(), d.getDate()),
+            max: new Date(d.setDate(d.getDate()+7)),
+
+            format: "dd/MM/yyyy"
+            
+        });
+
+        $("#EndDate").kendoDatePicker({
+            // value: new Date(d.getFullYear(), d.getMonth(), d.getDate()),
+            //max: new Date(d.getFullYear(), d.getMonth(), d.getDate()),
+            max: new Date(d.setDate(d.getDate())),
+            format: "dd/MM/yyyy"
+        });
+
+
+    }
+    //$("#btnSearch").click(function () {
+
+    //    firstLoad = true;
+    //    $("#grid").data('kendoGrid').dataSource.data([]);
+
+
+
+    //    if (Iagno > Hagno) {
+
+    //        bootbox.alert('La Fecha de Inicio debe ser menor al dia de hoy.');
+    //        return false;
+    //    }
+
+    //    if (Iagno >= Hagno && Imes > Hmes) {
+
+    //        bootbox.alert('La Fecha de Inicio debe ser menor al dia de hoy.');
+    //        return false;
+    //    }
+
+    //    if (Iagno >= Hagno && Imes >= Hmes && Idia > Hdia) {
+
+    //        bootbox.alert('La Fecha de Inicio  debe ser menor al dia de hoy.');
+    //        return false;
+    //    }
+
+
+    //    if (Fagno > Hagno) {
+
+    //        bootbox.alert('La Fecha de Fin debe ser menor al dia de hoy.');
+    //        return false;
+    //    }
+
+    //    if (Fagno >= Hagno && Fmes > Hmes) {
+
+    //        bootbox.alert('La Fecha de Fin debe ser menor al dia de hoy.');
+    //        return false;
+    //    }
+
+    //    if (Fagno >= Hagno && Fmes >= Hmes && Fdia > Hdia) {
+
+    //        bootbox.alert('La Fecha de Fin  debe ser menor al dia de hoy.');
+    //        return false;
+    //    }
+
+    //    if (inicio > fin) {
+    //        bootbox.alert('La Fecha de Inicio debe ser menor a la Fecha Fin.');
+    //        return false;
+    //    }
+
+    //    firstLoad = false;
+
+    //    filter = filterData();
+
+    //    var form = $('#frmRouteDetailsList');
+    //    $("#grid").data("kendoGrid").dataSource.read();
+
+    //    $('#collapseOne').collapse('hide');
+    //});
+</script>

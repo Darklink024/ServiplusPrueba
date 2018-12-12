@@ -1,0 +1,256 @@
+﻿
+@model net.paxialabs.mabe.serviplus.entities.ModelView.Security.ModelViewProfile
+@{
+    Layout = null;
+}
+
+@*@using (Html.BeginForm())
+{
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.ProfileID)
+
+    <br />
+    <div class="row">
+        <fieldset>
+            <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Profile)
+                    <div>
+                        @Html.EditorFor(model => model.Profile, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Profile, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Description)
+                    <div>
+                        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <center>
+                        <div>
+                            <input type="submit" id="btnGuardar" value="Guardar" class="btn btn-unauth" />
+                            <input type="button" id="btnCancelar" value="Cancelar" class="btn btn-danger" />
+                        </div>
+                    </center>
+                </div>
+            </div>
+</fieldset>
+    </div>
+
+}*@
+
+@using (Html.BeginForm("", "#", FormMethod.Post, new { id = "frmProfile", @class = "form-horizontal" }))
+{
+    @Html.HiddenFor(model => model.ProfileID)
+
+    <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
+        <br>
+        <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+                <input type="text" class="form-control input-sm" id="Profile" name="Profile" placeholder="Perfil">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+                <input type="text" class="form-control input-sm" id="Description" name="Description" placeholder="Descripción">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+                <center>
+                    <input type="submit" id="btnGuardar" value="Guardar" class="btn btn-unauth" />
+                    <input type="button" id="btnCancelar" value="Cancelar" class="btn btn-danger" />
+                </center>
+            </div>
+        </div>
+    </div>
+
+}
+
+@(Html.Kendo().Dialog()
+        .Name("dialogProfileDetail")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+        .Actions(actions =>
+        {
+            actions.Add().Text("<button class='btn btn-confirmar'>Aceptar</button>");
+        })
+        .Events(ev => ev.Close("onClose").Open("onOpen"))
+)
+
+
+<script>
+
+    $(document).ready(function () {
+        $('[class="btn btn-default"]').tooltip();
+
+        $('#frmProfile').bootstrapValidator({
+            message: 'Envio de formulario',
+            excluded: [':disabled'],
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                Profile: {
+                    container: 'tooltip',
+                    validators: {
+                        notEmpty: {
+                            message: 'Este campo es requerido.'
+                        },
+                    }
+                },
+                Description: {
+                    container: 'tooltip',
+                    validators: {
+                        notEmpty: {
+                            message: 'Este campo es requerido.'
+                        },
+                    }
+                }
+            }
+        })
+            .on('status.field.bv', function (e, data) {
+                var $form = $(e.target),
+                    validator = data.bv,
+                    $tabPane = data.element.parents('.tab-pane'),
+                    tabId = $tabPane.attr('id');
+
+                if (tabId) {
+                    var $icon = $('a[href="#' + tabId + '"][data-toggle="tab"]').parent().find('i');
+                    // Add custom class to tab containing the field
+                    if (data.status == validator.STATUS_INVALID) {
+                        $icon.removeClass(faIcon.valid).addClass(faIcon.invalid);
+                    } else if (data.status == validator.STATUS_VALID) {
+                        var isValidTab = validator.isValidContainer($tabPane);
+                        $icon.removeClass(faIcon.valid).addClass(isValidTab ? faIcon.valid : faIcon.invalid);
+                    }
+                }
+            }).on('success.form.bv', function (e, data) {
+                // Prevent form submission
+                e.preventDefault();
+
+                var online = navigator.onLine;
+                if (!online) {
+                    bootbox.alert('');
+                    return false;
+                }
+
+                var Profile = document.getElementById("Profile").value;
+                var Description = document.getElementById("Description").value;
+                var ProfileID = document.getElementById("ProfileID").value;
+                if (ProfileID == "" || ProfileID == null)
+                { ProfileID = 0 }
+                var model = { ProfileID: ProfileID, Profile: Profile, Description: Description }
+               
+                $.ajax({
+                    url: '../Security/saveProfile',
+                    type: "POST",
+                    cache: false,
+                    data: { modelo: JSON.stringify(model) },
+                    beforeSend: function (jqXHR, settings) { $("#divLoading").show(); },
+                    error: function (jqXHR, textStatus, errorThrown)
+                    {
+                        try {
+                            var json = $.parseJSON(jqXHR.responseText)
+                            if (json.serverError_Message == "Duplicate") {
+                                $("#divLoading").hide();
+                                showDialog('El Perfil ya se encuentra registrado.');
+                            }
+                        }
+                        catch (ex) {
+                        }
+                        //var json = $.parseJSON(jqXHR.responseText)
+                        //$("#divLoading").hide();
+                        //if (json.serverError_Message ==  "Duplicate") {
+                        //    showDialog('El Perfil ya se encuentra registrado.');
+
+                    },
+                    complete: function (jqXHR, textStatus) { ; },
+                    success: function (result) {
+                        $("#divLoading").hide();
+                        if (result == "Unauthorized") {
+                            showDialog('No cuenta con permisos suficientes.');
+                        } else {
+                            showDialog('Su solicitud se proceso con éxito.');
+                        }
+
+                        var grid = $("#grid").data("kendoGrid");
+                        grid.dataSource.read();
+                    }
+                });
+
+            });
+    });
+
+
+
+
+    //$("form").on("submit", function (event) {
+    //    event.preventDefault();
+
+    //    $.ajax({
+    //        url: '../Security/saveProfile',
+    //        type: "POST",
+    //        cache: false,
+    //        data: $(this).serialize(),
+    //        beforeSend: function (jqXHR, settings) { /*$("#divLoading").show();*/ },
+    //        error: function (jqXHR, textStatus, errorThrown) { /*$("#divLoading").hide();*/ },
+    //        complete: function (jqXHR, textStatus) { ; },
+    //        success: function (result) {
+
+    //            //$("#divLoading").hide();
+    //            //$("#divModal").modal('toggle');
+
+    //            if (result == "Unauthorized") {
+    //                showDialog('No cuenta con permisos suficientes.');
+    //            } else {
+    //                showDialog('Su solicitud se proceso con éxito.');
+    //            }
+    //            var grid = $("#grid").data("kendoGrid");
+    //            grid.dataSource.read();
+    //        }
+    //    });
+    //});
+
+    $("#btnCancelar").click(function () {
+        $("#frmProfile").validate().resetForm();
+        $("#frmProfile").find('.has-error').removeClass("has-error");
+        $("#frmProfile").find('.has-success').removeClass("has-success");
+        $('#frmProfile').find('.form-control-feedback').remove()
+        $("#ProfileID").val("0");
+        $("#Profile").val("");
+        $("#Description").val("");
+        var splitter = $("#splitter").data("kendoSplitter");
+        splitter.expand("#left-pane");
+        splitter.collapse("#right-pane");
+
+    });
+
+
+    function onClose() {
+
+    }
+
+    function onOpen() {
+
+    }
+
+    function showDialog(msg) {
+
+        var dialog = $('#dialogProfileDetail').data("kendoDialog");
+        dialog.content(msg);
+        dialog.open();
+    }
+
+</script>

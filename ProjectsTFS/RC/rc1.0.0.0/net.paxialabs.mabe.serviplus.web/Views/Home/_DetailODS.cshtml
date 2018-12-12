@@ -1,0 +1,53 @@
+﻿<table class="table table-responsive" id="table-ods">
+    <tr>
+        <td rowspan="2" class="order-id">ODS: @ViewBag.dataODS.OrderID</td>
+        <td><label class="main-data font-weight-bold">ID TÉCNICO: </label> @ViewBag.dataTecnico.EmployeeID</td>
+    </tr>
+    <tr>
+        <td><label class="main-data font-weight-bold">TÉCNICO: </label> @(ViewBag.dataTecnico.FirstName + " " + @ViewBag.dataTecnico.LastName)</td>
+    </tr>
+</table>
+
+@(Html.Kendo().TabStrip()
+    .Name("tabstrip")
+    .Animation(animation =>
+    {
+        animation.Enable(true);
+
+        animation.Open(config =>
+        {
+            config.Expand();
+
+            config.Fade(FadeDirection.In);
+
+            config.Duration(AnimationDuration.Fast);
+        });
+    })
+    .SelectedIndex(0)
+    .Items(tabstrip =>
+    {
+        tabstrip.Add().Text("Cliente")
+            .LoadContentFrom("_DetailODSCP", "Home", new { OrderID = ViewBag.dataODS.PK_OrderID });
+
+        tabstrip.Add().Text("Base Instalada")
+            .LoadContentFrom("_DetailODSIB", "Home", new { OrderID = ViewBag.dataODS.PK_OrderID });
+
+        tabstrip.Add().Text("Fallas / Refacciones")
+            .LoadContentFrom("_DetailODSFR", "Home", new { OrderID = ViewBag.dataODS.PK_OrderID });
+
+        tabstrip.Add().Text("Notas")
+            .LoadContentFrom("_DetailODSNotes", "Home", new { OrderID = ViewBag.dataODS.PK_OrderID });
+
+        tabstrip.Add().Text("Facturación / Pago")
+            .LoadContentFrom("_DetailODSIP", "Home", new { OrderID = ViewBag.dataODS.PK_OrderID });
+
+        tabstrip.Add().Text("Resumen")
+            .LoadContentFrom("_DetailODSResumen", "Home", new { OrderID = ViewBag.dataODS.PK_OrderID });
+
+        tabstrip.Add().Text("Log")
+         .LoadContentFrom("_DetailODSLog", "Home", new { OrderID = ViewBag.dataODS.PK_OrderID });
+
+        tabstrip.Add().Text("Kilometraje")
+        .LoadContentFrom("_DetailDistance", "Home", new { OrderID = ViewBag.dataODS.PK_OrderID });
+        })
+)

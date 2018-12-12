@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Monitor";
+}
+@Html.Partial("~/Views/Shared/_Monitor.cshtml")
+@Html.Partial("~/Views/Shared/_FilterQuotation.cshtml")
+@Html.Partial("_List")
+
+<script>
+    $(document).ready(function () {
+        var a = document.getElementById("li3");
+        a.style.color = "#FFF";
+        a.style.backgroundColor = "#16568A";
+
+        var a = document.getElementById("li3A");
+        a.style.color = "#FFF";
+        a.style.backgroundColor = "#16568A";
+        a.style.fontWeight = "bold";
+
+        $('#mnuPrincipal').hide();
+        $('#imgMnuShowHide').attr("src", "@Url.Content("~/Content/Images/Group_86.png")")
+
+    });
+</script>

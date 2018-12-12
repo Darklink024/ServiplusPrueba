@@ -1,0 +1,32 @@
+﻿<fieldset>    
+    <label class="main-data font-weight-bold en-bloque slight-margin-bottom blue-header">Base Instalada</label>
+    <div class="en-bloque">
+        <label class="main-data font-weight-bold">Modelo:</label>
+        <span class="en-linea"> @ViewBag.dataProduct.Model</span>
+    </div>
+
+    <div class="en-bloque">
+        <label class="main-data font-weight-bold">Producto:</label>
+        <span class="en-linea"> @ViewBag.dataProduct.ProductName</span>
+    </div>
+
+    <div class="en-bloque">
+        <label class="main-data font-weight-bold">Base Instalada:</label>
+        <span class="en-linea"> @ViewBag.dataIB.InstalledBaseID</span>
+    </div>
+    
+    <div class="en-bloque">
+        <label class="main-data font-weight-bold">No. de Serie:</label>
+        <span class="en-linea"> @ViewBag.dataIB.SerialNumber</span>
+    </div>
+    
+    <div class="en-bloque">
+        <label class="main-data font-weight-bold">Lugar de Compra:</label>
+        <span class="en-linea"> @ViewBag.dataShopPlace.ShopPlaceID - @ViewBag.dataShopPlace.ShopPlace1</span>
+    </div>
+
+    <div class="en-bloque">
+        <label class="main-data font-weight-bold">Fecha de Compra:</label>
+        <span class="en-linea"> @ViewBag.dataIB.ShopDate.ToString("dd-MM-yyyy")</span>
+    </div>
+</fieldset>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:p1="http://mabe.com/MW/CONFINAL/Mobile/ReprogramacionODS" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="SI_CONFINAL_ReprogramacionODS" targetNamespace="http://mabe.com/MW/CONFINAL/Mobile/ReprogramacionODS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_ReprogramacionODS" />
+  <wsdl:types>
+    <xsd:schema xmlns="http://mabe.com/MW/CONFINAL/Mobile/ReprogramacionODS" targetNamespace="http://mabe.com/MW/CONFINAL/Mobile/ReprogramacionODS" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="MT_ReprogramacionODS_Out" type="p1:DT_ReprogramacionODS_Send" />
+      <xsd:element name="MT_ReprogramacionODS_In" type="p1:DT_ReprogramacionODS_Receive" />
+      <xsd:complexType name="DT_ReprogramacionODS_Send">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">DT Sender Reprogramacion ODS</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">33252877382511e88d87000000873c82</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Items">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">c62b171d376611e890cc025041000001</xsd:appinfo>
+              <xsd:documentation>Items</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="SessionReference" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c62b1715376611e89e54025041000001</xsd:appinfo>
+                    <xsd:documentation>SessionReference</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="Satelite" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c62b1716376611e8b049025041000001</xsd:appinfo>
+                    <xsd:documentation>Satelite</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="Destino">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c62b171a376611e8c89e025041000001</xsd:appinfo>
+                    <xsd:documentation>Destino</xsd:documentation>
+                  </xsd:annotation>
+                  <xsd:complexType>
+                    <xsd:attribute name="Sistema" type="xsd:string" use="required">
+                      <xsd:annotation>
+                        <xsd:appinfo source="http://sap.com/xi/TextID">c62b1717376611e8c2f1025041000001</xsd:appinfo>
+                        <xsd:documentation>Sistema</xsd:documentation>
+                      </xsd:annotation>
+                    </xsd:attribute>
+                    <xsd:attribute name="Mandante" type="xsd:string" use="required">
+                      <xsd:annotation>
+                        <xsd:appinfo source="http://sap.com/xi/TextID">c62b1718376611e8966a025041000001</xsd:appinfo>
+                        <xsd:documentation>Mandante</xsd:documentation>
+                      </xsd:annotation>
+                    </xsd:attribute>
+                    <xsd:attribute name="Idioma" type="xsd:string" use="required">
+                      <xsd:annotation>
+                        <xsd:appinfo source="http://sap.com/xi/TextID">c62b1719376611e8b485025041000001</xsd:appinfo>
+                        <xsd:documentation>Idioma</xsd:documentation>
+                      </xsd:annotation>
+                    </xsd:attribute>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Item">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c62b171c376611e89b53025041000001</xsd:appinfo>
+                    <xsd:documentation>Item</xsd:documentation>
+                  </xsd:annotation>
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="ODS" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">c62b171b376611e88c77025041000001</xsd:appinfo>
+                          <xsd:documentation>ODS</xsd:documentation>
+                        </xsd:annotation>
+                      </xsd:element>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_ReprogramacionODS_Receive">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">DT Receiver Reprogramacion ODS Out</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">5614f26b382511e8c5a5000000873c82</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Items">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">b1c19b9c376711e88776025041000001</xsd:appinfo>
+              <xsd:documentation>Items</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" maxOccurs="unbounded" name="Return">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">b1c19b9b376711e8bcd1025041000001</xsd:appinfo>
+                    <xsd:documentation>Return</xsd:documentation>
+                  </xsd:annotation>
+                  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="TipoMensaje" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">b1c19b97376711e8b7a0025041000001</xsd:appinfo>
+                          <xsd:documentation>TipoMensaje</xsd:documentation>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element name="ClaseMensaje" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">b1c19b98376711e8c223025041000001</xsd:appinfo>
+                          <xsd:documentation>ClaseMensaje</xsd:documentation>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element name="Mensaje" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">b1c19b99376711e8c27e025041000001</xsd:appinfo>
+                          <xsd:documentation>Mensaje</xsd:documentation>
+                        </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element name="Descripcion" type="xsd:string">
+                        <xsd:annotation>
+                          <xsd:appinfo source="http://sap.com/xi/TextID">b1c19b9a376711e8b7d5025041000001</xsd:appinfo>
+                          <xsd:documentation>Descripcion</xsd:documentation>
+                        </xsd:annotation>
+                      </xsd:element>
+                    </xsd:sequence>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_ReprogramacionODS_Out">
+    <wsdl:documentation />
+    <wsdl:part name="MT_ReprogramacionODS_Out" element="p1:MT_ReprogramacionODS_Out" />
+  </wsdl:message>
+  <wsdl:message name="MT_ReprogramacionODS_In">
+    <wsdl:documentation />
+    <wsdl:part name="MT_ReprogramacionODS_In" element="p1:MT_ReprogramacionODS_In" />
+  </wsdl:message>
+  <wsdl:portType name="SI_CONFINAL_ReprogramacionODS">
+    <wsdl:documentation />
+    <wsdl:operation name="ReprogramacionODS">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_ReprogramacionODS" />
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_ReprogramacionODS_Out" />
+      <wsdl:output message="p1:MT_ReprogramacionODS_In" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SI_CONFINAL_ReprogramacionODSBinding" type="p1:SI_CONFINAL_ReprogramacionODS">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="ReprogramacionODS">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SI_CONFINAL_ReprogramacionODSService">
+    <wsdl:port name="HTTP_Port" binding="p1:SI_CONFINAL_ReprogramacionODSBinding">
+      <address location="http://srvmabetest05.mabenet.corpmabe.com:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_MABE_CONFINAL_QAS&amp;receiverParty=&amp;receiverService=&amp;interface=SI_CONFINAL_ReprogramacionODS&amp;interfaceNamespace=http%3A%2F%2Fmabe.com%2FMW%2FCONFINAL%2FMobile%2FReprogramacionODS" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+    <wsdl:port name="HTTPS_Port" binding="p1:SI_CONFINAL_ReprogramacionODSBinding">
+      <address location="https://srvmabetest05.mabenet.corpmabe.com:50001/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_MABE_CONFINAL_QAS&amp;receiverParty=&amp;receiverService=&amp;interface=SI_CONFINAL_ReprogramacionODS&amp;interfaceNamespace=http%3A%2F%2Fmabe.com%2FMW%2FCONFINAL%2FMobile%2FReprogramacionODS" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

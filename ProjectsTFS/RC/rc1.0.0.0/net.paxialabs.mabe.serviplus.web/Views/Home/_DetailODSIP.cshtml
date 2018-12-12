@@ -1,0 +1,66 @@
+﻿<label class="main-data font-weight-bold en-bloque contact slight-margin-bottom blue-header">Datos de Facturación</label>
+
+<div class="en-bloque">
+    <label class="main-data font-weight-bold">Nombre o Razón Social:</label>
+    <span class="en-linea">
+        @if (ViewBag.dataInvoicing.BusinessName != "")
+        {
+            @ViewBag.dataInvoicing.BusinessName
+        }
+        @if (ViewBag.dataInvoicing.BusinessName == "")
+        {
+            @(ViewBag.dataInvoicing.FirstName + " " + ViewBag.dataInvoicing.LastName)      
+        }
+    </span>
+</div>
+
+<div class="en-bloque">
+    <label class="main-data font-weight-bold">RFC:</label>
+    <span class="en-linea"> @ViewBag.dataInvoicing.RFC</span>
+</div>
+<div class="en-bloque">
+    <label class="main-data font-weight-bold">Email: </label>
+    <span class="en-linea"> @ViewBag.dataInvoicing.Email</span>
+</div>
+<label class="main-data font-weight-bold en-bloque gray-header">Domicilio Fiscal</label>
+
+<label>Calle:</label>
+<span class="street-right-spacing"> @ViewBag.dataInvoicing.StreetAddress</span>
+<label>No. Ext.:</label>
+<span class="double-right-spacing"> @ViewBag.dataInvoicing.NumExtAddress</span>
+<label>No. Int.:</label>
+<span> @ViewBag.dataInvoicing.NumIntAddress</span>
+<br />
+<label class="address">Colonia: </label>
+<span class="double-right-spacing">@ViewBag.dataInvoicing.CityAddress</span>
+<label>CP: </label>
+<span class="double-right-spacing">@ViewBag.dataInvoicing.CPAddress</span>
+<label>Delegación / Municipio: </label>
+<span class="double-right-spacing">@ViewBag.dataInvoicing.MunicipalityAddress</span>
+<br />
+<label>Estado: </label>
+<span>@ViewBag.dataInvoicing.StateAddress</span>
+
+<hr />
+
+<label class="main-data font-weight-bold slight-margin-top slight-margin-bottom blue-header" style="width: 100%;">Datos de Pago</label>
+
+<div class="en-bloque">
+    <label class="main-data font-weight-bold">Monto: </label>
+    <span class="en-linea">@ViewBag.dataPayment.MountPayment</span>
+</div>
+
+<div class="en-bloque">
+    <label class="main-data font-weight-bold">Fecha: </label>
+    <span class="en-linea">@ViewBag.dataPayment.DatePayment</span>
+</div>
+
+<div class="en-bloque">
+    <label class="main-data font-weight-bold">Tipo de Pago: </label>
+    <span class="en-linea">@ViewBag.dataPayment.TypePaymentID</span>
+</div>
+
+<div class="en-bloque">
+    <label class="main-data font-weight-bold">Referencia: </label>
+    <span class="en-linea">@ViewBag.dataPayment.AuthorizationPayment</span>
+</div>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CDE1309-A325-4ED0-9925-6E6C8D7CA4EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>net.paxialabs.mabe.serviplus.entities</RootNamespace>
+    <AssemblyName>net.paxialabs.mabe.serviplus.entities</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GemBox.Spreadsheet">
+      <HintPath>..\..\..\..\References\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Kendo.Mvc">
+      <HintPath>..\..\..\..\References\Kendo.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\..\..\..\References\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity\Interface\AndroidFCMPushNotificationStatus.cs" />
+    <Compile Include="Entity\Interface\BOM.cs" />
+    <Compile Include="Entity\Interface\Empleado.cs" />
+    <Compile Include="Entity\Interface\EntityGeoMaps.cs" />
+    <Compile Include="Entity\Interface\EntityGoogleMapsDistanceMatrixRequest.cs" />
+    <Compile Include="Entity\Interface\EntityGoogleMapsDistanceMatrixResponse.cs" />
+    <Compile Include="Entity\Interface\EntityREFACCIONES.cs" />
+    <Compile Include="Entity\Interface\Garantias1.cs" />
+    <Compile Include="Entity\Interface\Garantias2.cs" />
+    <Compile Include="Entity\Interface\GoogleTimeZone.cs" />
+    <Compile Include="Entity\Interface\LugComp.cs" />
+    <Compile Include="Entity\Interface\Material.cs" />
+    <Compile Include="Entity\Interface\RootInventory.cs" />
+    <Compile Include="Entity\Interface\SerieMod.cs" />
+    <Compile Include="Entity\Interface\ODS.cs" />
+    <Compile Include="Entity\Interface\ODSCLIENTE.cs" />
+    <Compile Include="Entity\Interface\ODSMODELO.cs" />
+    <Compile Include="Entity\Interface\ODSREFMAN.cs" />
+    <Compile Include="Entity\Interface\Precio.cs" />
+    <Compile Include="Entity\Interface\IDVal.cs" />
+    <Compile Include="Entity\Operation\EntityBlackList.cs" />
+    <Compile Include="Entity\Operation\EntityBuildOfMaterial.cs" />
+    <Compile Include="Entity\Operation\EntityCauseOrder.cs" />
+    <Compile Include="Entity\Operation\EntityCauseVisit.cs" />
+    <Compile Include="Entity\Operation\EntityClient.cs" />
+    <Compile Include="Entity\Operation\EntityCodeFailure.cs" />
+    <Compile Include="Entity\Operation\EntityCodeFailureByProduct.cs" />
+    <Compile Include="Entity\Operation\EntityConfiguration.cs" />
+    <Compile Include="Entity\Operation\EntityContract.cs" />
+    <Compile Include="Entity\Operation\EntityCountries.cs" />
+    <Compile Include="Entity\Operation\EntityEmployee.cs" />
+    <Compile Include="Entity\Operation\EntityGuaranty.cs" />
+    <Compile Include="Entity\Operation\EntityGuarantyType.cs" />
+    <Compile Include="Entity\Operation\EntityHistory.cs" />
+    <Compile Include="Entity\Operation\EntityInstalledBase.cs" />
+    <Compile Include="Entity\Operation\EntityInvoice.cs" />
+    <Compile Include="Entity\Operation\EntityLogCRM.cs" />
+    <Compile Include="Entity\Operation\EntityModelSerialNumber.cs" />
+    <Compile Include="Entity\Operation\EntityModuleService.cs" />
+    <Compile Include="Entity\Operation\EntityMonitorOrder.cs" />
+    <Compile Include="Entity\Operation\EntityNotification.cs" />
+    <Compile Include="Entity\Operation\EntityOrder.cs" />
+    <Compile Include="Entity\Operation\EntityOrderEvidence.cs" />
+    <Compile Include="Entity\Operation\EntityPayment.cs" />
+    <Compile Include="Entity\Operation\EntityPolicy.cs" />
+    <Compile Include="Entity\Operation\EntityPrice.cs" />
+    <Compile Include="Entity\Operation\EntityPriority.cs" />
+    <Compile Include="Entity\Operation\EntityProduct.cs" />
+    <Compile Include="Entity\Operation\EntityQuotation.cs" />
+    <Compile Include="Entity\Operation\EntityQuotationDetail.cs" />
+    <Compile Include="Entity\Operation\EntityReceivers.cs" />
+    <Compile Include="Entity\Operation\EntityRefSell.cs" />
+    <Compile Include="Entity\Operation\EntityRefsellDetail.cs" />
+    <Compile Include="Entity\Operation\EntitySchedule.cs" />
+    <Compile Include="Entity\Operation\EntityShopPlace.cs" />
+    <Compile Include="Entity\Operation\EntitySparePart.cs" />
+    <Compile Include="Entity\Operation\EntityStates.cs" />
+    <Compile Include="Entity\Operation\EntityStatusOrder.cs" />
+    <Compile Include="Entity\Operation\EntityStatusScheme.cs" />
+    <Compile Include="Entity\Operation\EntityStatusVisit.cs" />
+    <Compile Include="Entity\Operation\EntityTypeQuotation.cs" />
+    <Compile Include="Entity\Operation\EntityValidationGuarantyBOM.cs" />
+    <Compile Include="Entity\Operation\EntityValidationGuarantyProduct.cs" />
+    <Compile Include="Entity\Operation\EntityValidationSerialNumber.cs" />
+    <Compile Include="Entity\Operation\EntityVisit.cs" />
+    <Compile Include="Entity\Operation\EntityWorkforce.cs" />
+    <Compile Include="Entity\SAP\EntitySAPADRReserveSP.cs" />
+    <Compile Include="Entity\SAP\EntitySAPOrdenVentaRequest.cs" />
+    <Compile Include="Entity\SAP\EntitySAPOrdenVentaResult.cs" />
+    <Compile Include="Entity\SAP\EntitySAPReprogramacionODSResult.cs" />
+    <Compile Include="Entity\SAP\EntitySAPResumen.cs" />
+    <Compile Include="Entity\SAP\RootBOM.cs" />
+    <Compile Include="Entity\SAP\RootCifrasControl.cs" />
+    <Compile Include="Entity\SAP\RootCliente.cs" />
+    <Compile Include="Entity\SAP\RootFalla.cs" />
+    <Compile Include="Entity\SAP\RootInventory.cs" />
+    <Compile Include="Entity\SAP\RootLugarCompra.cs" />
+    <Compile Include="Entity\SAP\RootODS.cs" />
+    <Compile Include="Entity\SAP\RootPrecio.cs" />
+    <Compile Include="Entity\SAP\RootPTRef.cs" />
+    <Compile Include="Entity\SAP\RootRefMan.cs" />
+    <Compile Include="Entity\Security\EntityAudit.cs" />
+    <Compile Include="Entity\Security\EntityDevicePhone.cs" />
+    <Compile Include="Entity\Security\EntityDevicePhoneUser.cs" />
+    <Compile Include="Entity\Security\EntityLogMobile.cs" />
+    <Compile Include="Entity\Security\EntityMobileSync.cs" />
+    <Compile Include="Entity\Security\EntityModule.cs" />
+    <Compile Include="Entity\Security\EntityPermission.cs" />
+    <Compile Include="Entity\Security\EntityProfile.cs" />
+    <Compile Include="Entity\Security\EntitySecurity.cs" />
+    <Compile Include="Entity\Service\Result.cs" />
+    <Compile Include="ModelView\Interface\ModelViewApartadoADR.cs" />
+    <Compile Include="ModelView\Interface\ModelViewApartadoModulo.cs" />
+    <Compile Include="ModelView\Operation\ModelViewBilling.cs" />
+    <Compile Include="ModelView\Operation\ModelViewCauseOrder.cs" />
+    <Compile Include="ModelView\Operation\ModelViewCauseVisit.cs" />
+    <Compile Include="ModelView\Operation\ModelViewConfiguration.cs" />
+    <Compile Include="ModelView\Operation\ModelViewContrat.cs" />
+    <Compile Include="ModelView\Operation\ModelViewCountries.cs" />
+    <Compile Include="ModelView\Operation\ModelViewEvidence.cs" />
+    <Compile Include="ModelView\Operation\ModelViewFailures.cs" />
+    <Compile Include="ModelView\Operation\ModelViewFolios.cs" />
+    <Compile Include="ModelView\Operation\ModelViewGoogleMapsDistanceMatrixRequest.cs" />
+    <Compile Include="ModelView\Operation\ModelViewGuarantyBOM.cs" />
+    <Compile Include="ModelView\Operation\ModelViewGuarantyProduct.cs" />
+    <Compile Include="ModelView\Operation\ModelViewGuarantys.cs" />
+    <Compile Include="ModelView\Operation\ModelViewInventory.cs" />
+    <Compile Include="ModelView\Operation\ModelViewInvoicing.cs" />
+    <Compile Include="ModelView\Operation\ModelViewListODS.cs" />
+    <Compile Include="ModelView\Operation\ModelViewLoadODSResume.cs" />
+    <Compile Include="ModelView\Operation\ModelViewMonitorOrder.cs" />
+    <Compile Include="ModelView\Operation\ModelViewNotification.cs" />
+    <Compile Include="ModelView\Operation\ModelViewNotificationUpdate.cs" />
+    <Compile Include="ModelView\Operation\ModelViewODS.cs" />
+    <Compile Include="ModelView\Operation\ModelViewODSMovil.cs" />
+    <Compile Include="ModelView\Operation\ModelViewOrderEvidence.cs" />
+    <Compile Include="ModelView\Operation\ModelViewOrderEvidenceUpload.cs" />
+    <Compile Include="ModelView\Operation\ModelViewPayment.cs" />
+    <Compile Include="ModelView\Operation\ModelViewPermission.cs" />
+    <Compile Include="ModelView\Operation\ModelViewPolicyRefMan.cs" />
+    <Compile Include="ModelView\Operation\ModelViewPreODS.cs" />
+    <Compile Include="ModelView\Operation\ModelViewPrices.cs" />
+    <Compile Include="ModelView\Operation\ModelViewPriority.cs" />
+    <Compile Include="ModelView\Operation\ModelViewProducts.cs" />
+    <Compile Include="ModelView\Operation\ModelViewQuotation.cs" />
+    <Compile Include="ModelView\Operation\ModelViewReceiptRef.cs" />
+    <Compile Include="ModelView\Operation\ModelViewReceivers.cs" />
+    <Compile Include="ModelView\Operation\ModelViewSerialNumber.cs" />
+    <Compile Include="ModelView\Operation\ModelViewShopPlace.cs" />
+    <Compile Include="ModelView\Operation\ModelViewSpareParts.cs" />
+    <Compile Include="ModelView\Operation\ModelViewSparePartsODS.cs" />
+    <Compile Include="ModelView\Operation\ModelViewStates.cs" />
+    <Compile Include="ModelView\Operation\ModelViewUpdateStatusOrder.cs" />
+    <Compile Include="ModelView\Operation\ModelViewUserNotification.cs" />
+    <Compile Include="ModelView\Operation\ModelViewWorkforcePrices.cs" />
+    <Compile Include="ModelView\Security\ModelViewAudit.cs" />
+    <Compile Include="ModelView\Security\ModelViewChangePassword.cs" />
+    <Compile Include="ModelView\Security\ModelViewDevicePhone.cs" />
+    <Compile Include="ModelView\Security\ModelViewDevicePhoneUser.cs" />
+    <Compile Include="ModelView\Security\ModelViewLog.cs" />
+    <Compile Include="ModelView\Security\ModelViewLogin.cs" />
+    <Compile Include="ModelView\Security\ModelViewModule.cs" />
+    <Compile Include="ModelView\Security\ModelViewPermission.cs" />
+    <Compile Include="ModelView\Security\ModelViewProfile.cs" />
+    <Compile Include="ModelView\Security\ModelViewRecovery.cs" />
+    <Compile Include="ModelView\Security\ModelViewResultREST.cs" />
+    <Compile Include="ModelView\Users\ModelViewUser.cs" />
+    <Compile Include="ModelView\Users\ModelViewUserFCM.cs" />
+    <Compile Include="ModelView\Users\ModelViewUserG.cs" />
+    <Compile Include="ModelView\Users\ModelViewUserList.cs" />
+    <Compile Include="ModelView\Users\ModelViewUsers.cs" />
+    <Compile Include="ModelView\Users\ModelViewUserSecuence.cs" />
+    <Compile Include="ModelView\Users\ModelViewUserVisits.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entity\Security\EntityUser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\net.paxialabs.mabe.serviplus.resource\net.paxialabs.mabe.serviplus.resource.csproj">
+      <Project>{4748B1E2-60CE-4F67-9A64-228D9F0B3C9F}</Project>
+      <Name>net.paxialabs.mabe.serviplus.resource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\DependencyValidation1\DependencyValidation1.layerdiagram">
+      <Link>DependencyValidation1.layerdiagram</Link>
+      <Visible>False</Visible>
+    </AdditionalFiles>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

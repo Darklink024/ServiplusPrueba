@@ -1,0 +1,1053 @@
+﻿
+<style>
+    .customer-photo {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-size: 20px 20px;
+        background-position: center center;
+        vertical-align: middle;
+        line-height: 32px;
+        box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+        margin-left: 5px;
+    }
+</style>
+<script>
+    var firstLoadMap = true;
+    function Note(e) {
+
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        if (dataItem.Notes != "") {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content(dataItem.Notes);
+            dialog.open();
+        }
+        else {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Sin notas.');
+            dialog.open();
+        }
+    }
+
+    function Evidence(e) {
+
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        if (dataItem.Evidence.length > 0) {
+            $('#image1').attr('src', '');
+            $('#image2').attr('src', '');
+            $('#image3').attr('src', '');
+            if (dataItem.Evidence.length == 1) {
+                var img0 = dataItem.Evidence[0].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                $('#Evi2').removeClass('item').addClass('hide');
+                $('#Evi3').removeClass('item').addClass('hide');
+                document.getElementById("image1").src = img0;
+            }
+            if (dataItem.Evidence.length == 2) {
+                var img0 = dataItem.Evidence[0].URLEvidence;
+                var img1 = dataItem.Evidence[1].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item hide");
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+            }
+            if (dataItem.Evidence.length == 3) {
+                var img0 = dataItem.Evidence[0].URLEvidence;
+                var img1 = dataItem.Evidence[1].URLEvidence;
+                var img2 = dataItem.Evidence[2].URLEvidence;
+
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item");
+
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+                document.getElementById("image3").src = img2;
+            }
+
+            var x = document.getElementById('myCarousel');
+            x.style.display = 'block';
+            var dialogo = $('#dialogDetail').data("kendoDialog");
+            dialogo.content(x);
+            dialogo.open();
+        }
+        else {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Sin evidencia.');
+            dialog.open();
+        }
+    }
+
+
+    function loadColors(param) {
+
+        var color = "";
+        switch (param) {
+
+            case 1:
+                return "<center><div class='customer-photo' style='background-color: black;'></div></center>";
+                break;
+            case 2:
+                return "<center><div class='customer-photo' style='background-color: blue;'></div></center>";
+                break;
+            case 3:
+                return "<center><div class='customer-photo' style='background-color: yellow;'></div></center>";
+                break;
+            case 4:
+                return "<center><div class='customer-photo' style='background-color: green;'></div></center>";
+                break;
+            case 5:
+                return "<center><div class='customer-photo' style='background-color: red;'></div></center>";
+                break;
+        }
+    }
+
+    function showMap(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        if (dataItem.StatusVisitID == 1) {
+            var dialogSalida = $('#dialogSalida').data("kendoDialog");
+            dialogSalida.content('No se ha recibido la geolocalización.');
+            dialogSalida.open();
+        }
+
+        if (dataItem.StatusVisitID == 2) {
+            $.ajax({
+                url: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBjLwraMaWF08CW8BVqCW2ApLSaPM8OfMo",
+                dataType: "script",
+                cache: false,
+                success: function (result) {
+                    if (!firstLoadMap) {
+
+                        var dialogEntrada = $('#dialogEntrada').data("kendoDialog");
+                        dialogEntrada.content('');
+                        dialogEntrada.open();
+                    }
+                    var myLatLng = { lat: parseFloat(dataItem.LatitudeEndVisit), lng: parseFloat(dataItem.LogitudeEndVisit) };
+                    var mapOptions = {
+                        center: new google.maps.LatLng(myLatLng),
+                        zoom: 15,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    }
+
+                    var map = new google.maps.Map(document.getElementById("dialogEntrada"), mapOptions);
+
+                    var contentEntrada = '<div id="iw-container">' + '<div class="iw-title2">' + 'Detalles' + '</div>'
+                        + '<div class="iw-content">' + '<b>Inicio: </b>' + dataItem.StartVisitODS + '<br>'
+                        + '<b>Fin: </b>' + dataItem.EndVisitODS + '<br>'
+                        + '<b>N° de ODS: </b>' + dataItem.OrderID + '<br>'
+                        + '<b>Técnico: </b>' + dataItem.EmployeeName + '<br>'
+                        + '<b>Estatus ODS: </b>' + dataItem.StatusODS + '<br>'
+                        + '</div>' + '<div class="iw-bottom-gradient"></div>' + '</div>';
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentEntrada
+                    });
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Visita Pendiente',
+                        visible: true
+                    });
+                    var Proceso = '/Content/Images/Pendiente.png';
+                    marker.setIcon(Proceso);
+                    marker.addListener('mouseover', function () {
+                        infowindow.open(map, marker);
+                    });
+
+                }
+            });
+            var dialogEntrada = $('#dialogEntrada').data("kendoDialog");
+            dialogEntrada.open();
+        }
+
+        if (dataItem.StatusVisitID == 3) {
+
+            $.ajax({
+                url: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBjLwraMaWF08CW8BVqCW2ApLSaPM8OfMo",
+                dataType: "script",
+                cache: false,
+                success: function (result) {
+                    var marker;
+                    if (!firstLoadMap) {
+                        var dialogEntrada1 = $('#dialogEntrada').data("kendoDialog");
+                        dialogEntrada1.content('');
+                    }
+
+                    var myLatLng = { lat: parseFloat(dataItem.LatitudeStartVisit), lng: parseFloat(dataItem.LogitudeStartVisit) };
+                    var mapOptions = {
+                        center: new google.maps.LatLng(myLatLng),
+                        zoom: 15,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    }
+                    var map = new google.maps.Map(document.getElementById("dialogEntrada"), mapOptions);
+                    var contentEntrada = '<div id="iw-container">' + '<div class="iw-title2">' + 'Detalles' + '</div>'
+                        + '<div class="iw-content">' + '<b>Inicio: </b>' + dataItem.StartVisitODS + '<br>'
+                        + '<b>N° de ODS: </b>' + dataItem.OrderID + '<br>'
+                        + '<b>Técnico: </b>' + dataItem.EmployeeName + '<br>'
+                        + '<b>Estatus ODS: </b>' + dataItem.StatusODS + '<br>'
+                        + '</div>' + '<div class="iw-bottom-gradient"></div>' + '</div>';
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentEntrada
+                    });
+
+                    marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Visita En Proceso',
+                        visible: true
+                    });
+                    var Proceso = '/Content/Images/Proceso.png';
+                    marker.setIcon(Proceso);
+                    marker.addListener('mouseover', function () {
+                        infowindow.open(map, marker);
+
+                    });
+
+                }
+            });
+
+            var dialogEntrada = $('#dialogEntrada').data("kendoDialog");
+            dialogEntrada.open();
+
+            firstLoadMap = false;
+        }
+
+        if (dataItem.StatusVisitID == 4) {
+            $.ajax({
+                url: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBjLwraMaWF08CW8BVqCW2ApLSaPM8OfMo",
+                dataType: "script",
+                cache: false,
+                success: function (result) {
+                    if (!firstLoadMap) {
+
+                        var dialogEntrada = $('#dialogEntrada').data("kendoDialog");
+                        dialogEntrada.content('');
+                        dialogEntrada.open();
+                    }
+                    var myLatLng = { lat: parseFloat(dataItem.LatitudeEndVisit), lng: parseFloat(dataItem.LogitudeEndVisit) };
+                    var mapOptions = {
+                        center: new google.maps.LatLng(myLatLng),
+                        zoom: 15,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    }
+
+                    var map = new google.maps.Map(document.getElementById("dialogEntrada"), mapOptions);
+
+                    var contentEntrada = '<div id="iw-container">' + '<div class="iw-title2">' + 'Detalles' + '</div>'
+                        + '<div class="iw-content">' + '<b>Inicio: </b>' + dataItem.StartVisitODS + '<br>'
+                        + '<b>Fin: </b>' + dataItem.EndVisitODS + '<br>'
+                        + '<b>N° de ODS: </b>' + dataItem.OrderID + '<br>'
+                        + '<b>Técnico: </b>' + dataItem.EmployeeName + '<br>'
+                        + '<b>Estatus ODS: </b>' + dataItem.StatusODS + '<br>'
+                        + '</div>' + '<div class="iw-bottom-gradient"></div>' + '</div>';
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentEntrada
+                    });
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Visita Finalizada',
+                        visible: true
+                    });
+                    var Proceso = '/Content/Images/Terminada.png';
+                    marker.setIcon(Proceso);
+                    marker.addListener('mouseover', function () {
+                        infowindow.open(map, marker);
+                    });
+                }
+            });
+            var dialogEntrada = $('#dialogEntrada').data("kendoDialog");
+            dialogEntrada.open();
+        }
+
+        if (dataItem.StatusVisitID == 5) {
+            $.ajax({
+                url: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBjLwraMaWF08CW8BVqCW2ApLSaPM8OfMo",
+                dataType: "script",
+                cache: false,
+                success: function (result) {
+                    if (!firstLoadMap) {
+
+                        var dialogEntrada = $('#dialogEntrada').data("kendoDialog");
+                        dialogEntrada.content('');
+                        dialogEntrada.open();
+                    }
+                    var myLatLng = { lat: parseFloat(dataItem.LatitudeEndVisit), lng: parseFloat(dataItem.LogitudeEndVisit) };
+                    var mapOptions = {
+                        center: new google.maps.LatLng(myLatLng),
+                        zoom: 15,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    }
+
+                    var map = new google.maps.Map(document.getElementById("dialogEntrada"), mapOptions);
+
+                    var contentEntrada = '<div id="iw-container">' + '<div class="iw-title2">' + 'Detalles' + '</div>'
+                        + '<div class="iw-content">' + '<b>Inicio: </b>' + dataItem.StartVisitODS + '<br>'
+                        + '<b>Fin: </b>' + dataItem.EndVisitODS + '<br>'
+                        + '<b>N° de ODS: </b>' + dataItem.OrderID + '<br>'
+                        + '<b>Técnico: </b>' + dataItem.EmployeeName + '<br>'
+                        + '<b>Estatus ODS: </b>' + dataItem.StatusODS + '<br>'
+                        + '</div>' + '<div class="iw-bottom-gradient"></div>' + '</div>';
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentEntrada
+                    });
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Visita Cancelada',
+                        visible: true
+                    });
+                    var Proceso = '/Content/Images/Cancelada.png';
+                    marker.setIcon(Proceso);
+                    marker.addListener('mouseover', function () {
+                        infowindow.open(map, marker);
+                    });
+
+                }
+            });
+            var dialogEntrada = $('#dialogEntrada').data("kendoDialog");
+            dialogEntrada.open();
+        }
+
+    }
+
+
+
+
+    function showMapGeo(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        var result;
+        DatosEmpleado(dataItem.OrderID, function (val) {
+            result = val;
+            var marcadores = [];
+            var ordenes = "";
+            for (var i = 0; i < result.length; i++) {
+                marcadores.push([]);
+                if (result[i].LatitudeAddress != 0 && result[i].LogitudeAddress != 0) {
+                    marcadores[i].push(result[i].StatusOrderID); //[0]
+                    marcadores[i].push(result[i].LatitudeAddress);//[1]
+                    marcadores[i].push(result[i].LogitudeAddress);//[2]
+                    marcadores[i].push(result[i].LatitudeStartVisit);//[3]
+                    marcadores[i].push(result[i].LogitudeStartVisit);//[4]
+                    marcadores[i].push(result[i].LatitudeEndVisit);//[5]
+                    marcadores[i].push(result[i].LogitudeEndVisit);//[6]
+                    marcadores[i].push(result[i].Status);//[7]
+                    marcadores[i].push(result[i].OrderID);//[8]
+                    marcadores[i].push(result[i].StarTime);//[9]
+                    marcadores[i].push(result[i].EndTime);//[10]
+                    marcadores[i].push(result[i].Secuence);//[11]
+                    marcadores[i].push(result[i].Rango);//[12]
+                }
+                else {
+                    ordenes += result[i].Secuence + '.- ' + result[i].OrderID + '<br>';
+                }
+
+            }
+
+
+            var a = 0;
+            for (var i = 0; i < marcadores.length; i++) {
+                if (marcadores[i].length == 0) {
+                    delete marcadores[i]
+                    //marcadores.splice(i, 1)
+                    a++;
+                }
+            }
+            marcadores = marcadores.filter(function () { return true; });
+
+            $.ajax({
+                url: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBjLwraMaWF08CW8BVqCW2ApLSaPM8OfMo",
+                dataType: "script",
+                cache: false,
+                success: function (result) {
+                    var bounds = new google.maps.LatLngBounds();
+                    var map = new google.maps.Map(document.getElementById('dialogEntrada'), {
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    });
+                    var infowindow = new google.maps.InfoWindow();
+                    var marker, i;
+                    var Visita = '/Content/Images/Visita.png';
+                    var Pendiente = '/Content/Images/Pendiente.png';
+                    var Proceso = '/Content/Images/Proceso.png';
+                    var Terminada = '/Content/Images/Terminada.png';
+                    var Cancelada = '/Content/Images/Cancelada.png';
+
+                    for (i = 0; i < marcadores.length; i++) {
+                        if (marcadores[i][0] == 1) {
+                            var content1 = '<div id="iw-container">' + '<div class="iw-title2">' + 'Detalles' + '</div>'
+                                + '<div class="iw-content">'
+                                + '<b>N° de ODS: </b>' + marcadores[i][8] + '<br>'
+                                + '<b>Técnico: </b>' + dataItem.EmployeeName + '<br>'
+                                + '<b>Estatus ODS: </b>' + marcadores[i][7] + '<br>'
+                                + '<b>Hora Estimada de Llegada: </b>' + marcadores[i][12] + '<br>'
+                                + '</div>' + '<div class="iw-bottom-gradient"></div>' + '</div>';
+                            var pos = new google.maps.LatLng(marcadores[i][1], marcadores[i][2]);
+                            marker = createMarker(pos, map, content1, Visita, marcadores[i][11]);
+                        }
+                        if (marcadores[i][0] == 2) {
+                            var content2 = '<div id="iw-container">' + '<div class="iw-title2">' + 'Detalles' + '</div>'
+                                + '<div class="iw-content">' + '<b>Inicio: </b>' + marcadores[i][9] + '<br>'
+                                + '<b>Fin: </b>' + marcadores[i][10] + '<br>'
+                                + '<b>N° de ODS: </b>' + marcadores[i][8] + '<br>'
+                                + '<b>Técnico: </b>' + dataItem.EmployeeName + '<br>'
+                                + '<b>Estatus ODS: </b>' + marcadores[i][7] + '<br>'
+                                + '</div>' + '<div class="iw-bottom-gradient"></div>' + '</div>';
+                            var pos = new google.maps.LatLng(marcadores[i][5], marcadores[i][6]);
+                            marker = createMarker(pos, map, content2, Pendiente, marcadores[i][11]);
+                        }
+                        if (marcadores[i][0] == 3) {
+                            var content3 = '<div id="iw-container">' + '<div class="iw-title2">' + 'Detalles' + '</div>'
+                                + '<div class="iw-content">' + '<b>Inicio: </b>' + marcadores[i][9] + '<br>'
+                                + '<b>N° de ODS: </b>' + marcadores[i][8] + '<br>'
+                                + '<b>Técnico: </b>' + dataItem.EmployeeName + '<br>'
+                                + '<b>Estatus ODS: </b>' + marcadores[i][7] + '<br>'
+                                + '</div>' + '<div class="iw-bottom-gradient"></div>' + '</div>';
+                            var pos = new google.maps.LatLng(marcadores[i][3], marcadores[i][4]);
+                            marker = createMarker(pos, map, content3, Proceso, marcadores[i][11]);
+                        }
+                        if (marcadores[i][0] == 4) {
+                            var content4 = '<div id="iw-container">' + '<div class="iw-title2">' + 'Detalles' + '</div>'
+                                + '<div class="iw-content">' + '<b>Inicio: </b>' + marcadores[i][9] + '<br>'
+                                + '<b>Fin: </b>' + marcadores[i][10] + '<br>'
+                                + '<b>N° de ODS: </b>' + marcadores[i][8] + '<br>'
+                                + '<b>Técnico: </b>' + dataItem.EmployeeName + '<br>'
+                                + '<b>Estatus ODS: </b>' + marcadores[i][7] + '<br>'
+                                + '</div>' + '<div class="iw-bottom-gradient"></div>' + '</div>';
+                            var pos = new google.maps.LatLng(marcadores[i][5], marcadores[i][6]);
+                            marker = createMarker(pos, map, content4, Terminada, marcadores[i][11]);
+                        }
+                        if (marcadores[i][0] == 5) {
+                            var content5 = '<div id="iw-container">' + '<div class="iw-title2">' + 'Detalles' + '</div>'
+                                + '<div class="iw-content">'
+                                + '<b>N° de ODS: </b>' + marcadores[i][8] + '<br>'
+                                + '<b>Técnico: </b>' + dataItem.EmployeeName + '<br>'
+                                + '<b>Estatus ODS: </b>' + marcadores[i][7] + '<br>'
+                                + '</div>' + '<div class="iw-bottom-gradient"></div>' + '</div>';
+                            var pos = new google.maps.LatLng(marcadores[i][5], marcadores[i][6]);
+                            marker = createMarker(pos, map, content5, Cancelada, marcadores[i][11]);
+                        }
+                        bounds.extend(marker.position);
+                    };
+                    if (ordenes != "") {
+                        var menuDiv = document.createElement('div');
+                        menuDiv.style.cssText =
+                            'margin: 5px 5px; border-radius: 8px; height: 150px; width: 150px;' +
+                            'background-color: white; font-size: 11px; font-family: Roboto;' +
+                            'text-align: center; color: grey;line-height: 20px;';
+                        var titleDiv = document.createElement('div');
+                        titleDiv.style.cssText =
+                            'width: 100%; background-color: rgb(22, 86, 138); color: white; font-size: 15px;' +
+                            'line-height: 30px;margin-bottom: 2px';
+                        titleDiv.innerText = 'ODS sin Ubicación';
+                        var pieceTitleDiv = document.createElement('div');
+                        pieceTitleDiv.innerHTML = ordenes;
+                        menuDiv.appendChild(titleDiv);
+                        menuDiv.appendChild(pieceTitleDiv);
+                        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(menuDiv);
+                    }
+                    map.fitBounds(bounds);
+                }
+            });
+
+            var dialogEntrada = $('#dialogEntrada').data("kendoDialog");
+            dialogEntrada.open();
+
+
+        });
+    }
+
+    function createMarker(pos, map, contenido, icono, posicion) {
+        var markerIcon = {
+            url: icono,
+            scaledSize: new google.maps.Size(40, 40),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(32, 40),
+            labelOrigin: new google.maps.Point(20, 16)
+        };
+
+        var marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            icon: markerIcon,
+            label: {
+                text: String(posicion),
+                color: "#000000",
+                fontSize: "12px",
+                fontWeight: "bold",
+            }
+        });
+        //marker.setIcon(icono);
+        google.maps.event.addListener(marker, 'mouseover', function () {
+            var infowindow = new google.maps.InfoWindow({
+                content: contenido
+            });
+            infowindow.open(map, marker);
+
+        });
+        return marker;
+    }
+
+    function DatosEmpleado(OrderID, callback) {
+        var dialog;
+        $.ajax({
+            url: '../Monitor/GetList_Address',
+            type: "GET",
+            cache: false,
+            data: { OrderID: OrderID },
+            beforeSend: function () { $("#divLoading").show(); },
+            error: function (jqXHR, textStatus, errorThrown) {
+                $("#divLoading").hide();
+            },
+            complete: function (jqXHR, textStatus) { ; },
+            // async: false,
+            success: function (result) {
+                $("#divLoading").hide();
+
+                //dialog = result;
+                callback(result);
+            }
+        });
+
+        //return callback(dialog);
+    }
+
+</script>
+
+
+<script>
+    var firstLoad = true;
+
+    function gridDataBound(e) {
+        var grid = e.sender;
+        if (grid.dataSource.total() == 0) {
+            if (!firstLoad) {
+                var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+                $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                dialog.content('No se encontraron datos para mostrar.');
+                dialog.open();
+            }
+            e.sender.pager.options.messages.empty = 'No se encontraron datos para mostrar.';
+        }
+    }
+
+    function error_handler(e) {
+        // alert('No cuenta con permisos suficientes.');
+    }
+
+    function filterData() {
+        try {
+
+            var ModuleID = $("#ModuleID").data("kendoMultiSelect").value().toString();
+            var PriorityID = $("#PriorityID").data("kendoMultiSelect").value().toString();
+            var StatusOrderID = $("#StatusOrderID").data("kendoMultiSelect").value().toString();
+            var StatusVisitID = $("#StatusVisitID").data("kendoMultiSelect").value().toString();
+            var ServiceID = $("#ServiceID").data("kendoMultiSelect").value().toString();
+            var OrderID = document.getElementById("ODS").value;
+            var Employee = document.getElementById("Employee").value;
+
+
+        }
+        catch (ex) {
+            var ModuleID = "";
+            var PriorityID = "";
+            var StatusOrderID = "";
+            var StatusVisitID = "";
+            var ServiceID = "";
+            var OrderID = "";
+            var Employee = "";
+        }
+
+        return {
+            ModuleID: ModuleID,
+            PriorityID: PriorityID,
+            StatusOrderID: StatusOrderID,
+            StatusVisitID: StatusVisitID,
+            ServiceID: ServiceID,
+            OrderID: OrderID,
+            Employee: Employee,
+            StartDate: $('#StartDate').val(),
+            EndDate: $('#EndDate').val(),
+        }
+    }
+
+    var filter = {};
+
+    $("#btnSearch").click(function () {
+
+        firstLoad = true;
+        $("#grid").data('kendoGrid').dataSource.data([]);
+
+        firstLoad = false;
+
+
+        if ($("#EndDate").val() == "" && $("#StartDate").val() == "") {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Es necesario seleccionar fecha inicial y fecha final.');
+            dialog.open();
+            return false;
+        }
+
+        if ($("#EndDate").val() == "" && $("#StartDate").val() != "") {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Es necesario seleccionar una fecha final.');
+            dialog.open();
+            return false;
+        }
+
+        if ($("#StartDate").val() == "" && $("#EndDate").val() != "") {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Es necesario seleccionar una fecha inicial.');
+            dialog.open();
+            return false;
+        }
+
+
+        filter = filterData();
+        $('#btnClean').attr("disabled", false);
+        var form = $('#frmFilter');
+        $("#grid").data("kendoGrid").dataSource.read();
+
+    });
+
+
+
+
+    $("#btnClean").click(function () {
+
+        $("#ModuleID").data("kendoMultiSelect").value([]);
+        $("#PriorityID").data("kendoMultiSelect").value("");
+        $("#StatusOrderID").data("kendoMultiSelect").value([]);
+        $("#StatusVisitID").data("kendoMultiSelect").value([]);
+        $("#ServiceID").data("kendoMultiSelect").value("");
+        $('#ODS').val("");
+        $('#Employee').val("");
+        //$('#StartDate').val("");
+        //$('#EndDate').val("");
+        $('#btnSearch').attr("disabled", false);
+        //filter = filterData();
+        $(this).attr("disabled", true);
+        filterData();
+        //var grid = $("#grid").data("kendoGrid");
+        //$filter = new Array();
+        //$filter.push({ field: "ActivationEnabled", operator: "eq", value: true });
+        $("#grid").data("kendoGrid").dataSource.read();
+    });
+
+    function showODSDetails(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        $.ajax({
+            url: '../Home/_DetailODS',
+            type: "GET",
+            cache: false,
+            data: { MonitorID: JSON.stringify(dataItem.MonitorID) },
+            beforeSend: function (jqXHR, settings) { $("#divLoading").show(); },
+            error: function (jqXHR, textStatus, errorThrown) {
+                try {
+                    $("#divLoading").hide();
+                    var json = $.parseJSON(jqXHR.responseText)
+                    if (json.serverError_Message == "DuplicateEmail") {
+                        showDialog('El Correo Electrónico ya se encuentra registrado.');
+                    }
+                    if (json.serverError_Message == "DuplicateUser") {
+                        showDialog('El Nombre de Usuario ya se encuentra registrado.');
+                    }
+                }
+                catch (ex) {
+                }
+            },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+                $("#divLoading").hide();
+
+                var dialog = $('#dialogDetailPre').data("kendoDialog");
+                $('#dialogDetailPre').parent().find('.k-dialog-title').css(' font-size', 'bold');
+
+                dialog.content(result);
+                dialog.open();
+            }
+        });
+    }
+
+    function showDetails(e) {
+
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        if (dataItem.URL != null) {
+            var dialog = $('#dialogDetailPre').data("kendoDialog");
+            $('#dialogDetailPre').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            var x = "<object data=" + dataItem.URL + " type='application/pdf' width='770px' height='550px' />"
+            dialog.content(x);
+            dialog.open();
+        }
+        else {
+
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Sin Detalle.');
+            dialog.open();
+        }
+    }
+    function AssigmentUser(e) {
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        switch (dataItem.StatusVisitID) {
+         
+            case 3:
+                var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+                $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                dialog.content('No es posible reasignar esta orden de servicio, la orden esta en proceso');
+                dialog.open();
+
+                break;
+            case 4:
+                var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+                $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                dialog.content('No es posible reasignar esta orden de servicio, la orden ha sido terminada.');
+                dialog.open();
+                break;
+            default:
+            $.ajax({
+                    url: '../Home/_ODSAssignament',
+                    type: "GET",
+                    cache: false,
+                    data: { MonitorID: JSON.stringify(dataItem.MonitorID) },
+                    beforeSend: function (jqXHR, settings) { $("#divLoading").show(); },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        try {
+                            $("#divLoading").hide();
+                            var json = $.parseJSON(jqXHR.responseText)
+                            if (json.serverError_Message == "DuplicateEmail") {
+                                showDialog('El Correo Electrónico ya se encuentra registrado.');
+                            }
+                            if (json.serverError_Message == "DuplicateUser") {
+                                showDialog('El Nombre de Usuario ya se encuentra registrado.');
+                            }
+                        }
+                        catch (ex) {
+                        }
+                    },
+                    complete: function (jqXHR, textStatus) { ; },
+                    success: function (result) {
+                       
+                            $("#divLoading").hide();
+
+                            var dialog1 = $('#dialogAsignation').data("kendoDialog");
+                            $('#dialogAsignation').parent().find('.k-dialog-title').css(' font-size', 'bold');
+
+                            dialog1.content(result);
+                            dialog1.open();
+                        
+                        
+                       
+
+                    }
+                });
+
+                break;
+
+
+
+        }
+        
+    }
+
+
+
+
+
+    function onClose() {
+        if (typeof console._commandLineAPI !== 'undefined') {
+            console.API = console._commandLineAPI; //chrome
+        } else if (typeof console._inspectorCommandLineAPI !== 'undefined') {
+            console.API = console._inspectorCommandLineAPI; //Safari
+        } else if (typeof console.clear !== 'undefined') {
+            console.API = console;
+        }
+        console.API.clear();
+    }
+
+    function onOpen() {
+
+    }
+
+</script>
+
+
+@(Html.Kendo().Grid<net.paxialabs.mabe.serviplus.entities.ModelView.Operation.ModelViewODS>()
+            .Name("grid")
+            .EnableCustomBinding(true)
+            .Columns(columns =>
+            {
+                //columns.Bound(o => o.StatusODS).Title("Estatus ODS").Width("150px").Filterable(false);
+                columns.Bound(o => o.StatusVisitID).Title("Estatus Visita").Width("90px").ClientTemplate("#= loadColors(StatusVisitID) #").Filterable(false);
+                //columns.Command(command => command.Custom("Ver").Click("Note")).Title("Notas").Width(100);
+                columns.Bound(o => o.SendCRM).Title("Envio CRM").Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Command(command => command.Custom("Ver Detalle").Click("showODSDetails")).Title("Orden/PreOrden").Width(120); // showDetails
+                columns.Bound(o => o.Invoice).Title("Facturación").Width("120px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.OrderExecuteDate).Title("Ejecutar").Format("{0:dd/MM/yyyy}").Width("150px").Filterable(f => f.Operators(ft => ft.ForDate(o => { o.Clear(); o.IsGreaterThan("Es posterior"); o.IsLessThan("Es anterior"); })));
+                columns.Bound(o => o.Module).Title("Modulo").Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.OrderID).Title("Nº de ODS").Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.EmployeeName).Title("Técnico de Servicio").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.StatusODS).Title("Estatus ODS").Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.CauseOrder).Title("Motivo").Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.ServiceType).Title("Tipo de Servicio").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Command(command => command.Custom("Ver mapa").Click("showMapGeo")).Title("Ruta").Width(120);
+                columns.Command(command => command.Custom("Detalle").Click("showMap")).Title("Geolocalización").Width(120);
+                //columns.Command(command => { command.Custom("Inicio").Click("showMapI"); command.Custom("Fin").Click("showMapF"); }).Title("Geolocalización").Width(180);
+                //columns.Bound(o => o.OrderID).Title("Estatus Visita").Width("200px").Filterable(false);
+                columns.Bound(o => o.StartVisitODS).Title("Inicio de Visita").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.StartTryODS).Title("Inicio Tratar ODS").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); }))).Visible(false);
+                columns.Bound(o => o.StartRunODS).Title("Inicio Ejecución ODS").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); }))).Visible(false);
+                columns.Bound(o => o.EndRunODS).Title("Fin Ejecución ODS").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); }))).Visible(false);
+                columns.Bound(o => o.EndTryODS).Title("Fin Tratar ODS").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); }))).Visible(false);
+                columns.Bound(o => o.EndVisitODS).Title("Fin de Visita").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.DurationVisit).Title("Tiempo de Visita").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+                columns.Bound(o => o.DurationExecute).Title("Tiempo de Ejecución ODS").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+
+                columns.Command(command => command.Custom("Evidencia").Click("Evidence")).Title("Inicio de Visita").Width(150);
+                if (@ViewBag.profile == "Auxiliar TA") { 
+                columns.Command(command => command.Custom("Reasignar").Click("AssigmentUser")).Title("Reasignar ODS").Width(150);
+                 }
+
+                //columns.Bound(o => o.Folio).Title("Evidencia de Visita").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+    })
+            .Selectable(selectable => selectable.Mode(GridSelectionMode.Single))
+            .Resizable(resize => resize.Columns(true))
+            .Pageable(p => p.ButtonCount(5).PageSizes(true).Refresh(true).Messages(m => m.ItemsPerPage("Elementos por Página")).Messages(m => m.Display("Elementos Mostrados {0}-{1} de {2}")))
+            .Sortable()
+            .HtmlAttributes(new { style = "height: 380px" })
+            .Scrollable(scrolling => scrolling.Enabled(true))
+            .Events(events => events.DataBound("gridDataBound"))
+            .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+            .DataSource(dataSource => dataSource
+                .Ajax()
+                .Read(read => read.Action("GetListVisitAll", "Monitor").Data("filterData"))
+                .PageSize(15)
+                .ServerOperation(true)
+                .Events(e => e.Error("error_handler"))
+            )
+)
+@(Html.Kendo().Dialog()
+                .Name("dialogDetail")
+                .Title("Serviplus")
+                .Content("")
+                .Width(400)
+                .Height(650)
+                .Modal(true)
+                .Visible(false)
+)
+
+@(Html.Kendo().Dialog()
+                .Name("dialogDetailPre")
+                .Title("Serviplus")
+                .Content("")
+                 .Width(800)
+                .Height(650)
+                .Modal(true)
+                .Visible(false)
+)
+@(Html.Kendo().Dialog()
+                .Name("dialogAsignation")
+                .Title("Serviplus")
+                .Content("")
+                 .Width(650)
+                .Height(400)
+                .Modal(true)
+                .Visible(false)
+)
+
+
+@(Html.Kendo().Dialog()
+                .Name("confirmStatusProfileList")
+                .Title("Serviplus")
+                .Content("")
+                .Width(400)
+                .Modal(true)
+                .Visible(false)
+                .Actions(actions =>
+                {
+                    actions.Add().Text("<button class='btn btn-confirmar'>Aceptar</button>").Action("confirmStatusProfileList_OK");
+                    actions.Add().Text("<button class='btn btn-cancel'>Cancelar</button>");
+                })
+                .Events(ev => ev.Close("onClose").Open("onOpen"))
+)
+
+<div id="myCarousel" class="carousel" style='display:none;'>
+    <!-- Indicators -->
+    @*<ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>*@
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div id="Evi1" class="item active">
+            <img id="image1">
+        </div>
+
+        <div id="Evi2" class="item">
+            <img id="image2">
+        </div>
+
+        <div id="Evi3" class="item">
+            <img id="image3">
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+<div id="map" style='display:none;'></div>
+
+
+@(Html.Kendo().Dialog()
+                .Name("dialogEntrada")
+                .Title("Serviplus")
+                .Content("")
+                .Width(800)
+                .Height(650)
+                .Modal(true)
+                .Visible(false)
+                .Events(ev => ev
+                .Close("onClose")
+                )
+
+)
+
+@(Html.Kendo().Dialog()
+                .Name("dialogSalida")
+                .Title("Serviplus")
+                .Content("")
+                .Width(400)
+                .Modal(true)
+                .Visible(false)
+)
+
+@(Html.Kendo().Dialog()
+                .Name("dialogPriorityDetail")
+                .Title("Serviplus")
+                .Content("")
+                .Width(400)
+                .Modal(true)
+                .Visible(false)
+)
+
+
+<style>
+    #iw-container .iw-title1 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        padding: 10px;
+        background-color: red;
+        color: white;
+        margin: 0;
+        border-radius: 2px 2px 0 0;
+    }
+
+    #iw-container .iw-title2 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        padding: 10px;
+        background-color: #3a5271;
+        color: white;
+        margin: 0;
+        border-radius: 2px 2px 0 0;
+        text-align: center;
+    }
+
+    #iw-container .iw-content {
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400;
+        margin-right: 1px;
+        padding: 15px 5px 20px 15px;
+        max-height: 120px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .iw-content img {
+        float: right;
+        margin: 0 5px 5px 10px;
+    }
+
+    .iw-subTitle {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 5px 0;
+    }
+
+    .iw-bottom-gradient {
+        position: absolute;
+        width: 326px;
+        height: 25px;
+        bottom: 10px;
+        right: 18px;
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    }
+</style>
+<script>
+    $("#grid").on("dblclick", " tbody > tr", function () {
+        var dataItem = $("#grid").data("kendoGrid");
+        row = dataItem.select();
+        item = dataItem.dataItem(row);
+        if (item.SendCRM == "Error")
+        {
+            var dialog = $('#confirmStatusProfileList').data("kendoDialog");
+            dialog.content("Confirme el cambio de estatus CRM");
+            dialog.open();
+        }
+
+    });
+
+    function confirmStatusProfileList_OK() {
+        var dataItem = $("#grid").data("kendoGrid");
+        row = dataItem.select();
+        item = dataItem.dataItem(row);
+        $.ajax({
+            url: '@Url.Content("~/Monitor/SetStatus_CRM")',
+            type: "POST",
+            cache: false,
+            data: { OrderID: item.OrderID },
+            beforeSend: function (jqXHR, settings) { $("#divLoading").show(); },
+            error: function (jqXHR, textStatus, errorThrown) { $("#divLoading").hide(); },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+                $("#divLoading").hide();
+                var grid = $("#grid").data("kendoGrid");
+                grid.dataSource.read();
+            }
+        });
+    }
+</script>

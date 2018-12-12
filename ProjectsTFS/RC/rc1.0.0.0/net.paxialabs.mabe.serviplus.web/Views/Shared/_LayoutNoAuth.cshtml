@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiPlus - @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Styles.Render("~/Content/kendo/css")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
+    @*@Scripts.Render("~/Scripts/bootstrapValidator/bootstrapValidator.min.js")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    <link rel="icon" type="image/png" href="~/Content/Images/Icon.png" />
+</head>
+<body>
+    <div id="divLoading" class="loading"></div>
+    <div class="jumbotron vertical-center">
+        <div class="container">
+
+            <div class="col-md-6">
+                <img src="@Url.Content("~/Content/Images/Logo_serviplus_2017sd.png")" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+                <div class="jumbotron vertical-center">
+                    <div class="container">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="navbar navbar-right navbar-fixed-bottom">
+            <div style="text-align: right; margin-right: 50px"><img src="@Url.Content("~/Content/Images/Serviplus-MABE-paxia.png")"></div>
+        </div>
+    </div>
+
+  
+    
+    @RenderSection("scripts", required: false)
+</body>
+</html>

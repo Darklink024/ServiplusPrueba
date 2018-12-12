@@ -1,0 +1,140 @@
+﻿<button class="k-button k-primary" type="button" id="btnAdd">Agregar</button>
+
+<button class="k-button" type="button" id="btnStatus">Cambiar estado</button>
+
+@(Html.Kendo().Grid<net.paxialabs.mabe.serviplus.entities.ModelView.Security.ModelViewModule>()
+    .Name("grid")
+    .EnableCustomBinding(true)
+    .Columns(columns =>
+    {
+        columns.Bound(o => o.Module).Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        columns.Bound(o => o.Description).Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        columns.Bound(o => o.URL).Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        columns.Bound(o => o.Status).Width("150px").Filterable(f => f.Messages(m => m.IsTrue("activo")).Messages(m => m.IsFalse(" desactivado"))).ClientTemplate("# if(data.Status) { # activo # } else { #  desactivado  # } #");
+        columns.Command(command => command.Custom("Detalle").Click("showDetails")).Width(180);
+    })
+    .Selectable(selectable => selectable.Mode(GridSelectionMode.Multiple))
+    .Resizable(resize => resize.Columns(true))
+    .Pageable(p => p.ButtonCount(5).PageSizes(true).Refresh(true).Messages(m => m.ItemsPerPage("Elementos por Página")).Messages(m => m.Display("Elementos Mostrados {0}-{1} de {2}")))
+    .Sortable()
+    .HtmlAttributes(new { style = "height: 430px" })
+    .Scrollable(scrolling => scrolling.Enabled(true))
+    .Events(events => events.DataBound("gridDataBound"))
+    .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Read(read => read.Action("GetAllList_Module", "Security").Data("filterData"))
+        .PageSize(15)
+        .ServerOperation(true)
+        .Events(e => e.Error("error_handler"))
+    )
+)
+
+@(Html.Kendo().Dialog()
+        .Name("confirmStatusModuleList")
+        .Title("Mabe - Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+        .Actions(actions =>
+        {
+            actions.Add().Text("Aceptar").Primary(true).Action("confirmStatusModuleList_OK");
+            actions.Add().Text("Cancelar");
+        })
+        .Events(ev => ev.Close("onClose").Open("onOpen"))
+)
+
+<script>
+
+    function gridDataBound(e) {
+        var grid = e.sender;
+        if (grid.dataSource.total() == 0) {
+            alert('No se encontraron datos para mostrar.');
+            e.sender.pager.options.messages.empty = 'No se encontraron datos para mostrar.';
+        }
+    }
+
+    function error_handler(e) {
+        alert('No cuenta con permisos suficientes.');
+    }
+
+    function filterData() {
+        return {};
+    }
+
+    function showDetails(e) {
+        e.preventDefault();
+
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        $("#ModuleID").val(dataItem.ModuleID);
+        $("#Section").val(dataItem.Section);
+        $("#Module").val(dataItem.Module);
+        $("#Description").val(dataItem.Description);
+        $("#URL").val(dataItem.URL);
+
+        var splitter = $("#splitter").data("kendoSplitter");
+
+        splitter.expand("#right-pane");
+        splitter.expand("#left-pane");
+
+    }
+
+    $("#btnAdd").click(function () {
+        var splitter = $("#splitter").data("kendoSplitter");
+        splitter.expand("#right-pane");
+        splitter.collapse("#left-pane");
+    });
+
+    $("#btnStatus").click(function () {
+
+
+        var dialog = $('#confirmStatusModuleList').data("kendoDialog");
+        dialog.content("Confirme el cambio de estatus");
+        dialog.open();
+
+
+    });
+
+
+    function confirmStatusModuleList_OK() {
+        var ids = [];
+        var grid = $("#grid").data("kendoGrid");
+        var selected = grid.select();
+        if (selected.length == 0) {
+            showDialog('Debe seleccionar un registro');
+            return false;
+        }
+
+        grid.select().each(function (i) {
+            var dataItem = grid.dataItem($(this));
+            ids[i] = dataItem.ModuleID;
+        });
+
+
+        $.ajax({
+            url: '@Url.Content("~/Security/SetStatus_Modules")',
+            type: "POST",
+            cache: false,
+            data: { ModuleIDs: ids.toString() },
+            beforeSend: function (jqXHR, settings) { /*$("#divLoading").show();*/ },
+            error: function (jqXHR, textStatus, errorThrown) { /*$("#divLoading").hide();*/ },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+
+                //$("#divLoading").hide();
+                //$("#divModal").modal('toggle');
+
+                if (result == "Unauthorized") {
+                    showDialog('No cuenta con permisos suficientes.');
+                } else {
+                    showDialog('Su solicitud se proceso con éxito.');
+                }
+                var grid = $("#grid").data("kendoGrid");
+                grid.dataSource.read();
+            }
+        });
+    }
+
+</script>

@@ -1,0 +1,22 @@
+﻿<item>
+  <!--Optional:-->
+  <IDOrden>IDORDEN_VALUE</IDOrden>
+  <!--Optional:-->
+  <Material>MATERIAL_VALUE</Material>
+  <!--Optional:-->
+  <Cantidad>CANTIDAD_VALUE</Cantidad>
+  <!--Optional:-->
+  <OrganizacionCompras>PUMX</OrganizacionCompras>
+  <!--Optional:-->
+  <GrupoCompras>A03</GrupoCompras>
+  <!--Optional:-->
+  <Sociedad>SOCIEDAD_VALUE</Sociedad>
+  <!--Optional:-->
+  <CentroSuministrador>CENTROSUMINISTRADOR_VALUE</CentroSuministrador>
+  <!--Optional:-->
+  <CentroSolictador>CENTROSOLICITADOR_VALUE</CentroSolictador>
+  <!--Optional:-->
+  <AlmacenSolictador>ALMACENSOLICITADOR_VALUE</AlmacenSolictador>
+  <!--Optional:-->
+  <ClasePedido>ZUFR</ClasePedido>
+</item>

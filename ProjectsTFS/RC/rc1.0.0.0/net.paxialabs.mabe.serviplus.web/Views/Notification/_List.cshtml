@@ -1,0 +1,249 @@
+﻿<button class="btn btn-aceptar" type="button" id="btnAdd">Agregar</button>
+
+<button class="k-button" type="button" id="btnStatus">Publicar</button>
+
+@(Html.Kendo().Grid<net.paxialabs.mabe.serviplus.entities.ModelView.Operation.ModelViewConfiguration>()
+    .Name("grid")
+    .EnableCustomBinding(true)
+    .Columns(columns =>
+    {
+        columns.Bound(o => o.ConfigurationID).Visible(false);
+        columns.Bound(o => o.Title).Title("Titulo").Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        columns.Bound(o => o.Message).Title("Mensaje").Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        columns.Bound(o => o.Publish).Title("Publicado").Width("150px").Filterable(f => f.Messages(m => m.IsTrue("Publicado")).Messages(m => m.IsFalse(" No Publicado"))).ClientTemplate("# if(data.Publish) { # Publicado # } else { #  No Publicado  # } #");
+    })
+    .Selectable(selectable => selectable.Mode(GridSelectionMode.Multiple))
+    .Resizable(resize => resize.Columns(true))
+    .Pageable(p => p.ButtonCount(5).PageSizes(true).Refresh(true).Messages(m => m.ItemsPerPage("Elementos por Página")).Messages(m => m.Display("Elementos Mostrados {0}-{1} de {2}")))
+    .Sortable()
+    .HtmlAttributes(new { style = "height: 450px" })
+    .Scrollable(scrolling => scrolling.Enabled(true))
+    .Events(events => events.DataBound("gridDataBound"))
+    .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Read(read => read.Action("GetListAll", "Notification").Data("filterData"))
+        .PageSize(15)
+        .ServerOperation(true)
+        .Events(e => e.Error("error_handler"))
+    )
+)
+@(Html.Kendo().Dialog()
+        .Name("confirmStatusProfileList")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+        .Actions(actions =>
+        {
+            actions.Add().Text("<button class='btn btn-confirmar'>Aceptar</button>").Action("confirmStatusProfileList_OK");
+            actions.Add().Text("<button class='btn btn-cancel'>Cancelar</button>");
+        })
+        .Events(ev => ev.Close("onClose").Open("onOpen"))
+)
+@(Html.Kendo().Dialog()
+        .Name("dialogDetail")
+        .Title("Serviplus - Cotización")
+        .Content("")
+        .Width(800)
+        .Height(650)
+        .Modal(true)
+        .Visible(false)
+)
+@(Html.Kendo().Dialog()
+        .Name("dialogProfileDetail")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+        .Actions(actions =>
+        {
+            actions.Add().Text("<button class='btn btn-confirmar'>Aceptar</button>");
+        })
+        .Events(ev => ev.Close("onClose").Open("onOpen"))
+)
+
+@(Html.Kendo().Dialog()
+        .Name("dialogPriorityDetail")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+)
+
+
+<script>
+    function onClose() {
+
+    }
+
+    function onOpen() {
+
+    }
+    function showDialog(msg) {
+
+        var dialog = $('#dialogProfileDetail').data("kendoDialog");
+        dialog.content(msg);
+        dialog.open();
+    }
+
+    function confirmStatusProfileList_OK() {
+        var ids = [];
+        var grid = $("#grid").data("kendoGrid");
+        var selected = grid.select();
+   
+        grid.select().each(function (i) {
+            var dataItem = grid.dataItem($(this));
+            ids[i] = dataItem.ConfigurationID;
+        });
+
+
+        $.ajax({
+            url: '@Url.Content("~/Notification/SetPublish")',
+            type: "POST",
+            cache: false,
+            data: { ConfigurationIDs: ids.toString() },
+            beforeSend: function (jqXHR, settings) { $("#divLoading").show(); },
+            error: function (jqXHR, textStatus, errorThrown) { $("#divLoading").hide(); },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+
+                $("#divLoading").hide();
+                //$("#divModal").modal('toggle');
+
+                if (result == "Unauthorized") {
+                    showDialog('No cuenta con permisos suficientes.');
+                } else {
+                    showDialog('Su solicitud se proceso con éxito.');
+                }
+                var grid = $("#grid").data("kendoGrid");
+                grid.dataSource.read();
+            }
+        });
+    }
+
+
+    function gridDataBound(e) {
+        var grid = e.sender;
+        if (grid.dataSource.total() == 0) {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('No se encontraron datos para mostrar.');
+            dialog.open();
+            e.sender.pager.options.messages.empty = 'No se encontraron datos para mostrar.';
+        }
+    }
+
+    function error_handler(e) {
+        alert('No cuenta con permisos suficientes.');
+    }
+
+    function filterData() {
+        return {};
+    }
+
+
+    $("#grid").on("dblclick", " tbody > tr", function () {
+        var dataItem = $("#grid").data("kendoGrid");
+        row = dataItem.select();
+        item = dataItem.dataItem(row);
+        pat = /youtube/
+        if (item.Publish == true) {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Esta Notificación no puede ser modificada por que se encuentra Publicada.');
+            dialog.open();
+            var splitter = $("#splitter").data("kendoSplitter");
+            splitter.expand("#left-pane");
+            splitter.collapse("#right-pane");
+        }
+        else {
+            if (pat.test(item.Url) == true)
+            {
+                $("input[name=URLType][value=youtube]").prop('checked', true);
+                $("#URLYoutube").show();
+                $("#AttachmentFile").hide();
+                $("#Youtube").val(item.Url);
+            }
+            else
+            {
+                var image = item.Url.split("/");
+                $("input[name=URLType][value=file]").prop('checked', true);
+                $("#imgNotification").attr("src", "@Url.Content("~/Content/Notification/logo.png")");
+                if (item.Url == 'empty')
+                {
+                    setImage('')
+                }
+                else
+                { setImage(image[5]); }
+               
+                $("#Url").val(image[5]);
+                $("#URLYoutube").hide();
+                $("#AttachmentFile").show();
+            }
+            $("#Notification").val(item.Title);
+            $("#Description").val(item.Message);
+
+            $("#ConfigurationID").val(item.ConfigurationID);
+            CargarEmpladosNotificacion('loadEmployee', { Employee: item.Users });
+            var splitter = $("#splitter").data("kendoSplitter");
+            splitter.expand("#right-pane");
+            splitter.expand("#left-pane");
+        }
+
+
+
+    });
+
+    function showDetails(e) {
+
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        dataItem.URL
+        //http://vmpaxiadev01.cloudapp.net:9200/Content/Attachments/13072017_211519Cotizaci%C3%B3n.pdf
+        var dialog = $('#dialogDetail').data("kendoDialog");
+
+
+        $('#dialogDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+        var x = "<object data=" + dataItem.URL +  " type='application/pdf' width='770px' height='550px' />"
+        dialog.content(x);
+        dialog.open();
+
+    }
+
+    $("#btnAdd").click(function () {
+        var splitter = $("#splitter").data("kendoSplitter");
+        splitter.expand("#right-pane");
+        splitter.collapse("#left-pane");
+    });
+
+    $("#btnStatus").click(function () {
+
+        var ids = [];
+        var grid = $("#grid").data("kendoGrid");
+        var selected = grid.select();
+        if (selected.length == 0) {
+            showDialog('Debe seleccionar un registro');
+            return false;
+        }
+
+        grid.select().each(function (i) {
+            var dataItem = grid.dataItem($(this));
+            ids[i] = dataItem.ConfigurationID;
+        });
+
+        var dataItem = $("#grid").data("kendoGrid");
+        row = dataItem.select();
+        item = dataItem.dataItem(row);
+        if (item.Publish == true) {
+            showDialog('La Notificación fue publicada anteriormente');
+            return false;
+        }
+        var dialog = $('#confirmStatusProfileList').data("kendoDialog");
+        dialog.content("Confirme la publicación");
+        dialog.open();
+    });
+</script>

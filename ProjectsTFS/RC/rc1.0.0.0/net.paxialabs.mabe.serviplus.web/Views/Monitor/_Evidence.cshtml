@@ -1,0 +1,495 @@
+﻿<script>
+    function BadUse(e) {
+
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        if (dataItem.EvidenceBadUse.length > 0) {
+            $('#image1').attr('src', '');
+            $('#image2').attr('src', '');
+            $('#image3').attr('src', '');
+            if (dataItem.EvidenceBadUse.length == 1)
+            {
+                var img0 = dataItem.EvidenceBadUse[0].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active"); 
+                $('#Evi2').removeClass('item').addClass('hide');
+                $('#Evi3').removeClass('item').addClass('hide');
+           
+                document.getElementById("image1").src = img0;
+            }
+            if (dataItem.EvidenceBadUse.length == 2) {
+                var img0 = dataItem.EvidenceBadUse[0].URLEvidence;
+                var img1 = dataItem.EvidenceBadUse[1].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item hide");
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+            }
+            if (dataItem.EvidenceBadUse.length == 3) {
+                var img0 = dataItem.Evidence[0].URLEvidence;
+                var img1 = dataItem.Evidence[1].URLEvidence;
+                var img2 = dataItem.Evidence[2].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item");
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+                document.getElementById("image3").src = img2;
+            }
+            var x = document.getElementById('myCarousel');
+            x.style.display = 'block';
+            var dialog = $('#dialogDetail').data("kendoDialog");
+            dialog.content(x);
+            dialog.open();
+        }
+        else {
+            var dialogEvidence = $('#dialogEvidence').data("kendoDialog");
+            dialogEvidence.content('Sin Evidencias.');
+            dialogEvidence.open();
+
+        }
+
+    }
+
+    function Finish(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        if (dataItem.EvidenceFinish.length > 0) {
+            $('#image1').attr('src', '');
+            $('#image2').attr('src', '');
+            $('#image3').attr('src', '');
+            if (dataItem.EvidenceFinish.length == 1)
+            {
+                var img0 = dataItem.EvidenceFinish[0].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active"); 
+                $('#Evi2').removeClass('item').addClass('hide');
+                $('#Evi3').removeClass('item').addClass('hide');
+                document.getElementById("image1").src = img0;
+            }
+            var x = document.getElementById('myCarousel');
+            x.style.display = 'block';
+            var dialog = $('#dialogDetail').data("kendoDialog");
+            dialog.content(x);
+            dialog.open();
+        }
+        else {
+            var dialogEvidence = $('#dialogEvidence').data("kendoDialog");
+            dialogEvidence.content('Sin Evidencias.');
+            dialogEvidence.open();
+        }
+    }
+
+    function NoSeriesNumber(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        if (dataItem.EvidenceNoSeriesNumber.length > 0) {
+            $('#image1').attr('src', '');
+            $('#image2').attr('src', '');
+            $('#image3').attr('src', '');
+            if (dataItem.EvidenceNoSeriesNumber.length == 1)
+            {
+                var img0 = dataItem.EvidenceNoSeriesNumber[0].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");     
+                $('#Evi2').removeClass('item').addClass('hide');
+                $('#Evi3').removeClass('item').addClass('hide');
+                document.getElementById("image1").src = img0;
+            }
+            if (dataItem.EvidenceNoSeriesNumber.length == 2) {
+                var img0 = dataItem.EvidenceNoSeriesNumber[0].URLEvidence;
+                var img1 = dataItem.EvidenceNoSeriesNumber[1].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item hide");
+              
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+            }
+            if (dataItem.EvidenceNoSeriesNumber.length == 3) {
+                var img0 = dataItem.EvidenceNoSeriesNumber[0].URLEvidence;
+                var img1 = dataItem.EvidenceNoSeriesNumber[1].URLEvidence;
+                var img2 = dataItem.EvidenceNoSeriesNumber[2].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item");
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+                document.getElementById("image3").src = img2;
+            }
+            var x = document.getElementById('myCarousel');
+            x.style.display = 'block';
+            var dialog = $('#dialogDetail').data("kendoDialog");
+            dialog.content(x);
+            dialog.open();
+        }
+        else {
+            var dialogEvidence = $('#dialogEvidence').data("kendoDialog");
+            dialogEvidence.content('Sin Evidencias.');
+            dialogEvidence.open();
+        }
+    }
+
+    function PurchaseNote(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        $('#image1').attr('src', '');
+        $('#image2').attr('src', '');
+        $('#image3').attr('src', '');
+        if (dataItem.EvidencePurchaseNote.length > 0) {
+            if (dataItem.EvidencePurchaseNote.length == 1)
+            {
+                var img0 = dataItem.EvidencePurchaseNote[0].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                $('#Evi2').removeClass('item').addClass('hide');
+                $('#Evi3').removeClass('item').addClass('hide');
+                document.getElementById("image1").src = img0;
+            }
+            if (dataItem.EvidencePurchaseNote.length == 2) {
+                var img0 = dataItem.EvidencePurchaseNote[0].URLEvidence;
+                var img1 = dataItem.EvidencePurchaseNote[1].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item");
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+            }
+            if (dataItem.EvidencePurchaseNote.length == 3) {
+                var img0 = dataItem.EvidencePurchaseNote[0].URLEvidence;
+                var img1 = dataItem.EvidencePurchaseNote[1].URLEvidence;
+                var img2 = dataItem.EvidencePurchaseNote[2].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item");
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+                document.getElementById("image3").src = img2;
+            }
+            var x = document.getElementById('myCarousel');
+            x.style.display = 'block';
+            var dialog = $('#dialogDetail').data("kendoDialog");
+            dialog.content(x);
+            dialog.open();
+        }
+        else {
+            var dialogEvidence = $('#dialogEvidence').data("kendoDialog");
+            dialogEvidence.content('Sin Evidencias.');
+            dialogEvidence.open();
+        }
+    }
+
+    function StartODS(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+     
+        if (dataItem.EvidenceStartODS.length > 0) {
+            $('#image1').attr('src', '');
+            $('#image2').attr('src', '');
+            $('#image3').attr('src', '');
+            if (dataItem.EvidenceStartODS.length == 1) {
+                var img0 = dataItem.EvidenceStartODS[0].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                $('#Evi2').removeClass('item').addClass('hide');
+                $('#Evi3').removeClass('item').addClass('hide');
+                document.getElementById("image1").src = img0;
+            }
+            if (dataItem.EvidenceStartODS.length == 2) {
+                var img0 = dataItem.EvidenceStartODS[0].URLEvidence;
+                var img1 = dataItem.EvidenceStartODS[1].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item hide");
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+            }
+            if (dataItem.EvidenceStartODS.length == 3) {
+                var img0 = dataItem.EvidenceStartODS[0].URLEvidence;
+                var img1 = dataItem.EvidenceStartODS[1].URLEvidence;
+                var img2 = dataItem.EvidenceStartODS[2].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item");
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+                document.getElementById("image3").src = img2;
+            }
+            var x = document.getElementById('myCarousel');
+            x.style.display = 'block';
+            var dialog = $('#dialogDetail').data("kendoDialog");
+            dialog.content(x);
+            dialog.open();
+        }
+        else {
+            var dialogEvidence = $('#dialogEvidence').data("kendoDialog");
+            dialogEvidence.content('Sin Evidencias.');
+            dialogEvidence.open();
+        }
+    }
+
+    function Summary(e) {
+        e.preventDefault();
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        if (dataItem.EvidenceSummary.length > 0) {
+            $('#image1').attr('src', '');
+            $('#image2').attr('src', '');
+            $('#image3').attr('src', '');
+            if (dataItem.EvidenceSummary.length == 1)
+            {
+                var img0 = dataItem.EvidenceSummary[0].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                $('#Evi2').removeClass('item').addClass('hide');
+                $('#Evi3').removeClass('item').addClass('hide');
+                document.getElementById("image1").src = img0;
+            }
+            if (dataItem.EvidenceSummary.length == 2) {
+                var img0 = dataItem.EvidenceSummary[0].URLEvidence;
+                var img1 = dataItem.EvidenceSummary[1].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item hide");
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+            }
+            if (dataItem.EvidenceSummary.length == 3) {
+                var img0 = dataItem.EvidenceSummary[0].URLEvidence;
+                var img1 = dataItem.EvidenceSummary[1].URLEvidence;
+                var img2 = dataItem.EvidenceSummary[2].URLEvidence;
+                document.getElementById("Evi1").setAttribute("class", "item active");
+                document.getElementById("Evi2").setAttribute("class", "item");
+                document.getElementById("Evi3").setAttribute("class", "item");
+                document.getElementById("image1").src = img0;
+                document.getElementById("image2").src = img1;
+                document.getElementById("image3").src = img2;
+            }
+            var x = document.getElementById('myCarousel');
+            x.style.display = 'block';
+            var dialog = $('#dialogDetail').data("kendoDialog");
+            dialog.content(x);
+            dialog.open();
+        }
+        else {
+            var dialogEvidence = $('#dialogEvidence').data("kendoDialog");
+            dialogEvidence.content('Sin Evidencias.');
+            dialogEvidence.open();
+        }
+    }
+
+</script>
+
+<script>
+    var firstLoad = true;
+    function gridDataBound(e) {
+        var grid = e.sender;
+        if (grid.dataSource.total() == 0) {
+            if (!firstLoad) {
+                var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+                $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                dialog.content('No se encontraron datos para mostrar.');
+                dialog.open();
+            }
+            e.sender.pager.options.messages.empty = 'No se encontraron datos para mostrar.';
+        }
+    }
+
+    function error_handler(e) {
+        //var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+        //$('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+        //dialog.content('No cuenta con permisos suficientes.');
+        //dialog.open();
+    }
+
+    function filterData() {
+        try {
+
+            var ModuleID = $("#ModuleID").data("kendoMultiSelect").value().toString();
+            var PriorityID = $("#PriorityID").data("kendoMultiSelect").value().toString();
+            var StatusOrderID = $("#StatusOrderID").data("kendoMultiSelect").value().toString();
+            var StatusVisitID = $("#StatusVisitID").data("kendoMultiSelect").value().toString();
+            var ServiceID = $("#ServiceID").data("kendoMultiSelect").value().toString();
+            var OrderID = document.getElementById("ODS").value;
+            var Employee = document.getElementById("Employee").value;
+
+
+        }
+        catch (ex) {
+            var ModuleID = "";
+            var PriorityID = "";
+            var StatusOrderID = "";
+            var StatusVisitID = "";
+            var ServiceID = "";
+            var OrderID = "";
+            var Employee = "";
+        }
+
+        return {
+            ModuleID: ModuleID,
+            PriorityID: PriorityID,
+            StatusOrderID: StatusOrderID,
+            StatusVisitID: StatusVisitID,
+            ServiceID: ServiceID,
+            OrderID: OrderID,
+            Employee: Employee,
+            StartDate: $('#StartDate').val(),
+            EndDate: $('#EndDate').val(),
+        }
+    }
+
+    $("#btnSearch").click(function () {
+
+        firstLoad = true;
+        $("#grid").data('kendoGrid').dataSource.data([]);
+
+        firstLoad = false;
+
+
+        if ($("#EndDate").val() == "" && $("#StartDate").val() == "") {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Es necesario seleccionar fecha inicial y fecha final.');
+            dialog.open();
+            return false;
+        }
+
+        if ($("#EndDate").val() == "" && $("#StartDate").val() != "") {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Es necesario seleccionar una fecha final.');
+            dialog.open();
+            return false;
+        }
+
+        if ($("#StartDate").val() == "" && $("#EndDate").val() != "") {
+            var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+            $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('Es necesario seleccionar una fecha inicial.');
+            dialog.open();
+            return false;
+        }
+
+
+        filter = filterData();
+        $('#btnClean').attr("disabled", false);
+        var form = $('#frmFilter');
+        $("#grid").data("kendoGrid").dataSource.read();
+
+    });
+
+
+    $("#btnClean").click(function () {
+
+        $("#ModuleID").data("kendoMultiSelect").value([]);
+        $("#PriorityID").data("kendoMultiSelect").value("");
+        $("#StatusOrderID").data("kendoMultiSelect").value([]);
+        $("#StatusVisitID").data("kendoMultiSelect").value([]);
+        $("#ServiceID").data("kendoMultiSelect").value("");
+        $('#ODS').val("");
+        $('#Employee').val("");
+        $('#StartDate').val("");
+        $('#EndDate').val("");
+        $('#btnSearch').attr("disabled", false);
+        //filter = filterData();
+        $(this).attr("disabled", true);
+        filterData();
+        //var grid = $("#grid").data("kendoGrid");
+        //$filter = new Array();
+        //$filter.push({ field: "ActivationEnabled", operator: "eq", value: true });
+        $("#grid").data("kendoGrid").dataSource.read();
+    });
+
+</script>
+
+@(Html.Kendo().Grid<net.paxialabs.mabe.serviplus.entities.ModelView.Operation.ModelViewEvidence>()
+    .Name("grid")
+    .EnableCustomBinding(true)
+    .Columns(columns =>
+    {
+        columns.Bound(o => o.Date).Title("Fecha").Format("{0:dd/MM/yyyy hh:mm:ss}").Width("150px").Filterable(f => f.Operators(ft => ft.ForDate(o => { o.Clear(); o.IsGreaterThan("Es posterior"); o.IsLessThan("Es anterior"); })));
+        columns.Bound(o => o.OrderID).Title("Nº de ODS").Width("100px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        //columns.Bound(o => o.StatusQuotation).Title("Foto Visita").Width("100px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        //columns.Bound(o => o.Folio).Title(" Foto Diagnóstico").Width("100px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        //columns.Bound(o => o.ClientName).Title(" Foto Reparación").Width("200px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        columns.Bound(o => o.EmployeeName).Title("Técnico de Servicio").Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        //columns.Command(command => command.Custom("Ver").Click("BadUse")).Title("Foto Mal Uso").Width(100);
+        //columns.Command(command => command.Custom("Ver").Click("StartODS")).Title("Foto Inicio Visita").Width(100);
+        columns.Command(command => { command.Custom("Inicio").Click("StartODS"); command.Custom("N° Serie").Click("NoSeriesNumber"); command.Custom("Nota Compra").Click("PurchaseNote"); command.Custom("Mal Uso").Click("BadUse"); command.Custom("Resumen").Click("Summary"); command.Custom("Firma del Cliente").Click("Finish"); }).Title("Evidencias").Width(350);
+    })
+
+    .Resizable(resize => resize.Columns(true))
+    .Pageable(p => p.ButtonCount(5).PageSizes(true).Refresh(true).Messages(m => m.ItemsPerPage("Elementos por Página")).Messages(m => m.Display("Elementos Mostrados {0}-{1} de {2}")))
+    .Sortable()
+    .HtmlAttributes(new { style = "height: 380px" })
+    .Scrollable(scrolling => scrolling.Enabled(true))
+    .Events(events => events.DataBound("gridDataBound"))
+    .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Read(read => read.Action("GetLisEvidencetAll", "Monitor").Data("filterData"))
+        .PageSize(15)
+        .ServerOperation(true)
+        .Events(e => e.Error("error_handler"))
+    )
+)
+
+<div id="myCarousel" class="carousel"  data-interval="false" style='display:none;'>
+    <!-- Indicators -->
+        @*<ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>*@
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div id="Evi1" class="item active">
+            <img id="image1">
+        </div>
+
+        <div id="Evi2"  class="item" >
+            <img id="image2">
+
+        </div>
+
+        <div id="Evi3"  class="item" >
+            <img id="image3">
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+@(Html.Kendo().Dialog()
+        .Name("dialogDetail")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Height(650)
+        .Modal(true)
+        .Visible(false)
+)
+@(Html.Kendo().Dialog()
+        .Name("dialogEvidence")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+)
+@(Html.Kendo().Dialog()
+        .Name("dialogPriorityDetail")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+)
+
+
+
+

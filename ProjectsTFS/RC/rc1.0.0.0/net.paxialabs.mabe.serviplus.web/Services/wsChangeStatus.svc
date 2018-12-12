@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="net.paxialabs.mabe.serviplus.web.Services.wsChangeStatus" CodeBehind="wsChangeStatus.svc.cs" %>

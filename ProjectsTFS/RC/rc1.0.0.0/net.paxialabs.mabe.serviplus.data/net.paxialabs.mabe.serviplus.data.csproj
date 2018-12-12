@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97418C0E-E948-4BF4-BCC1-C5F8B5323B36}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>net.paxialabs.mabe.serviplus.data</RootNamespace>
+    <AssemblyName>net.paxialabs.mabe.serviplus.data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.1.15.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinqKit.1.1.15\lib\net45\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Z.EntityFramework.Extensions, Version=3.12.27.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Extensions.3.12.27\lib\net45\Z.EntityFramework.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseFactory.cs" />
+    <Compile Include="BaseRepository.cs" />
+    <Compile Include="Factory\Operation\FactoryBlackList.cs" />
+    <Compile Include="Factory\Operation\FactoryBuildOfMaterial.cs" />
+    <Compile Include="Factory\Operation\FactoryCauseOrder.cs" />
+    <Compile Include="Factory\Operation\FactoryCauseVisit.cs" />
+    <Compile Include="Factory\Operation\FactoryClient.cs" />
+    <Compile Include="Factory\Operation\FactoryCodeFailure.cs" />
+    <Compile Include="Factory\Operation\FactoryCodeFailureByProduct.cs" />
+    <Compile Include="Factory\Operation\FactoryConfiguration.cs" />
+    <Compile Include="Factory\Operation\FactoryContrat.cs" />
+    <Compile Include="Factory\Operation\FactoryCountries.cs" />
+    <Compile Include="Factory\Operation\FactoryEmployee.cs" />
+    <Compile Include="Factory\Operation\FactoryGuaranty.cs" />
+    <Compile Include="Factory\Operation\FactoryGuarantyType.cs" />
+    <Compile Include="Factory\Operation\FactoryHistory.cs" />
+    <Compile Include="Factory\Operation\FactoryInstalledBase.cs" />
+    <Compile Include="Factory\Operation\FactoryInvoice.cs" />
+    <Compile Include="Factory\Operation\FactoryLogCRM.cs" />
+    <Compile Include="Factory\Operation\FactoryModelSerialNumber.cs" />
+    <Compile Include="Factory\Operation\FactoryModuleService.cs" />
+    <Compile Include="Factory\Operation\FactoryMonitorOrder.cs" />
+    <Compile Include="Factory\Operation\FactoryNotification.cs" />
+    <Compile Include="Factory\Operation\FactoryOrder.cs" />
+    <Compile Include="Factory\Operation\FactoryOrderEvidence.cs" />
+    <Compile Include="Factory\Operation\FactoryPayment.cs" />
+    <Compile Include="Factory\Operation\FactoryPolicy.cs" />
+    <Compile Include="Factory\Operation\FactoryPrice.cs" />
+    <Compile Include="Factory\Operation\FactoryPriority.cs" />
+    <Compile Include="Factory\Operation\FactoryProduct.cs" />
+    <Compile Include="Factory\Operation\FactoryQuotation.cs" />
+    <Compile Include="Factory\Operation\FactoryQuotationDetail.cs" />
+    <Compile Include="Factory\Operation\FactoryReceivers.cs" />
+    <Compile Include="Factory\Operation\FactoryREFACCIONES.cs" />
+    <Compile Include="Factory\Operation\FactoryRefSell.cs" />
+    <Compile Include="Factory\Operation\FactoryRefsellDetail.cs" />
+    <Compile Include="Factory\Operation\FactorySchedule.cs" />
+    <Compile Include="Factory\Operation\FactoryShopPlace.cs" />
+    <Compile Include="Factory\Operation\FactorySparePart.cs" />
+    <Compile Include="Factory\Operation\FactorySparePartODS.cs" />
+    <Compile Include="Factory\Operation\FactoryStates.cs" />
+    <Compile Include="Factory\Operation\FactoryStatusOrder.cs" />
+    <Compile Include="Factory\Operation\FactoryStatusScheme.cs" />
+    <Compile Include="Factory\Operation\FactoryStatusVisit.cs" />
+    <Compile Include="Factory\Operation\FactoryTypeQuotation.cs" />
+    <Compile Include="Factory\Operation\FactoryValidationGuarantyBOM.cs" />
+    <Compile Include="Factory\Operation\FactoryValidationGuarantyProduct.cs" />
+    <Compile Include="Factory\Operation\FactoryValidationsSerialNumber.cs" />
+    <Compile Include="Factory\Operation\FactoryVisit.cs" />
+    <Compile Include="Factory\Operation\FactoryWorkforce.cs" />
+    <Compile Include="Factory\SAP\FactorySAPResumen.cs" />
+    <Compile Include="Factory\Security\FactoryAudit.cs" />
+    <Compile Include="Factory\Security\FactoryDevicePhone.cs" />
+    <Compile Include="Factory\Security\FactoryDevicePhoneUser.cs" />
+    <Compile Include="Factory\Security\FactoryLogMobile.cs" />
+    <Compile Include="Factory\Security\FactoryMobileSync.cs" />
+    <Compile Include="Factory\Security\FactoryModule.cs" />
+    <Compile Include="Factory\Security\FactoryPermission.cs" />
+    <Compile Include="Factory\Security\FactoryProfile.cs" />
+    <Compile Include="Factory\Security\FactoryUser.cs" />
+    <Compile Include="IRepositoryGET.cs" />
+    <Compile Include="IRepositorySET.cs" />
+    <Compile Include="Model\Audit.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BlackList.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BOM.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BuildOfMaterials.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CauseOrder.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CauseVisit.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CifrasControl.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Client.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Clientes.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CodeFailure.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CodeFailureByProduct.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Configuration.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ContratReceipt.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Countries.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\db_paxialabs_mabe_serviplus_model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\db_paxialabs_mabe_serviplus_model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\db_paxialabs_mabe_serviplus_model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DevicePhone.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DevicePhoneUser.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Employee.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Evidence.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Fallas.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Guaranty.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GuarantyType.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\History.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HProduct_Result.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\InstalledBase.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\InterfaceLog.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Invoice.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LogCRM.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LogMobile.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LugarCompra.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Message.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MobileSync.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModelSerialNumber.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Module.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModuleMabe.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MonitorOrders.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ODS.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Orders.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Payment.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Permission.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Policy.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PRECIOS.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Prices.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Priority.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Product.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Profile.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PTRef.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Quotation.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\QuotationDetail.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Receivers.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\REFACCIONES.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\REFMAN.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RefSell.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RefsellQuotation.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Resumen.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Schedule.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ShopPlace.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpareParts.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_get_Quotation_Result.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_get_Quotation_Result1.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\States.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\StatusOrder.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\StatusScheme.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\StatusVisit.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TypeQuotation.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\User.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ValidationGuarantyBOM.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ValidationGuarantyProduct.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ValidationsSerialNumber.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Workforce.cs">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Operation\RepositoryBlackList.cs" />
+    <Compile Include="Repository\Operation\RepositoryBuildOfMaterial.cs" />
+    <Compile Include="Repository\Operation\RepositoryCauseOrder.cs" />
+    <Compile Include="Repository\Operation\RepositoryCauseVisit.cs" />
+    <Compile Include="Repository\Operation\RepositoryClient.cs" />
+    <Compile Include="Repository\Operation\RepositoryCodeFailure.cs" />
+    <Compile Include="Repository\Operation\RepositoryCodeFailureByProduct.cs" />
+    <Compile Include="Repository\Operation\RepositoryConfiguration.cs" />
+    <Compile Include="Repository\Operation\RepositoryContract.cs" />
+    <Compile Include="Repository\Operation\RepositoryCountries.cs" />
+    <Compile Include="Repository\Operation\RepositoryEmployee.cs" />
+    <Compile Include="Repository\Operation\RepositoryGuaranty.cs" />
+    <Compile Include="Repository\Operation\RepositoryGuarantyType.cs" />
+    <Compile Include="Repository\Operation\RepositoryHistory.cs" />
+    <Compile Include="Repository\Operation\RepositoryInstalledBase.cs" />
+    <Compile Include="Repository\Operation\RepositoryInvoice.cs" />
+    <Compile Include="Repository\Operation\RepositoryLogCRM.cs" />
+    <Compile Include="Repository\Operation\RepositoryModuleService.cs" />
+    <Compile Include="Repository\Operation\RepositoryMonitorOrder.cs" />
+    <Compile Include="Repository\Operation\RepositoryNotification.cs" />
+    <Compile Include="Repository\Operation\RepositoryOrder.cs" />
+    <Compile Include="Repository\Operation\RepositoryOrderEvidence.cs" />
+    <Compile Include="Repository\Operation\RepositoryPayment.cs" />
+    <Compile Include="Repository\Operation\RepositoryPolicy.cs" />
+    <Compile Include="Repository\Operation\RepositoryPrice.cs" />
+    <Compile Include="Repository\Operation\RepositoryPriority.cs" />
+    <Compile Include="Repository\Operation\RepositoryProduct.cs" />
+    <Compile Include="Repository\Operation\RepositoryQuotation.cs" />
+    <Compile Include="Repository\Operation\RepositoryQuotationDetail.cs" />
+    <Compile Include="Repository\Operation\RepositoryReceivers.cs" />
+    <Compile Include="Repository\Operation\RepositoryREFACCIONES.cs" />
+    <Compile Include="Repository\Operation\RepositoryRefSell.cs" />
+    <Compile Include="Repository\Operation\RepositoryRefsellDetail.cs" />
+    <Compile Include="Repository\Operation\RepositorySchedule.cs" />
+    <Compile Include="Repository\Operation\RepositoryShopPlace.cs" />
+    <Compile Include="Repository\Operation\RepositorySparePart.cs" />
+    <Compile Include="Repository\Operation\RepositoryStates.cs" />
+    <Compile Include="Repository\Operation\RepositoryStatusOrder.cs" />
+    <Compile Include="Repository\Operation\RepositoryStatusVisit.cs" />
+    <Compile Include="Repository\Operation\RepositoryTypeQuotation.cs" />
+    <Compile Include="Repository\Operation\RepositoryValidationGuarantyBOM.cs" />
+    <Compile Include="Repository\Operation\RepositoryValidationGuarantyProduct.cs" />
+    <Compile Include="Repository\Operation\RepositoryValidationsSerialNumber.cs" />
+    <Compile Include="Repository\Operation\RepositoryVisit.cs" />
+    <Compile Include="Repository\Operation\RepositoryModelSerialNumber.cs" />
+    <Compile Include="Repository\Operation\RepositoryWorkforce.cs" />
+    <Compile Include="Repository\Operation\RepositoryStatusScheme.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPBOM.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPCifrasControl.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPClientes.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPFalla.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPInterface.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPInventory.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPLugarCompra.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPODS.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPPrecios.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPPTRef.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPRefMan.cs" />
+    <Compile Include="Repository\SAP\RepositorySAPResumen.cs" />
+    <Compile Include="Repository\Security\RepositoryAudit.cs" />
+    <Compile Include="Repository\Security\RepositoryDevicePhone.cs" />
+    <Compile Include="Repository\Security\RepositoryDevicePhoneUser.cs" />
+    <Compile Include="Repository\Security\RepositoryLogMobile.cs" />
+    <Compile Include="Repository\Security\RepositoryMobileSync.cs" />
+    <Compile Include="Repository\Security\RepositoryModule.cs" />
+    <Compile Include="Repository\Security\RepositoryPermission.cs" />
+    <Compile Include="Repository\Security\RepositoryProfile.cs" />
+    <Compile Include="Repository\Security\RepositoryUser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\cs\Microsoft.DependencyValidation.Analyzers.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.DependencyValidation.Analyzers.0.9.0\analyzers\dotnet\Microsoft.DependencyValidation.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\DependencyValidation1\DependencyValidation1.layerdiagram">
+      <Link>DependencyValidation1.layerdiagram</Link>
+      <Visible>False</Visible>
+    </AdditionalFiles>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Model\db_paxialabs_mabe_serviplus_model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>db_paxialabs_mabe_serviplus_model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\db_paxialabs_mabe_serviplus_model.edmx.diagram">
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\net.paxialabs.mabe.serviplus.entities\net.paxialabs.mabe.serviplus.entities.csproj">
+      <Project>{9cde1309-a325-4ed0-9925-6e6c8d7ca4ef}</Project>
+      <Name>net.paxialabs.mabe.serviplus.entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\net.paxialabs.mabe.serviplus.security\net.paxialabs.mabe.serviplus.security.csproj">
+      <Project>{3da4718c-89b4-496b-b223-b0e064c85ffa}</Project>
+      <Name>net.paxialabs.mabe.serviplus.security</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\db_paxialabs_mabe_serviplus_model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.edmx</DependentUpon>
+      <LastGenOutput>db_paxialabs_mabe_serviplus_model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\db_paxialabs_mabe_serviplus_model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>db_paxialabs_mabe_serviplus_model.edmx</DependentUpon>
+      <LastGenOutput>db_paxialabs_mabe_serviplus_model.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

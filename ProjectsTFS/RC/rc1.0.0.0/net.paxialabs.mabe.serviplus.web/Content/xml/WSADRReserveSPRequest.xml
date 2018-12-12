@@ -1,0 +1,16 @@
+﻿<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:proc="http://mabe.com/MW/CONFINAL/Mobile/Process_RPL">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <proc:MT_ProcessRPL_Req>
+      <!--Optional:-->
+      <SessionReference Satelite="SATELITE_VALUE"/>
+      <!--Optional:-->
+      <DestinoSistema Mandante="MANDANTE_VALUE" idioma="IDIOMA_VALUE"/>
+      <!--Zero or more repetitions:-->
+      <Tipo_de_operacion>
+        <!--Zero or more repetitions:-->
+        ITEMS_VALUE
+      </Tipo_de_operacion>
+    </proc:MT_ProcessRPL_Req>
+  </soapenv:Body>
+</soapenv:Envelope>

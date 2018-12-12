@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Modulos";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+@(Html.Kendo().Splitter()
+.Name("splitter")
+.HtmlAttributes(new { style = "height: 350;" })
+.Panes(horizontalPanes =>
+{
+horizontalPanes.Add()
+        .HtmlAttributes(new { id = "left-pane" })
+        .Size("50%")
+        .Collapsible(true)
+        .Content(@<div class="pane-content">
+            @Html.Partial("_ModuleList")
+        </div>);
+
+horizontalPanes.Add()
+        .HtmlAttributes(new { id = "right-pane" })
+        .Collapsible(true)
+        .Size("50%")
+        .Content(@<div class="pane-content">
+            @Html.Partial("_ModuleDetail")
+        </div>);
+})
+)
+
+
+
+<script>
+    $(document).ready(function () {
+        var splitter = $("#splitter").data("kendoSplitter");
+        splitter.collapse("#right-pane");
+    });
+</script>

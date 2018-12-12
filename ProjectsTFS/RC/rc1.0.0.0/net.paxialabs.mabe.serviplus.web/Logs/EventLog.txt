@@ -1,0 +1,556 @@
+2017-11-07 13:12:41,899 [13] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 938c9b23-d019-470d-b1ab-c618e16f336f
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: TokenInvalid
+Mensaje de Error: 
+TokenInvalid
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+TokenInvalid
+Seguimiento de Pila interna:    en net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred) en C:\ProjectsTFS\Mabe\dev\net.paxialabs.mabe.serviplus.domain\Business\Operation\BusinessOrder.cs:línea 493
+   en net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred) en C:\ProjectsTFS\Mabe\dev\net.paxialabs.mabe.serviplus.domain\Facade\Operation\FacadeOrder.cs:línea 19
+   en net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) en C:\ProjectsTFS\Mabe\dev\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:línea 55
+2017-11-07 13:14:20,762 [11] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 3c9f003e-1e5f-4486-a9d8-95ed8193d4e5
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: TokenInvalid
+Mensaje de Error: 
+TokenInvalid
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+TokenInvalid
+Seguimiento de Pila interna:    en net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred) en C:\ProjectsTFS\Mabe\dev\net.paxialabs.mabe.serviplus.domain\Business\Operation\BusinessOrder.cs:línea 493
+   en net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred) en C:\ProjectsTFS\Mabe\dev\net.paxialabs.mabe.serviplus.domain\Facade\Operation\FacadeOrder.cs:línea 19
+   en net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) en C:\ProjectsTFS\Mabe\dev\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:línea 55
+2018-05-22 13:36:47,338 [25] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 6127552c-c9e3-4716-be08-ef095ba282ba
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-05-22 13:36:47,834 [6] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 1c3ac37e-d68a-4570-b991-8c64cfff9c6c
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-05-22 14:03:36,694 [11] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 20fcb2fe-9ddc-4061-ae7e-4ddf90263b1c
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Business\Operation\BusinessOrder.cs:line 744
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Facade\Operation\FacadeOrder.cs:line 20
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-06-08 13:13:09,413 [18] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 1cba1c5e-168f-4498-a41f-94d9c2a33341
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-06-08 13:13:12,123 [13] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: bb213bda-6b36-4dcb-9473-31fc18649b5b
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-06-08 13:13:44,809 [13] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 6c612257-348f-40da-9f2a-2825604b41b8
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-06-08 13:16:40,204 [14] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 3c62f3a8-3827-4afc-adca-4a9b164fba94
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-06-08 13:17:46,592 [14] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 08/06/2018 01:17:46 p. m.
+Data: tecTA5151 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-06-08 13:20:46,199 [14] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 08/06/2018 01:20:46 p. m.
+Data: tecTA5151 FIN_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-06-08 13:24:18,522 [30] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: acb9a3e6-7e8d-439b-81d1-7bc9164a7588
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: The underlying provider failed on Open.
+Mensaje de Error: 
+The underlying provider failed on Open.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+The underlying provider failed on Open.
+Seguimiento de Pila interna:    at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__3[TResult](IEnumerable`1 sequence)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at net.paxialabs.mabe.serviplus.data.Repository.Security.RepositoryUser.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.data\Repository\Security\RepositoryUser.cs:line 77
+   at net.paxialabs.mabe.serviplus.domain.Business.Users.BusinessUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Business\Users\BusinessUsers.cs:line 206
+   at net.paxialabs.mabe.serviplus.domain.Facade.Users.FacadeUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Facade\Users\FacadeUsers.cs:line 64
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-06-08 13:24:27,547 [30] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 08/06/2018 01:24:27 p. m.
+Data: tecTA5151 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-06-13 14:20:27,250 [8] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: d5fb9400-5420-4935-a3ad-decbf046c64d
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Business\Operation\BusinessOrder.cs:line 939
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Facade\Operation\FacadeOrder.cs:line 20
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-06-13 14:20:40,803 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 13/06/2018 02:20:40 p. m.
+Data: tecTA5151 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-06-13 14:21:43,189 [8] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 8682c96c-3827-4236-ba45-d82b11887095
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Business\Operation\BusinessOrder.cs:line 939
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Facade\Operation\FacadeOrder.cs:line 20
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-06-13 14:22:07,100 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 13/06/2018 02:22:07 p. m.
+Data: tecTA5151 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-06-13 14:23:29,048 [8] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 48324dec-6816-4e05-8ac6-fc34a6f7671f
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Business\Operation\BusinessOrder.cs:line 939
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Facade\Operation\FacadeOrder.cs:line 20
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-06-13 14:23:55,727 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 13/06/2018 02:23:55 p. m.
+Data: tecTA5151 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-06-13 14:27:59,437 [8] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 55204b71-24c3-40dd-b809-83a4e374caa2
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Business\Operation\BusinessOrder.cs:line 939
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Facade\Operation\FacadeOrder.cs:line 20
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-06-13 14:28:47,842 [8] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 24097d49-0d09-4765-824b-c031a7dfcd09
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Business\Operation\BusinessOrder.cs:line 939
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.domain\Facade\Operation\FacadeOrder.cs:line 20
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S4\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-06-13 14:28:55,771 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 13/06/2018 02:28:55 p. m.
+Data: tecTA5151 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-09-06 17:58:01,457 [15] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: dff161a0-4ae4-45fc-960f-5656779b2b5d
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-06 17:59:44,048 [27] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/09/2018 05:59:44 p. m.
+Data: tec2422 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-09-18 13:29:39,144 [14] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: e98483cd-761b-43f1-bcde-496fe1210ab8
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-18 13:30:09,072 [13] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 6e46fdf9-999c-4556-83f6-b313d4ad0195
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-18 13:32:30,976 [16] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: d68d2085-c728-48ec-ba5c-159c7b2d578c
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-18 13:32:37,249 [16] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 18/09/2018 01:32:37 p. m.
+Data: tec0488 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-09-18 13:33:22,112 [16] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 18/09/2018 01:33:22 p. m.
+Data: tec0488 FIN_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-09-18 13:37:20,341 [43] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 18/09/2018 01:37:20 p. m.
+Data: tec6118 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-09-18 13:52:06,535 [39] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 18/09/2018 01:52:06 p. m.
+Data: tec6118 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-09-18 13:52:12,257 [39] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: e13b305e-9a7a-473c-9d99-08fb1115e1b7
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Method not found: 'Void net.paxialabs.mabe.serviplus.entities.ModelView.Operation.DetailODS.set_EmployeeID(System.String)'.
+Mensaje de Error: 
+Method not found: 'Void net.paxialabs.mabe.serviplus.entities.ModelView.Operation.DetailODS.set_EmployeeID(System.String)'.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Method not found: 'Void net.paxialabs.mabe.serviplus.entities.ModelView.Operation.DetailODS.set_EmployeeID(System.String)'.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred)
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred)
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-09-18 13:52:21,300 [39] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 18/09/2018 01:52:21 p. m.
+Data: tec6118 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-09-18 13:52:45,719 [39] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 39553d5d-52fa-4926-be2e-d2ef1d950f60
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Method not found: 'Void net.paxialabs.mabe.serviplus.entities.ModelView.Operation.DetailODS.set_EmployeeID(System.String)'.
+Mensaje de Error: 
+Method not found: 'Void net.paxialabs.mabe.serviplus.entities.ModelView.Operation.DetailODS.set_EmployeeID(System.String)'.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Method not found: 'Void net.paxialabs.mabe.serviplus.entities.ModelView.Operation.DetailODS.set_EmployeeID(System.String)'.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred)
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred)
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-09-18 14:00:24,096 [39] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 18/09/2018 02:00:24 p. m.
+Data: tec6118 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-09-18 14:00:24,778 [39] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: bd58641a-ed94-4e44-879a-91dd64c03307
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Method not found: 'Void net.paxialabs.mabe.serviplus.entities.ModelView.Operation.DetailODS.set_EmployeeID(System.String)'.
+Mensaje de Error: 
+Method not found: 'Void net.paxialabs.mabe.serviplus.entities.ModelView.Operation.DetailODS.set_EmployeeID(System.String)'.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Method not found: 'Void net.paxialabs.mabe.serviplus.entities.ModelView.Operation.DetailODS.set_EmployeeID(System.String)'.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred)
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred)
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-09-25 19:23:57,237 [9] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 2374ef34-c15a-4006-89cd-95a126e47606
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-25 19:25:25,940 [8] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 25/09/2018 07:25:25 p. m.
+Data: tec0518 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-09-26 12:36:00,471 [12] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 9147422f-e2e2-4347-ae36-74aeef291cd9
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Mensaje de Error: 
+The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Seguimiento de Pila interna:    at System.Data.Entity.Internal.AppConfig.get_DefaultInstance()
+   at System.Data.Entity.Internal.LazyInternalConnection..ctor(DbContext context, String nameOrConnectionString)
+   at System.Data.Entity.DbContext..ctor(String nameOrConnectionString)
+   at net.paxialabs.mabe.serviplus.data.Model.db_PaxiaLabs_ServiplusEntities..ctor() in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\Model\db_paxialabs_mabe_serviplus_model.Context.cs:line 21
+   at net.paxialabs.mabe.serviplus.data.BaseRepository..ctor() in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\BaseRepository.cs:line 12
+   at net.paxialabs.mabe.serviplus.data.Repository.Security.RepositoryUser..ctor()
+   at net.paxialabs.mabe.serviplus.domain.Business.Users.BusinessUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Business\Users\BusinessUsers.cs:line 206
+   at net.paxialabs.mabe.serviplus.domain.Facade.Users.FacadeUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Facade\Users\FacadeUsers.cs:line 64
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-26 12:36:43,724 [12] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: cc2fbc99-7cec-416b-ba8f-aa720086f32e
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Mensaje de Error: 
+The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Seguimiento de Pila interna:    at System.Data.Entity.Internal.AppConfig.get_DefaultInstance()
+   at System.Data.Entity.Internal.LazyInternalConnection..ctor(DbContext context, String nameOrConnectionString)
+   at System.Data.Entity.DbContext..ctor(String nameOrConnectionString)
+   at net.paxialabs.mabe.serviplus.data.Model.db_PaxiaLabs_ServiplusEntities..ctor() in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\Model\db_paxialabs_mabe_serviplus_model.Context.cs:line 21
+   at net.paxialabs.mabe.serviplus.data.BaseRepository..ctor() in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\BaseRepository.cs:line 12
+   at net.paxialabs.mabe.serviplus.data.Repository.Security.RepositoryUser..ctor()
+   at net.paxialabs.mabe.serviplus.domain.Business.Users.BusinessUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Business\Users\BusinessUsers.cs:line 206
+   at net.paxialabs.mabe.serviplus.domain.Facade.Users.FacadeUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Facade\Users\FacadeUsers.cs:line 64
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-26 12:42:20,774 [12] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: a2d9288c-70d6-4423-ab26-2321389efe3d
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Mensaje de Error: 
+The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Seguimiento de Pila interna:    at System.Data.Entity.Internal.AppConfig.get_DefaultInstance()
+   at System.Data.Entity.Internal.LazyInternalConnection..ctor(DbContext context, String nameOrConnectionString)
+   at System.Data.Entity.DbContext..ctor(String nameOrConnectionString)
+   at net.paxialabs.mabe.serviplus.data.Model.db_PaxiaLabs_ServiplusEntities..ctor() in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\Model\db_paxialabs_mabe_serviplus_model.Context.cs:line 21
+   at net.paxialabs.mabe.serviplus.data.BaseRepository..ctor() in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\BaseRepository.cs:line 12
+   at net.paxialabs.mabe.serviplus.data.Repository.Security.RepositoryUser..ctor()
+   at net.paxialabs.mabe.serviplus.domain.Business.Users.BusinessUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Business\Users\BusinessUsers.cs:line 206
+   at net.paxialabs.mabe.serviplus.domain.Facade.Users.FacadeUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Facade\Users\FacadeUsers.cs:line 64
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-26 12:43:16,611 [12] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: f746e8cb-c283-4409-9819-f224de096ce9
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Mensaje de Error: 
+The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Seguimiento de Pila interna:    at System.Data.Entity.Internal.AppConfig.get_DefaultInstance()
+   at System.Data.Entity.Internal.LazyInternalConnection..ctor(DbContext context, String nameOrConnectionString)
+   at System.Data.Entity.DbContext..ctor(String nameOrConnectionString)
+   at net.paxialabs.mabe.serviplus.data.Model.db_PaxiaLabs_ServiplusEntities..ctor() in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\Model\db_paxialabs_mabe_serviplus_model.Context.cs:line 21
+   at net.paxialabs.mabe.serviplus.data.BaseRepository..ctor() in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\BaseRepository.cs:line 12
+   at net.paxialabs.mabe.serviplus.data.Repository.Security.RepositoryUser..ctor()
+   at net.paxialabs.mabe.serviplus.domain.Business.Users.BusinessUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Business\Users\BusinessUsers.cs:line 206
+   at net.paxialabs.mabe.serviplus.domain.Facade.Users.FacadeUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Facade\Users\FacadeUsers.cs:line 64
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-26 12:44:17,049 [16] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: da0491c7-a489-4293-87d9-dd746412168f
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Mensaje de Error: 
+The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+The type initializer for 'System.Data.Entity.Internal.AppConfig' threw an exception.
+Seguimiento de Pila interna:    at System.Data.Entity.Internal.AppConfig.get_DefaultInstance()
+   at System.Data.Entity.Internal.LazyInternalConnection..ctor(DbContext context, String nameOrConnectionString)
+   at System.Data.Entity.DbContext..ctor(String nameOrConnectionString)
+   at net.paxialabs.mabe.serviplus.data.Model.db_PaxiaLabs_ServiplusEntities..ctor() in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\Model\db_paxialabs_mabe_serviplus_model.Context.cs:line 21
+   at net.paxialabs.mabe.serviplus.data.BaseRepository..ctor() in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\BaseRepository.cs:line 12
+   at net.paxialabs.mabe.serviplus.data.Repository.Security.RepositoryUser..ctor()
+   at net.paxialabs.mabe.serviplus.domain.Business.Users.BusinessUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Business\Users\BusinessUsers.cs:line 206
+   at net.paxialabs.mabe.serviplus.domain.Facade.Users.FacadeUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Facade\Users\FacadeUsers.cs:line 64
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-26 15:58:35,684 [10] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 7dcc2ee8-985b-45a8-9e50-fab85734996e
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-26 15:58:50,596 [8] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 613eff4a-12f6-49ea-8576-7edbf7679674
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-27 10:17:07,882 [8] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 96d25f60-bf19-47da-bee2-ee7c180bb692
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-27 10:30:05,979 [10] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 98568297-02c6-4784-8caf-ab185054be54
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: No connection string named 'db_PaxiaLabs_ServiplusEntities' could be found in the application config file.
+Mensaje de Error: 
+No connection string named 'db_PaxiaLabs_ServiplusEntities' could be found in the application config file.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+No connection string named 'db_PaxiaLabs_ServiplusEntities' could be found in the application config file.
+Seguimiento de Pila interna:    at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at net.paxialabs.mabe.serviplus.data.Repository.Security.RepositoryUser.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.data\Repository\Security\RepositoryUser.cs:line 76
+   at net.paxialabs.mabe.serviplus.domain.Business.Users.BusinessUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Business\Users\BusinessUsers.cs:line 206
+   at net.paxialabs.mabe.serviplus.domain.Facade.Users.FacadeUsers.GetUserByToken(String Token) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.domain\Facade\Users\FacadeUsers.cs:line 64
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-09-28 13:42:46,790 [12] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 4d041c5d-cec3-463d-9988-f44bdc741e45
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S6\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-11-06 15:51:44,542 [9] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 90d03d92-7e8a-4a21-9f47-44285ae78ac6
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S7\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 55
+2018-11-06 18:03:09,658 [11] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 71a9998c-8a7f-4ccb-98a2-82615f05ef27
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: bloque 1
+Mensaje de Error: 
+bloque 1
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+bloque 1
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S7\net.paxialabs.mabe.serviplus.domain\Business\Operation\BusinessOrder.cs:line 881
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S7\net.paxialabs.mabe.serviplus.domain\Facade\Operation\FacadeOrder.cs:line 20
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S7\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-11-06 18:03:16,351 [12] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 06/11/2018 06:03:16 p. m.
+Data: tec0520 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-11-08 18:32:35,585 [14] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 57b91881-b74a-42ab-92d1-8567b581e88f
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: The remote name could not be resolved: 'maps.googleapis.com'
+Mensaje de Error: 
+The remote name could not be resolved: 'maps.googleapis.com'
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+The remote name could not be resolved: 'maps.googleapis.com'
+Seguimiento de Pila interna:    at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at net.paxialabs.mabe.serviplus.domain.Business.Interface.BusinessGoogle.GetDistanceMatrix(ModelViewGoogleMapsDistanceMatrixRequest model) in C:\PojectsTFS\Mabe\dev_sprint\S7\net.paxialabs.mabe.serviplus.domain\Business\Interface\BusinessGoogle.cs:line 51
+2018-11-08 18:32:35,841 [14] ERROR net.paxialabs.mabe.serviplus.security.ManagerExceptions.Commons.Generic_Exception - 
+GUI de Error: 6876210e-b7fd-43f2-8e4d-bd81876ccf4b
+Codigo de Error: ErrorGoogleMaps
+Descripción del Error: Object reference not set to an instance of an object.
+Mensaje de Error: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila: 
+Excepción interna: 
+Mensaje de Error Interno: 
+Object reference not set to an instance of an object.
+Seguimiento de Pila interna:    at net.paxialabs.mabe.serviplus.domain.Business.Operation.BusinessOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S7\net.paxialabs.mabe.serviplus.domain\Business\Operation\BusinessOrder.cs:line 1065
+   at net.paxialabs.mabe.serviplus.domain.Facade.Operation.FacadeOrder.GetListOrden(ModelViewUserVisits objCred) in C:\PojectsTFS\Mabe\dev_sprint\S7\net.paxialabs.mabe.serviplus.domain\Facade\Operation\FacadeOrder.cs:line 20
+   at net.paxialabs.mabe.serviplus.web.Controllers.OrderController.GetListVisit(String ListVisit) in C:\PojectsTFS\Mabe\dev_sprint\S7\net.paxialabs.mabe.serviplus.web\Controllers\OrderController.cs:line 57
+2018-11-08 18:33:13,815 [10] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 08/11/2018 06:33:13 p. m.
+Data: tec0520 INICIO_DescargaODS 
+-----------------------Log Mobile End------------------------
+2018-11-08 18:33:55,223 [10] INFO  MabeMobileLog - -----------------------Log Mobile Inicio------------------------Fecha: 08/11/2018 06:33:55 p. m.
+Data: tec0520 FIN_DescargaODS 
+-----------------------Log Mobile End------------------------

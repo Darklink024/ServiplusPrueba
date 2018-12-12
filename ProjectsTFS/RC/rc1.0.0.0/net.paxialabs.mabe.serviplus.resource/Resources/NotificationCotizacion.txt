@@ -1,0 +1,280 @@
+	
+
+<style>
+   
+
+body,div,dl,dt,dd,ul,ol,li,nav,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,a
+{
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	border-style: solid;
+	border-color: transparent;
+	-webkit-transform-origin: left top;
+	-ms-transform-origin: left top;
+	-o-transform-origin: left top;
+	transform-origin: left top;
+	background-repeat: no-repeat;
+}
+.colelem /* a child element of a column */
+{
+	display: inline;
+	float: left;
+	clear: both;
+}
+.browser_width > *
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}
+
+.grpelem,.accordion_wrapper /* a child element of a group */
+{
+	display: inline;
+	float: left;
+}
+
+
+
+.colelem100,.verticalspacer /* a child element of a column that is 100% width */
+{
+	clear: both;
+}
+
+
+#page
+{
+	z-index: 1;
+	min-height: 818.9500000000003px;
+	background-image: none;
+	border-width: 0px;
+	border-color: #000000;
+	background-color: transparent;
+	padding-bottom: 0px;
+	width: 100%;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u100
+{
+	z-index: 2;
+	height: 326px;
+	background-color: #5B99C9;
+	opacity: 0.1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+}
+
+
+
+#u100-bw
+{
+	z-index: 2;
+	height: 326px;
+}
+
+#u144-6
+{
+	z-index: 3;
+	min-height: 57px;
+	background-color: transparent;
+	color: #000000;
+	text-align: center;
+	font-size: 18px;
+	line-height: 25px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 213px;
+	width: 70.17%;
+	left: 22.17%;
+}
+
+#u149
+{
+	z-index: 9;
+	min-height: 93px;
+	-pie-box-shadow: 6px 6px 8px #BFBFBF;
+	box-shadow: 6px 6px 8px rgba(127,127,127,0.5);
+	background-color: #5E646E;
+}
+
+#u149_align_to_page
+{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	max-width: 600px;
+}
+
+#u194
+{
+	z-index: 10;
+	width: 212px;
+	background-color: transparent;
+	margin-bottom: -42px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: -35px;
+	left: -30px;
+}
+
+#u181-4
+{
+	z-index: 45;
+	width: 197px;
+	min-height: 41px;
+	background-color: transparent;
+	color: #FFFFFF;
+	line-height: 34px;
+	font-size: 28px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 26px;
+	left: 189px;
+}
+
+#u149-bw
+{
+	z-index: 9;
+	min-height: 93px;
+	margin-top: 56px;
+}
+
+#u217-31
+{
+	z-index: 12;
+	min-height: 362px;
+	line-height: 17px;
+	color: 	#000000;
+	font-size: 12px;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	margin-top: 12px;
+	position: relative;
+	width: 70.17%;
+	margin-left: 12.17%;
+	
+}
+
+#u144-2,#u217-2,#u217-7,#u217-10,#u217-13,#u217-23
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+
+}
+
+#u217-4,#u217-5,#u217-8,#u217-11,#u217-14,#u217-15,#u217-17,#u217-18,#u217-20,#u217-21,#u217-25,#u217-26,#u217-27
+{
+	text-align: justify;
+}
+
+
+
+
+#pu100,#u220_img
+{
+	width: 100%;
+}
+p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+b {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+</style>
+
+            <center>
+                <table width="800" style="border: 0px; border-collapse: collapse;">
+                    <tr><td  bgcolor="#FFFFFF">
+					<img src="http://vmpaxiadev01.cloudapp.net:9200/content/Mailing/ServiplusHome.png" alt="" width="800" style="margin-left:-5px"/>
+					</td></tr>
+                    <tr>
+					<td>
+				    <table width="800"> 
+				    <tr><td>
+					<div>
+					<center>
+					<p ">Hola <span id="u217-2">#%Nombre%#</span> </p>
+					<p id="u217-21">&nbsp;</p>
+					<p >&iexclTe hacemos llegar la cotizaci&oacuten del servicio de reparaci&oacuten!</p>
+					<p id="u217-21">&nbsp;</p>
+					<p ><span id="u217-2">Tu N&uacutemero de Orden de Servicio es : #%OrderID%#</span></p>
+					<p ><span id="u217-2">Tu Folio de Cotizaci&oacuten es : #%Folio%#</span></p>
+				
+					
+					
+					
+					<p id="u217-27">&nbsp;</p>
+					<p >Detalles del Servicio:</p>
+					<p id="u217-27">&nbsp;</p>
+					 <table class='table table - bordered table - condensed' border='1' >
+                     <tr>
+					 <td  style='font-size: 11px; color:#FFFFFF; background-color:#16568A; text-align:left;  padding:5px 5px 5px 15px'><b>Modelo</b></td>
+					 <td  style='font-size:11px; color:#FFFFFF; background-color:#16568A; text-align:left;  padding:5px 5px 5px 15px'><b>Descripci&oacuten</b></td>
+					 <td  style='color:#FFFFFF; background-color:#16568A; text-align:left; padding:5px 5px 5px 15px'><b>N&#176; de Serie</b></td>
+					 <td  style='font-size:11px; color:#FFFFFF; background-color:#16568A; text-align:left;  padding:5px 5px 5px 15px'><b>Fecha de Compra</b></td>
+					 <td style='font-size:11px; color:#FFFFFF; background-color:#16568A; text-align:left; padding:5px 5px 5px 15px'><b>Lugar de Compra</b></td>
+					 </tr>
+                     <tr>
+					 <td style=' text-align:left; height:3px;'> <b style='	font-size: 9px; '> #%Modelo%#</b> </td>
+					 <td style=' text-align:left; height:3px;'> <b style='	font-size: 9px;'> #%Descripcion%#</b> </td>
+					 <td style=' text-align:left; height:3px;'> <b style='	font-size: 9px;'> #%Serie%#</b> </td>
+					 <td style=' text-align:left; height:3px;'> <b style='	font-size: 9px;'> #%Fecha%#</b> </td>
+					 <td style=' text-align:left; height:3px;'> <b style='	font-size: 9px;'> #%Lugar%#</b> </td>
+					 </tr> 
+					 </table>
+				    <p id="u217-27">&nbsp;</p> 
+					
+					<p >Conserve estos datos para cualquier seguimiento y/o aclaraci&oacuten futura.</p>
+					<p id="u217-21">&nbsp;</p>
+					<p >Para mayor informaci&oacuten consulte nuestro <a href="https://serviplus.com.mx/servicio/es_MX/privacidad" target="_blank">Aviso de Privacidad.</a></p>
+					<p id="u217-21">&nbsp;</p>
+					<p >Si tienes alguna duda, comunicate con nosotros:</p>
+					<p id="u217-21">&nbsp;</p>
+					<p >www.serviplus.com.mx</p>
+					<p >serviplus@mabe.com.mx</p>
+					<p >servicio@mabe.com.mx</p>
+					<p >serviciopremium@mabe.com.mx</p>
+					<p id="u217-21">&nbsp;</p>
+					<p >01 461 471 70 00</p>
+					<p >01 461 471 71 00</p>
+					<p >01 461 471 72 00</p>
+					<p id="u217-21">&nbsp;</p>
+				    <p ><span id="u217-2">Siempre estamos para Servirte.</span></p>
+					<p ><span id="u217-2">&iexclGracias por confiar en nosotros!</span></p>
+					<p id="u217-27">&nbsp;</p> 
+					<p id="u217-27">&nbsp;</p> 
+					</center>
+					</div>
+					</td></tr></table>
+                    </td>
+                    </tr>
+					<tr><td>
+					<img src="http://vmpaxiadev01.cloudapp.net:9200/content/Mailing/Footer.jpg" alt=""  style=" height: 80px;"  width="800" style="margin-left:-5px"/>
+					</td></tr>
+					<tr><td>
+					<center><p >Permitanos recordarle que la cuenta cotizaciones.serviplus@mabe.com.mx no recibe correos electr&oacutenicos</p></center>
+					</td></tr>
+					<tr>
+                </table>
+            </center>
+            

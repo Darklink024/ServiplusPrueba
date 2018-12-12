@@ -1,0 +1,64 @@
+﻿<div id="mnuPrincipal" style="background-color: black; width: 180px; min-height: 600px; float:left; text-align: center; background-color: rgba(23,120,187,.53);">
+    
+    <img src="@Url.Content("~/Content/Images/Group_26.png")" style="margin-top: 20px" />
+    <br />
+    <span class="perfilUser">@ViewBag.Profile</span>
+    <br />
+    <span class="perfilUser">@ViewBag.User</span>
+    <br />
+    <span class="perfilUser">Modulo:</span>
+    <br />
+    <span class="perfilUser">@ViewBag.Module</span>
+    <br />
+    <a href="@Url.Content("~/Home/Index")">
+        <div style="float: left; margin-top: 0px; background-color: rgba(51,51,51,.53); cursor: pointer; height:75px; width: 100%; text-align: left; padding: 10px">
+            <img src="@Url.Content("~/Content/Images/Group_83.png")" />
+            <span style="color: white;">Monitor</span>
+        </div>
+    </a>
+
+    <a href="@Url.Content("~/User/Index")">
+        <div style="float: left; margin-top: 0px; background-color: rgba(51,51,51,.53); cursor: pointer; height:75px; width: 100%; text-align: left; padding: 10px">
+            <img src="@Url.Content("~/Content/Images/Group_82.png")" />
+            <span style="color: white;">Administración</span>
+        </div>
+    </a>
+
+    <a href="@Url.Content("~/Priority/Index")">
+        <div style="float: left; margin-top: 0px; background-color: rgba(51,51,51,.53); cursor: pointer; height:75px; width: 100%; text-align: left; padding: 10px">
+            <img src="@Url.Content("~/Content/Images/Group_81.png")" />
+            <span style="color: white;">Configuración</span>
+        </div>
+    </a>
+
+    <a href="@Url.Content("~/Security/SingOut")">
+        <div style="float: left; margin-top: 0px; background-color: rgba(51,51,51,.53); cursor: pointer; height:75px; width: 100%; text-align: left; padding: 10px">
+            <img src="@Url.Content("~/Content/Images/Group_84.png")" />
+            <span style="color: white;">Cerrar Sesión</span>
+        </div>
+    </a>
+
+    <div style="float: left; margin-top: 0px; background-color: rgba(51,51,51,.53); width:100%; height: 70px; padding:15px">
+        <img src="@Url.Content("~/Content/Images/Group_85.png")" />
+    </div>
+</div>
+
+<div style="float:left; cursor: pointer;">
+    <img id="imgMnuShowHide" src="@Url.Content("~/Content/Images/Group_86b.png")" style="margin-top: 20px" onclick="showhide();" />
+</div>
+
+<script>
+
+    function showhide() { 
+        if ($('#mnuPrincipal').is(":hidden")) {
+            $('#mnuPrincipal').show("slow");
+            $('#imgMnuShowHide').attr("src", "@Url.Content("~/Content/Images/Group_86b.png")")
+        } else {
+            $('#mnuPrincipal').hide("slow");
+            $('#imgMnuShowHide').attr("src", "@Url.Content("~/Content/Images/Group_86.png")")
+        }
+
+    }
+</script>
+
+ 

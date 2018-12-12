@@ -1,0 +1,51 @@
+﻿<fieldset>
+    <div class="en-bloque">
+        <label class="main-data font-weight-bold en-bloque slight-margin-bottom blue-header">Cliente</label>
+        <label class="main-data font-weight-bold">No. de Cliente:</label>
+        <span>@ViewBag.dataClient.ClientID</span>
+    </div>
+
+    <label class="slight-margin-bottom">Nombre:</label>
+    <span class="en-linea right-spacing">@ViewBag.dataClient.FirstName</span>
+    <label>Apellido:</label>
+    <span class="en-linea">@ViewBag.dataClient.LastName</span>
+
+    <label class="main-data font-weight-bold en-bloque slight-margin-bottom blue-header">Contacto</label>
+    <label>Teléfono 1:</label>
+    <span class="tel-right-spacing">@ViewBag.dataClient.PhoneNumber1</span>
+    <label>Teléfono 2:</label>
+    <span class="tel-right-spacing">@ViewBag.dataClient.PhoneNumber2</span>
+    <label>Teléfono 3:</label>
+    <span class="tel-right-spacing">@ViewBag.dataClient.PhoneNumber3</span>
+    <label>Extensión:</label>
+    <span>@ViewBag.dataClient.PhoneExtension1</span>
+    <br />
+    <label class="slight-margin-bottom">Correo Electrónico:</label>
+    <span>@ViewBag.dataClient.Email</span>
+
+    <label class="main-data font-weight-bold en-bloque slight-margin-bottom blue-header">Dirección</label>
+    <label>Calle:</label>
+    <span class="street-right-spacing">@ViewBag.dataClient.StreetAddress</span>
+    <label>No. Ext.:</label>
+    <span class="double-right-spacing">@ViewBag.dataClient.NumberExternalAddress</span>
+    <label>No. Int.:</label>
+    <span>@ViewBag.dataClient.NumberInternalAddress</span>
+    <br />
+    <label class="slight-margin-bottom">Colonia:</label>
+    <span class="double-right-spacing">@ViewBag.dataClient.BoroughAddress</span>
+    <label>CP:</label>
+    <span class="double-right-spacing">@ViewBag.dataClient.PostalCodeAddress</span>
+    <label>Delegación / Municipio:</label>
+    <span>@ViewBag.dataClient.MunicipalityAddress</span>
+
+    <br />
+
+    <ul class="aditionals slight-margin-top">
+        <li><label>Adicional 1:</label><span> @ViewBag.dataClient.AdditionalInfoAddress1</span></li>
+        <li><label>Adicional 2:</label><span> @ViewBag.dataClient.AdditionalInfoAddress2</span></li>
+        <li><label>Adicional 3:</label><span> @ViewBag.dataClient.AdditionalInfoAddress3</span></li>
+        <li><label>Adicional 4:</label><span> @ViewBag.dataClient.AdditionalInfoAddress4</span></li>
+        <li><label>Adicional 5:</label><span> @ViewBag.dataClient.AdditionalInfoAddress5</span></li>
+    </ul>
+
+</fieldset>

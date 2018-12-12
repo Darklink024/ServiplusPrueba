@@ -1,0 +1,175 @@
+﻿
+@*<button class="btn btn-aceptar" type="button" id="btnAdd">Agregar</button>*@
+
+<button class="k-button" type="button" id="btnStatus">Cambiar estado</button>
+
+@(Html.Kendo().Grid<net.paxialabs.mabe.serviplus.entities.ModelView.Operation.ModelViewPriority>()
+    .Name("grid")
+    .EnableCustomBinding(true)
+    .Columns(columns =>
+    {
+        columns.Bound(o => o.Priority).Title("Secuencia").Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        //columns.Bound(o => o.Description).Width("150px").Filterable(f => f.Operators(ft => ft.ForString(o => { o.Clear(); o.Contains("Contiene"); o.StartsWith("Inicia con"); })));
+        columns.Bound(o => o.ScheduleStart).Title("Inicio").Width("150px").Filterable(f => f.Operators(ft => ft.ForDate(o => { o.Clear(); o.IsGreaterThan("Es posterior"); o.IsLessThan("Es anterior"); })));
+        columns.Bound(o => o.ScheduleEnd).Title("Fin").Width("150px").Filterable(f => f.Operators(ft => ft.ForDate(o => { o.Clear(); o.IsGreaterThan("Es posterior"); o.IsLessThan("Es anterior"); })));
+        columns.Bound(o => o.Status).Title("Estatus").Width("150px").Filterable(f => f.Messages(m => m.IsTrue("Activo")).Messages(m => m.IsFalse(" No Activo"))).ClientTemplate("# if(data.Status) { # Activo # } else { #  No Activo  # } #");
+        //columns.Command(command => command.Custom("Detalle").Click("showDetails")).Width(180);
+        
+
+    })
+    .Selectable(selectable => selectable.Mode(GridSelectionMode.Multiple))
+    .Resizable(resize => resize.Columns(true))
+    .Pageable(p => p.ButtonCount(5).PageSizes(true).Refresh(true).Messages(m => m.ItemsPerPage("Elementos por Página")).Messages(m => m.Display("Elementos Mostrados {0}-{1} de {2}")))
+    .Sortable()
+    .HtmlAttributes(new { style = "height: 450px" })
+    .Scrollable(scrolling => scrolling.Enabled(true))
+    .Events(events => events.DataBound("gridDataBound"))
+    .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Read(read => read.Action("GetListAll", "Priority").Data("filterData"))
+        .PageSize(15)
+        .ServerOperation(true)
+        .Events(e => e.Error("error_handler"))
+    )
+)
+
+
+@(Html.Kendo().Dialog()
+        .Name("confirmStatusSchedule")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+        .Actions(actions =>
+        {
+            actions.Add().Text("<button class='btn btn-confirmar'>Aceptar</button>").Action("confirmStatusSchedule_OK");
+            actions.Add().Text("<button class='btn btn-cancel'>Cancelar</button>");
+        })
+        .Events(ev => ev.Close("onClose").Open("onOpen"))
+)
+
+
+@(Html.Kendo().Dialog()
+        .Name("dialogPriorityDetail1")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+)
+
+
+    <script>
+
+    function gridDataBound(e) {
+        var grid = e.sender;
+        if (grid.dataSource.total() == 0) {
+            var dialog = $('#dialogPriorityDetail1').data("kendoDialog");
+            $('#dialogPriorityDetail1').parent().find('.k-dialog-title').css(' font-size', 'bold');
+            dialog.content('No se encontraron datos para mostrar.');
+            dialog.open();
+            //alert('No se encontraron datos para mostrar.');
+            e.sender.pager.options.messages.empty = 'No se encontraron datos para mostrar.';
+        }
+    }
+
+    function error_handler(e) {
+        alert('No cuenta con permisos suficientes.');
+    }
+
+    function filterData() {
+        return {};
+    }
+
+        $("#grid").on("dblclick", " tbody > tr", function () {
+            var dataItem = $("#grid").data("kendoGrid");
+            row = dataItem.select();
+            item = dataItem.dataItem(row);
+            //console.log(dataItem.dataItem($(this)));
+            $("#ScheduleStart").val(item.ScheduleStart);
+            $("#ScheduleEnd").val(item.ScheduleEnd);
+            $("#ScheduleID").val(item.ScheduleID);
+            $("#PriorityID").val(item.PriorityID);
+            $("#PriorityID").attr("disabled", "disabled");
+            var splitter = $("#splitter").data("kendoSplitter");
+            splitter.expand("#right-pane");
+            splitter.expand("#left-pane");
+
+        });
+
+    //function showDetails(e) {
+    //    e.preventDefault();
+    //    var dataItem = this.dataItem($(e.currentTarget).closest("tr"));  
+    //    $("#ScheduleStart").val(dataItem.ScheduleStart);
+    //    $("#ScheduleEnd").val(dataItem.ScheduleEnd);
+    //    $("#ScheduleID").val(dataItem.ScheduleID);
+    //    $("#PriorityID").val(dataItem.PriorityID);
+    //    $("#PriorityID").attr("disabled", "disabled");
+    //    var splitter = $("#splitter").data("kendoSplitter");
+    //    splitter.expand("#right-pane");
+    //    splitter.expand("#left-pane");
+    //}
+
+    $("#btnAdd").click(function () {
+        var splitter = $("#splitter").data("kendoSplitter");
+        $("#PriorityID").removeAttr("disabled");
+        splitter.expand("#right-pane");
+        splitter.collapse("#left-pane");
+    });
+
+    $("#btnStatus").click(function () {
+        var dialog = $('#confirmStatusSchedule').data("kendoDialog");
+
+        //$('#confirmStatusSchedule').parent().find('.k-window-titlebar,.k-window-actions').css('backgroundColor', '#31794F');
+        //$('#confirmStatusSchedule').parent().find('.k-dialog-title').css('color', '#FFFFFF');
+        //$('#confirmStatusSchedule').parent().find('.k-content').css('backgroundColor', '#4A4A4A');
+        //$('#confirmStatusSchedule').parent().find('.k-content').css('color', '#FFFFFF');
+        //$('#confirmStatusSchedule').parent().find('.k-font-icon').css('color', '#FFFFFF');
+        //$('#confirmStatusSchedule').parent().find('.k-button').css('backgroundColor', '#4A4A4A');
+        dialog.content("Confirme el cambio de estatus");
+        dialog.open();
+    });
+
+
+    function confirmStatusSchedule_OK() {
+        var ids = [];
+        var grid = $("#grid").data("kendoGrid");
+        var selected = grid.select();
+        if (selected.length == 0) {
+            showDialog('Debe seleccionar un registro');
+            return false;
+        }
+
+        grid.select().each(function (i) {
+            var dataItem = grid.dataItem($(this));
+            ids[i] = dataItem.PriorityID;
+        });
+
+
+        $.ajax({
+            url: '@Url.Content("~/Priority/SetStatus_Priority")',
+            type: "POST",
+            cache: false,
+            data: { PrioritysID: ids.toString() },
+            beforeSend: function (jqXHR, settings) { $("#divLoading").show(); },
+            error: function (jqXHR, textStatus, errorThrown) { $("#divLoading").hide(); },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+                $("#divLoading").hide();
+                if (result == "Unauthorized") {
+                    showDialog('No cuenta con permisos suficientes.');
+                } else {
+                    showDialog('Su solicitud se proceso con éxito.');
+                }
+                var grid = $("#grid").data("kendoGrid");
+                grid.dataSource.read();
+            }
+        });
+    }
+
+
+    </script>
+
+

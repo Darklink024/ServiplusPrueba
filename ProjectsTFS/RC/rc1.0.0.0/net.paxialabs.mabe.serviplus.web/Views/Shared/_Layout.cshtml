@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiPlus - @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Styles.Render("~/Content/kendo/css")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
+    @Scripts.Render("~/bundles/bootstrap")
+    <link rel="icon" type="image/png" href="~/Content/Images/Icon.png" />
+</head>
+<body  onload="deshabilitaRetroceso()" id="bootstrap_overrides"> 
+   
+    <header>
+        <div style="background-color: white;height: 72px; text-align: center; padding-top: 30px;">
+            <div class="center-abs">
+                <div class="center-abs-child">
+                    <span id="titleModuleApp">@ViewBag.Title</span>
+                </div>
+            </div>
+            <img src="@Url.Content("~/Content/Images/logo_mabe_web_.png")" style="float: right; margin-right: 50px; margin-top: -30px;" />
+        </div>
+    </header> 
+
+        <div id="divLoading" class="loading"></div>
+    
+        <div id="div_superior">
+            @Html.Partial("_Menu")
+        </div>
+            
+       
+
+    <div class="container-fluid">
+        @RenderBody()
+        <hr />
+    </div>
+        @*<div class="container-fluid">
+            @RenderBody()
+        </div>*@
+        @*<div>
+            @RenderBody()
+        </div>*@
+
+            @*<div class="navbar navbar-right navbar-fixed-bottom" style="background-color:#16568A">
+                <div style="text-align: center; width: 100%;"><img src="@Url.Content("~/Content/Images/logos_serviplus_mabe.png")" class="img-responsive center-block"></div>
+            </div>*@
+  
+    <div class="espacio-footer"></div>
+    <div class="footer">
+        @*<img src="~/Content/img/poweredby_.png">*@
+    </div>
+
+      
+    @*<footer>
+        <div  style="background-color:#16568A">
+            <div style="text-align: center; width: 100%;"><img src="@Url.Content("~/Content/Images/logos_serviplus_mabe.png")" class="img-responsive center-block"></div>
+        </div>
+    </footer>*@  
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+</body>
+
+
+
+</html>
+
+<script type="text/javascript">
+    function deshabilitaRetroceso() {
+        window.location.hash = "no-back-button";
+        window.location.hash = "Again-No-back-button" //chrome
+        window.onhashchange = function () { window.location.hash = ""; }
+    }
+</script>

@@ -1,0 +1,236 @@
+﻿<style>
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        text-align: center;
+    }
+
+    ::-moz-placeholder { /* Firefox 19+ */
+        text-align: center;
+    }
+
+    :-ms-input-placeholder {
+        text-align: center;
+    }
+
+
+</style>
+@using (Html.BeginForm("", "#", FormMethod.Post, new { id = "frmLogin", @class = "form-horizontal" }))
+{
+  
+    <div class="container fondo-blanco" style="border-radius: 8px; box-shadow: 0 0 15px 10px #b0b9c1;">
+        <div class="col-md-8 col-md-offset-2">
+            <br>
+
+            <div class="form-group">
+                <div class="col-md-12 col-md-offset-0">
+                    <input type="text" class="form-control input-sm" id="UserName" name="UserName" placeholder="Usuario">
+                </div>
+                  
+                    <input type="hidden" id="intento" name="intento" value=1>
+            </div>
+
+
+
+            <div class="form-group">
+                <div class="col-md-12 col-md-offset-0">
+                    <input type="password" class="form-control input-sm" id="UserHash" name="UserHash" placeholder="Contraseña">
+                </div>
+            </div>
+            
+            <div class="text-center">
+
+                <button class="btn btn-unauth" type="submit">Acceder</button>
+                <br />
+                <br />
+                <div class="form-group">
+                    <div class="col-md-12 col-md-offset-0">
+                        @Html.ActionLink("Recuperar contraseña", "Recovery", "Security")
+                    </div>
+                </div>
+            </div>
+           
+           
+                @(Html.Kendo().Dialog()
+        .Name("dialogPriorityDetail")
+        .Title("Serviplus")
+        .Content("")
+        .Width(400)
+        .Modal(true)
+        .Visible(false)
+                )
+           
+        </div>
+    </div>
+    
+}
+
+<script>
+  
+       $('[class="btn btn-primary"]').tooltip();
+
+        $('#frmLogin').bootstrapValidator({
+            message: 'Envio de formulario',
+            excluded: [':disabled'],
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                UserName: {
+                    container: 'tooltip',
+                    validators: {
+                        notEmpty: {
+                            message: 'Este campo es requerido.'
+                        }
+                    }
+                },
+                UserHash: {
+                    container: 'tooltip',
+                    validators: {
+                        notEmpty: {
+                            message: 'Este campo es requerido.'
+                        },
+                        stringLength: {
+                            message: 'Su contraseña debe ser de al menos 5 caracteres.',
+                            min: function (value, validator, $field) {
+                                return 5 - (value.match(/\r/g) || []).length;
+                            }
+                        }
+                    }
+                }
+            }
+        })
+        .on('status.field.bv', function (e, data) {
+            var $form = $(e.target),
+            validator = data.bv,
+            $tabPane = data.element.parents('.tab-pane'),
+            tabId = $tabPane.attr('id');
+
+            if (tabId) {
+                var $icon = $('a[href="#' + tabId + '"][data-toggle="tab"]').parent().find('i');
+                // Add custom class to tab containing the field
+                if (data.status == validator.STATUS_INVALID) {
+                    $icon.removeClass(faIcon.valid).addClass(faIcon.invalid);
+                } else if (data.status == validator.STATUS_VALID) {
+                    var isValidTab = validator.isValidContainer($tabPane);
+                    $icon.removeClass(faIcon.valid).addClass(isValidTab ? faIcon.valid : faIcon.invalid);
+                }
+            }
+        })
+        .on('success.form.bv', function (e, data) {
+            // Prevent form submission
+            e.preventDefault();
+
+            var online = navigator.onLine;
+            if (!online) {
+                bootbox.alert('Sin Internet');
+                return false;
+            }
+
+        var form = $('#frmLogin');
+        var username = document.getElementById("UserName").value;
+        var pass = document.getElementById("UserHash").value;
+        var token = '@ViewBag.AppToken';
+        var session = { UserName: username, Password: pass, Token: token, Origin: 'WEB'}
+        $.ajax({
+            url: "@Url.Content("~/Security/Authenticate")",
+            type: "GET",
+            cache: false,
+            data: { session: JSON.stringify(session) },
+            beforeSend: function (jqXHR, settings) {
+                $("#divLoading").show();
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                try {
+                    var json = $.parseJSON(jqXHR.responseText)
+                    if (json.serverError_Message == "UserPasswordInvalid") {
+                        $("#divLoading").hide();
+                        var conte = document.getElementById("intento").value;
+                        var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+                        $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                        dialog.content('Usuario o Contraseña Inválida, Verifique e intente de nuevo.');
+                        dialog.open();
+                        conte++;
+                        $("#intento").val(conte++);
+                        $("#divLoading").hide();
+                        if (document.getElementById("intento").value == 4) {
+                            window.location.href = "../Security/Recovery";
+                        }
+                    }
+
+                    if (json.serverError_Message == "NoAccess") {
+                        $("#divLoading").hide();
+                        var dialog = $('#dialogPriorityDetail').data("kendoDialog");
+                        $('#dialogPriorityDetail').parent().find('.k-dialog-title').css(' font-size', 'bold');
+                        dialog.content('Usuario Sin Acceso');
+                        dialog.open();
+                        $("#divLoading").hide();
+
+                    }
+                }
+                catch (ex) {
+                }
+            },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+
+                if (result.ChangePassword == true)
+                {
+                    window.location.href = "../Security/Password";
+                }
+                else
+                {
+                    window.location.href = "../Home/Index";
+                }
+            }
+        });
+
+        });
+   
+
+
+
+    @*$("form").on("submit", function (event) {
+        event.preventDefault();
+
+        var username = document.getElementById("UserName").value;
+        var pass = document.getElementById("UserHash").value;
+        var token = '@ViewBag.AppToken';
+        var session = { UserName: username, Password: pass, Token: token, Origin: ''}
+        $.ajax({
+            url: "@Url.Content("~/Security/Authenticate")",
+            type: "GET",
+            cache: false,
+            data: { session: JSON.stringify(session) },
+            beforeSend: function (jqXHR, settings) {
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                try {
+                    var json = $.parseJSON(jqXHR.responseText)
+                    if (json.serverError_Message == "UserPasswordInvalid") {
+                        alert('Usuario y/o contraseña invalidos');
+                    }
+                }
+                catch (ex) {
+                }
+            },
+            complete: function (jqXHR, textStatus) { ; },
+            success: function (result) {
+
+                if (result.ChangePassword == true)
+                {
+                    window.location.href = "../Security/_ChangePassword";
+                }
+                else
+                {
+                    window.location.href = "../Home/Index";
+                }
+            }
+        });
+    });*@
+
+</script>

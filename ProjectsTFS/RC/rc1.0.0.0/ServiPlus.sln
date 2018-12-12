@@ -1,0 +1,150 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{76CF74C0-DEB1-48A7-9F36-0181EF76EE1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{7219E295-AD36-467C-83A6-181F430739ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net.paxialabs.mabe.serviplus.entities", "net.paxialabs.mabe.serviplus.entities\net.paxialabs.mabe.serviplus.entities.csproj", "{9CDE1309-A325-4ED0-9925-6E6C8D7CA4EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net.paxialabs.mabe.serviplus.data", "net.paxialabs.mabe.serviplus.data\net.paxialabs.mabe.serviplus.data.csproj", "{97418C0E-E948-4BF4-BCC1-C5F8B5323B36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net.paxialabs.mabe.serviplus.domain", "net.paxialabs.mabe.serviplus.domain\net.paxialabs.mabe.serviplus.domain.csproj", "{15AF22E8-148A-4399-9819-5DE821E81C39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net.paxialabs.mabe.serviplus.security", "net.paxialabs.mabe.serviplus.security\net.paxialabs.mabe.serviplus.security.csproj", "{3DA4718C-89B4-496B-B223-B0E064C85FFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net.paxialabs.mabe.serviplus.web", "net.paxialabs.mabe.serviplus.web\net.paxialabs.mabe.serviplus.web.csproj", "{2F4CC99C-97DB-42CF-8056-3862BFFB75BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net.paxialabs.mabe.serviplus.web.tests", "net.paxialabs.mabe.serviplus.web.tests\net.paxialabs.mabe.serviplus.web.tests.csproj", "{15193606-462B-4163-89D9-9CD55D259B87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net.paxialabs.mabe.serviplus.resource", "net.paxialabs.mabe.serviplus.resource\net.paxialabs.mabe.serviplus.resource.csproj", "{4748B1E2-60CE-4F67-9A64-228D9F0B3C9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net.paxialabs.mabe.serviplus.interface", "net.paxialabs.mabe.serviplus.interface\net.paxialabs.mabe.serviplus.interface.csproj", "{007DC807-1E23-4882-9ED3-C68607925A1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net.paxialabs.mabe.serviplus.webapi", "net.paxialabs.mabe.serviplus.webapi\net.paxialabs.mabe.serviplus.webapi.csproj", "{C3EDECFD-EDCD-4C87-BDC0-A752050C6A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net.paxialabs.mabe.serviplus.console", "net.paxialabs.mabe.serviplus.console\net.paxialabs.mabe.serviplus.console.csproj", "{C7E000D7-284F-493C-8B6C-7E665D7858D3}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "DependencyValidation1", "DependencyValidation1\DependencyValidation1.modelproj", "{BA9C91DF-3468-4DF7-B0DB-C2518F15402B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CDE1309-A325-4ED0-9925-6E6C8D7CA4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDE1309-A325-4ED0-9925-6E6C8D7CA4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDE1309-A325-4ED0-9925-6E6C8D7CA4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDE1309-A325-4ED0-9925-6E6C8D7CA4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97418C0E-E948-4BF4-BCC1-C5F8B5323B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97418C0E-E948-4BF4-BCC1-C5F8B5323B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97418C0E-E948-4BF4-BCC1-C5F8B5323B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97418C0E-E948-4BF4-BCC1-C5F8B5323B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AF22E8-148A-4399-9819-5DE821E81C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AF22E8-148A-4399-9819-5DE821E81C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AF22E8-148A-4399-9819-5DE821E81C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AF22E8-148A-4399-9819-5DE821E81C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA4718C-89B4-496B-B223-B0E064C85FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA4718C-89B4-496B-B223-B0E064C85FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA4718C-89B4-496B-B223-B0E064C85FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA4718C-89B4-496B-B223-B0E064C85FFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F4CC99C-97DB-42CF-8056-3862BFFB75BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4CC99C-97DB-42CF-8056-3862BFFB75BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4CC99C-97DB-42CF-8056-3862BFFB75BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4CC99C-97DB-42CF-8056-3862BFFB75BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15193606-462B-4163-89D9-9CD55D259B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15193606-462B-4163-89D9-9CD55D259B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15193606-462B-4163-89D9-9CD55D259B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15193606-462B-4163-89D9-9CD55D259B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4748B1E2-60CE-4F67-9A64-228D9F0B3C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4748B1E2-60CE-4F67-9A64-228D9F0B3C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4748B1E2-60CE-4F67-9A64-228D9F0B3C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4748B1E2-60CE-4F67-9A64-228D9F0B3C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007DC807-1E23-4882-9ED3-C68607925A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007DC807-1E23-4882-9ED3-C68607925A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007DC807-1E23-4882-9ED3-C68607925A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007DC807-1E23-4882-9ED3-C68607925A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EDECFD-EDCD-4C87-BDC0-A752050C6A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EDECFD-EDCD-4C87-BDC0-A752050C6A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EDECFD-EDCD-4C87-BDC0-A752050C6A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EDECFD-EDCD-4C87-BDC0-A752050C6A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E000D7-284F-493C-8B6C-7E665D7858D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E000D7-284F-493C-8B6C-7E665D7858D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E000D7-284F-493C-8B6C-7E665D7858D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E000D7-284F-493C-8B6C-7E665D7858D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA9C91DF-3468-4DF7-B0DB-C2518F15402B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9C91DF-3468-4DF7-B0DB-C2518F15402B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9C91DF-3468-4DF7-B0DB-C2518F15402B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9C91DF-3468-4DF7-B0DB-C2518F15402B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9CDE1309-A325-4ED0-9925-6E6C8D7CA4EF} = {76CF74C0-DEB1-48A7-9F36-0181EF76EE1C}
+		{97418C0E-E948-4BF4-BCC1-C5F8B5323B36} = {76CF74C0-DEB1-48A7-9F36-0181EF76EE1C}
+		{15AF22E8-148A-4399-9819-5DE821E81C39} = {76CF74C0-DEB1-48A7-9F36-0181EF76EE1C}
+		{3DA4718C-89B4-496B-B223-B0E064C85FFA} = {76CF74C0-DEB1-48A7-9F36-0181EF76EE1C}
+		{2F4CC99C-97DB-42CF-8056-3862BFFB75BC} = {7219E295-AD36-467C-83A6-181F430739ED}
+		{15193606-462B-4163-89D9-9CD55D259B87} = {7219E295-AD36-467C-83A6-181F430739ED}
+		{4748B1E2-60CE-4F67-9A64-228D9F0B3C9F} = {76CF74C0-DEB1-48A7-9F36-0181EF76EE1C}
+		{007DC807-1E23-4882-9ED3-C68607925A1C} = {7219E295-AD36-467C-83A6-181F430739ED}
+		{C3EDECFD-EDCD-4C87-BDC0-A752050C6A7E} = {7219E295-AD36-467C-83A6-181F430739ED}
+		{C7E000D7-284F-493C-8B6C-7E665D7858D3} = {7219E295-AD36-467C-83A6-181F430739ED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1A8E80C-A7EE-4D0A-8773-2C22574ECEA5}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://vmpaxialabsweb.paxialabs.net/defaultcollection
+		SccProjectUniqueName0 = net.paxialabs.mabe.serviplus.web.tests\\net.paxialabs.mabe.serviplus.web.tests.csproj
+		SccProjectTopLevelParentUniqueName0 = ServiPlus.sln
+		SccProjectName0 = net.paxialabs.mabe.serviplus.web.tests
+		SccLocalPath0 = net.paxialabs.mabe.serviplus.web.tests
+		SccProjectUniqueName1 = net.paxialabs.mabe.serviplus.webapi\\net.paxialabs.mabe.serviplus.webapi.csproj
+		SccProjectTopLevelParentUniqueName1 = ServiPlus.sln
+		SccProjectName1 = net.paxialabs.mabe.serviplus.webapi
+		SccLocalPath1 = net.paxialabs.mabe.serviplus.webapi
+		SccProjectUniqueName2 = DependencyValidation1\\DependencyValidation1.modelproj
+		SccProjectName2 = DependencyValidation1
+		SccLocalPath2 = DependencyValidation1
+		SccLocalPath3 = .
+		SccProjectUniqueName4 = net.paxialabs.mabe.serviplus.console\\net.paxialabs.mabe.serviplus.console.csproj
+		SccProjectTopLevelParentUniqueName4 = ServiPlus.sln
+		SccProjectName4 = net.paxialabs.mabe.serviplus.console
+		SccLocalPath4 = net.paxialabs.mabe.serviplus.console
+		SccProjectUniqueName5 = net.paxialabs.mabe.serviplus.data\\net.paxialabs.mabe.serviplus.data.csproj
+		SccProjectTopLevelParentUniqueName5 = ServiPlus.sln
+		SccProjectName5 = net.paxialabs.mabe.serviplus.data
+		SccLocalPath5 = net.paxialabs.mabe.serviplus.data
+		SccProjectUniqueName6 = net.paxialabs.mabe.serviplus.domain\\net.paxialabs.mabe.serviplus.domain.csproj
+		SccProjectTopLevelParentUniqueName6 = ServiPlus.sln
+		SccProjectName6 = net.paxialabs.mabe.serviplus.domain
+		SccLocalPath6 = net.paxialabs.mabe.serviplus.domain
+		SccProjectUniqueName7 = net.paxialabs.mabe.serviplus.entities\\net.paxialabs.mabe.serviplus.entities.csproj
+		SccProjectTopLevelParentUniqueName7 = ServiPlus.sln
+		SccProjectName7 = net.paxialabs.mabe.serviplus.entities
+		SccLocalPath7 = net.paxialabs.mabe.serviplus.entities
+		SccProjectUniqueName8 = net.paxialabs.mabe.serviplus.interface\\net.paxialabs.mabe.serviplus.interface.csproj
+		SccProjectTopLevelParentUniqueName8 = ServiPlus.sln
+		SccProjectName8 = net.paxialabs.mabe.serviplus.interface
+		SccLocalPath8 = net.paxialabs.mabe.serviplus.interface
+		SccProjectUniqueName9 = net.paxialabs.mabe.serviplus.resource\\net.paxialabs.mabe.serviplus.resource.csproj
+		SccProjectTopLevelParentUniqueName9 = ServiPlus.sln
+		SccProjectName9 = net.paxialabs.mabe.serviplus.resource
+		SccLocalPath9 = net.paxialabs.mabe.serviplus.resource
+		SccProjectUniqueName10 = net.paxialabs.mabe.serviplus.security\\net.paxialabs.mabe.serviplus.security.csproj
+		SccProjectTopLevelParentUniqueName10 = ServiPlus.sln
+		SccProjectName10 = net.paxialabs.mabe.serviplus.security
+		SccLocalPath10 = net.paxialabs.mabe.serviplus.security
+		SccProjectUniqueName11 = net.paxialabs.mabe.serviplus.web\\net.paxialabs.mabe.serviplus.web.csproj
+		SccProjectTopLevelParentUniqueName11 = ServiPlus.sln
+		SccProjectName11 = net.paxialabs.mabe.serviplus.web
+		SccLocalPath11 = net.paxialabs.mabe.serviplus.web
+	EndGlobalSection
+EndGlobal
