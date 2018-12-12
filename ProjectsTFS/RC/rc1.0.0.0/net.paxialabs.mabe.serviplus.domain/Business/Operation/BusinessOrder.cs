@@ -2234,6 +2234,7 @@ namespace net.paxialabs.mabe.serviplus.domain.Business.Operation
                 int refafin = refa;
                 int costRefa = 26;
                 int kilometros = 0;
+                int pruebagit=0;
                 
 
                 foreach (var jko in obj.BillingDetails)
